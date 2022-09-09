@@ -1,17 +1,20 @@
 import "./style/App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Components
+import Intro from "./components/pages/Intro";
+import Home from "./components/pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <div className="background">
-        <div className="welcome">
-          <img src="assets/crowdysymbol-white.png" alt="" />
-          <h1>Welcome Crowdy</h1>
-          <br />
-          <h2>click icon</h2>
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* /intro */}
+        <Route path="/" element={<Intro />} />
+        {/* /home */}
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

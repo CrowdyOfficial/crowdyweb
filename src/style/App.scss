@@ -8,27 +8,25 @@
   background-color: #00705b;
   .welcome {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    h1,
+    h2 {
+      color: white;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+    }
     img {
       width: 5vh;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
     }
-    h1 {
-      width: 100%;
-      height: 100%;
-      color: white;
-      text-align: center;
+    h2 {
+      font-size: 2vh;
     }
-  }
-  h2 {
-    color: white;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    font-size: 2vh;
   }
 }
