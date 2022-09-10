@@ -23,7 +23,7 @@ const LeReve = () => {
       {/* Question 1 */}
       <div className="questAnswer">
         <div className="question">
-          <span>르레브의 공간은 특별한데요! 사장님이 르레브를</span>
+          <span>르레브의 공간은 특별한데요! 사장님이 르레브를 </span>
           <span>기획하는데 큰 영향을 준 요인이 궁금합니다.</span>
         </div>
         <div className="answer">

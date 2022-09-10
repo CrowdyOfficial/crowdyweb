@@ -111,12 +111,13 @@ a::after {
     }
   }
   .questAnswer {
+    margin: 0 auto;
     width: 80%;
     .question {
       margin: 0 auto;
       margin-top: 3vh;
       span {
-        display: inline-block;
+        display: inline;
         width: 100%;
         font-weight: 600;
         font-size: 1.5vh;
@@ -128,7 +129,7 @@ a::after {
       margin: 0 auto;
       margin-top: 0.5vh;
       span {
-        display: inline-block;
+        display: inline;
         width: 100%;
         font-weight: 400;
         font-size: 1.2vh;
@@ -141,7 +142,7 @@ a::after {
       margin-top: 0.5vh;
       margin-bottom: 3vh;
       span {
-        display: inline-block;
+        display: inline;
         width: 100%;
         font-weight: 400;
         font-size: 1.2vh;
