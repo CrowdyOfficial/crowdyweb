@@ -2,6 +2,17 @@
   margin: 0;
   padding: 0;
 }
+a,
+a:visited,
+a:hover,
+a::after {
+  color: black;
+  text-decoration: none;
+}
+.Space {
+  width: 100%;
+  min-height: 5vh;
+}
 .background {
   width: 100%;
   height: 100vh;
@@ -28,5 +39,126 @@
     h2 {
       font-size: 2vh;
     }
+  }
+}
+
+.magazine {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  .crowdyMagazine {
+    margin-top: 3vh;
+    color: #00705b;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6vh;
+    line-height: 23px;
+  }
+
+  // LeReve 1, 2, 4, 5, 6 png
+  img {
+    margin-top: 2vh;
+    width: 100%;
+  }
+
+  .title {
+    flex: 1;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-weight: 400;
+    font-size: 2.8vh;
+    line-height: 34px;
+    text-align: center;
+    display: left;
+    span {
+      width: 100%;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 3vh;
+      line-height: 34px;
+      text-align: center;
+    }
+    .address {
+      color: #00705b;
+      font-size: 1.2vh;
+    }
+  }
+  .cafeDesc {
+    flex: 2;
+    border-top: 0.5px solid #adadad;
+    border-bottom: 0.5px solid #adadad;
+    .topSpan {
+      margin-top: 2vh;
+    }
+    .bottomSpan {
+      margin-bottom: 2vh;
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      color: #5c5c5c;
+      font-weight: 500;
+      font-size: 1.2vh;
+      line-height: 17px;
+    }
+  }
+  .questAnswer {
+    width: 80%;
+    .question {
+      margin: 0 auto;
+      margin-top: 3vh;
+      span {
+        display: inline-block;
+        width: 100%;
+        font-weight: 600;
+        font-size: 1.5vh;
+        line-height: 20px;
+        color: #191919;
+      }
+    }
+    .answerOne {
+      margin: 0 auto;
+      margin-top: 0.5vh;
+      span {
+        display: inline-block;
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.2vh;
+        line-height: 17px;
+        color: #5c5c5c;
+      }
+    }
+    .answer {
+      margin: 0 auto;
+      margin-top: 0.5vh;
+      margin-bottom: 3vh;
+      span {
+        display: inline-block;
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.2vh;
+        line-height: 17px;
+        color: #5c5c5c;
+      }
+    }
+  }
+
+  // 3.1, 3.2, 3.3, 3.4 png
+  // grid gap issue
+  .container {
+    width: 99%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1vh 1vh;
+    grid-auto-flow: row;
   }
 }

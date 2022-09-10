@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Intro from "./components/pages/Intro";
 import Home from "./components/pages/Home";
 
+import LeReve from "./components/pages/magazine";
+
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Intro />} />
         {/* /home */}
         <Route path="/home" element={<Home />} />
+        {/* LeLeve */}
+        <Route path="/lereve" element={<LeReve />} />
       </Routes>
     </BrowserRouter>
   );
