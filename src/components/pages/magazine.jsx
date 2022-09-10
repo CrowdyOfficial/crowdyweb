@@ -134,6 +134,7 @@ const LeReve = () => {
       <div className="questAnswer">
         <div className="answer">
           <span>영업시간: 매일 10:00 ~ 23:59</span>
+          <br />
           <span>
             외부링크: <br />
             <a href="">네이버</a> <br /> <a href="">인스타</a>
