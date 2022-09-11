@@ -29,22 +29,27 @@ a::after {
       text-align: center;
       width: 100%;
       height: 100%;
+      font-size: 100px;
     }
     img {
-      width: 5vh;
+      width: 8vh;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
     }
     h2 {
-      font-size: 2vh;
+      font-size: 80px;
     }
   }
 }
-
+.M {
+  width: 100%;
+  height: 100%;
+}
 .magazine {
   font-family: "Noto Sans KR";
   font-style: normal;
+  margin: 0 auto;
   width: 100%;
   display: flex;
   flex-wrap: wrap;

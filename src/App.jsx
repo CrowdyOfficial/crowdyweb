@@ -12,11 +12,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* /intro */}
-        <Route path="/" element={<Intro />} />
+        <Route path="/intro" element={<Intro />} />
         {/* /home */}
         <Route path="/home" element={<Home />} />
         {/* LeLeve */}
-        <Route path="/lereve" element={<LeReve />} />
+        <Route path="/" element={<LeReve />} />
       </Routes>
     </BrowserRouter>
   );

@@ -6,12 +6,13 @@ const Intro = () => {
     <div className="App">
       <div className="background">
         <div className="welcome">
-          <Link to={"/home"}>
-            <img src="assets/crowdysymbol-white.png" alt="crowdy" />
-          </Link>
+          <img src="assets/crowdysymbol-white.png" alt="crowdy" />
+
           <h1>Welcome Crowdy</h1>
           <br />
-          <h2>click icon</h2>
+          <Link to={"/lereve"}>
+            <h2>LeReve Magazine</h2>
+          </Link>
         </div>
       </div>
     </div>
