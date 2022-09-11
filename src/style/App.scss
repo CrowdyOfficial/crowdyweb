@@ -11,7 +11,7 @@ a::after {
 }
 .Space {
   width: 100%;
-  min-height: 5vh;
+  min-height: 50px;
 }
 .background {
   width: 100%;
@@ -53,8 +53,8 @@ a::after {
   justify-content: center;
   -webkit-flex-direction: column;
   .crowdyMagazine {
-    margin-top: 3vh;
-    margin-bottom: 1vh;
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: #00705b;
     width: 100%;
     text-align: center;
@@ -70,8 +70,8 @@ a::after {
 
   .title {
     flex: 1;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-weight: 400;
     line-height: 34px;
     text-align: center;
@@ -94,10 +94,10 @@ a::after {
     border-top: 0.5px solid #adadad;
     border-bottom: 0.5px solid #adadad;
     .topSpan {
-      margin-top: 2vh;
+      margin-top: 20px;
     }
     .bottomSpan {
-      margin-bottom: 2vh;
+      margin-bottom: 20px;
     }
     span {
       display: inline-block;
@@ -114,7 +114,7 @@ a::after {
     width: 80%;
     .question {
       margin: 0 auto;
-      margin-top: 5vh;
+      margin-top: 50px;
       span {
         display: inline;
         width: 100%;
@@ -126,7 +126,7 @@ a::after {
     }
     .answerOne {
       margin: 0 auto;
-      margin-top: 0.5vh;
+      margin-top: 5px;
       span {
         display: inline;
         width: 100%;
@@ -138,8 +138,8 @@ a::after {
     }
     .answer {
       margin: 0 auto;
-      margin-top: 0.5vh;
-      margin-bottom: 5vh;
+      margin-top: 5px;
+      margin-bottom: 50px;
       span {
         display: inline;
         width: 100%;
@@ -158,12 +158,14 @@ a::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1vh 1vh;
+    gap: 10px 10px;
     grid-auto-flow: row;
   }
 }
 .links {
-  display: relative;
+  div {
+    width: 50%;
+  }
   img {
     width: 13px;
     height: 13px;
