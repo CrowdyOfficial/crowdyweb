@@ -8,7 +8,7 @@ const LeReve = () => {
         <div className="crowdyMagazine">크라우디 매거진</div>
         <img src="assets/LeReve/1.png" alt="" />
         <div className="title">
-          <span>미술관에서 연인과 즐기는</span>
+          <span class>미술관에서 연인과 즐기는</span>
           <span>커피와 영화 한 편</span>
           <span className="address">르레브 / 화성시 여울로 140</span>
         </div>
