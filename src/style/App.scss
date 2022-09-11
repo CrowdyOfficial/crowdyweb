@@ -11,7 +11,7 @@ a::after {
 }
 .Space {
   width: 100%;
-  min-height: 50px;
+  min-height: 70px;
 }
 .background {
   width: 100%;
@@ -97,7 +97,7 @@ a::after {
   .bottom {
     flex: 1;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 400;
     line-height: 34px;
     text-align: center;
@@ -187,7 +187,6 @@ table {
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
-  // display: flex;
   align-items: center;
   a {
     img {

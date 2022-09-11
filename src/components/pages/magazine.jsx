@@ -155,29 +155,6 @@ const LeReve = () => {
         <div className="bottom">
           <span className="address">르레브 / 화성시 여울로 140</span>
         </div>
-
-        {/* <div className="questAnswer">
-          <div className="answer">
-            <span>영업시간: 매일 10:00 ~ 23:59</span>
-            <br />
-            <span className="links">
-              <span>외부링크</span>
-              <br />
-              <br />
-              <div>
-                <a href="https://map.naver.com/v5/entry/place/1267521105?c=14143706.329624798,4468556.865391634,13,0,0,0,dh&placePath=%2Fhome&entry=plt">
-                  <img src="assets/icon/naver.png" alt="" />
-                  &nbsp;&nbsp;네이버
-                </a>
-                <br />
-                <a href="https://www.instagram.com/cafe_lereve/">
-                  <img src="assets/icon/insta.png" alt="" />
-                  &nbsp;&nbsp;인스타
-                </a>
-              </div>
-            </span>
-          </div>
-        </div> */}
       </div>
       <div>
         <table border="0">
