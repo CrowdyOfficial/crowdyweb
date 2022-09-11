@@ -161,7 +161,7 @@ const LeReve = () => {
             <span>영업시간: 매일 10:00 ~ 23:59</span>
             <br />
             <span className="links">
-              <span>외부링크:</span>
+              <span>외부링크</span>
               <br />
               <br />
               <div>
