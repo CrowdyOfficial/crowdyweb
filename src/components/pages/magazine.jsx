@@ -42,7 +42,7 @@ const LeReve = () => {
         <img src="assets/LeReve/2.png" alt="" />
 
         {/* Question 2 */}
-        <div className="questAnswer">
+        <div className="questAnswer One">
           <div className="question">
             <span>공간이 주는 컨셉과 웅장함이 돋보이는데요.</span>
           </div>

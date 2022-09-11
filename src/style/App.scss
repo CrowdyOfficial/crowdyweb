@@ -202,11 +202,9 @@ a::after {
     .bottom {
       .address {
         font-size: 2vh;
-
         font-weight: 500;
       }
     }
-
     .questAnswer {
       margin-top: 5vh;
       margin-bottom: 5vh;
@@ -227,6 +225,9 @@ a::after {
           line-height: 2vh;
         }
       }
+    }
+    .One {
+      margin-bottom: 0;
     }
     img {
       width: 100%;
