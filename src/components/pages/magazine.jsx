@@ -111,7 +111,7 @@ const LeReve = () => {
           </div>
         </div>
 
-        <img src="assets/LeReve/4.png" alt="" />
+        <img className="LereveMenu" src="assets/LeReve/4.png" alt="" />
 
         {/* Question 5 */}
         <div className="questAnswer">
@@ -133,7 +133,7 @@ const LeReve = () => {
           </div>
         </div>
 
-        <img src="assets/LeReve/5.png" alt="" />
+        <img className="LereveMenu" src="assets/LeReve/5.png" alt="" />
 
         {/* Question 6 */}
         <div className="questAnswer">
