@@ -45,10 +45,10 @@ a::after {
 .M {
   width: 100%;
   height: 100%;
-}
-.magazine {
   font-family: "Noto Sans KR";
   font-style: normal;
+}
+.magazine {
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -182,12 +182,17 @@ a::after {
     grid-auto-flow: row;
   }
 }
-.links {
-  div {
-    width: 50%;
-  }
-  img {
-    width: 13px;
-    height: 13px;
+table {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  // display: flex;
+  align-items: center;
+  a {
+    img {
+      height: 13px;
+      width: 13px;
+    }
   }
 }
