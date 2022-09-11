@@ -152,7 +152,7 @@ const LeReve = () => {
 
         <img src="assets/LeReve/6.png" alt="" />
 
-        <div className="title">
+        <div className="bottom">
           <span className="address">르레브 / 화성시 여울로 140</span>
         </div>
 

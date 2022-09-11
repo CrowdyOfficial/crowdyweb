@@ -76,7 +76,7 @@ a::after {
   .title {
     flex: 1;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-weight: 400;
     line-height: 34px;
     text-align: center;
@@ -89,6 +89,19 @@ a::after {
       line-height: 34px;
       text-align: center;
     }
+    .address {
+      color: #00705b;
+      font-size: 12px;
+    }
+  }
+  .bottom {
+    flex: 1;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    display: left;
     .address {
       color: #00705b;
       font-size: 12px;
