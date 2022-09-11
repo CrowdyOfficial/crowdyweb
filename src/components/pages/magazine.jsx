@@ -129,7 +129,9 @@ const LeReve = () => {
 
       {/* Question 6 */}
       <div className="questAnswer">
-        <div className="question"></div>
+        <div className="question">
+          <span>마지막으로 하시고 싶은 말씀 있으신가요?</span>
+        </div>
         <div className="answer">
           <span>
             고객분들 중에 인터뷰를 보고 방문하셨다면 꼭 저 또는 직원에게
@@ -150,9 +152,18 @@ const LeReve = () => {
         <div className="answer">
           <span>영업시간: 매일 10:00 ~ 23:59</span>
           <br />
-          <span>
-            외부링크: <br />
-            <a href="">네이버</a> <br /> <a href="">인스타</a>
+          <span className="links">
+            외부링크:&nbsp;&nbsp;&nbsp;
+            <a href="https://map.naver.com/v5/entry/place/1267521105?c=14143706.329624798,4468556.865391634,13,0,0,0,dh&placePath=%2Fhome&entry=plt">
+              <img src="assets/icon/naver.png" alt="" />
+              &nbsp;&nbsp;네이버
+            </a>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/cafe_lereve/">
+              <img src="assets/icon/insta.png" alt="" />
+              &nbsp;&nbsp;인스타
+            </a>
           </span>
         </div>
       </div>
