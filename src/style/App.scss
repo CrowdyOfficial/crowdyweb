@@ -182,9 +182,52 @@ a::after {
   }
 }
 
+// 1025px --> pc
 @media only screen and (min-width: 1025px) {
+  table {
+    margin-top: 5vh;
+    tr {
+      td {
+        img {
+          width: 2vh;
+          height: 2vh;
+        }
+        line-height: 2vh;
+        font-size: 1.5vh;
+      }
+    }
+  }
   .magazine {
     width: 50%;
+    .bottom {
+      .address {
+        font-size: 2vh;
+
+        font-weight: 500;
+      }
+    }
+
+    .questAnswer {
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      .question {
+        line-height: 4vh;
+        span {
+          font-size: 2vh;
+        }
+      }
+      .answerOne {
+        margin-bottom: 0;
+      }
+      .answer,
+      .answerOne {
+        line-height: 2vh;
+        span {
+          font-size: 1.7vh;
+          line-height: 2vh;
+        }
+      }
+    }
     img {
       width: 100%;
       background-position: inherit;
@@ -197,15 +240,15 @@ a::after {
     }
     .title {
       display: inline;
-      margin-top: 5vh;
-      margin-bottom: 5vh;
+      margin-top: 7vh;
+      margin-bottom: 3vh;
       line-height: 5vh;
       span {
         font-size: 4vh;
         font-weight: 500;
       }
       .address {
-        margin-top: 3vh;
+        margin-top: 2vh;
         font-size: 2vh;
         font-weight: 500;
       }
@@ -214,7 +257,7 @@ a::after {
       width: 100%;
       line-height: 3vh;
       span {
-        font-size: 2vh;
+        font-size: 1.8vh;
       }
       .topSpan {
         margin-top: 5vh;

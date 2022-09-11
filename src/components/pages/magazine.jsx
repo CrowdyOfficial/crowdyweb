@@ -165,7 +165,7 @@ const LeReve = () => {
           <tr>
             <td>외부링크: </td>
             <td>
-              <a href="https://map.naver.com/v5/entry/place/1267521105?c=14143706.329624798,4468556.865391634,13,0,0,0,dh&placePath=%2Fhome&entry=plt">
+              <a href="https://bit.ly/3xC2cVh">
                 <img src="assets/icon/naver.png" alt="" />
                 &nbsp;&nbsp;네이버
               </a>
@@ -174,7 +174,7 @@ const LeReve = () => {
           <tr>
             <td></td>
             <td>
-              <a href="https://www.instagram.com/cafe_lereve/">
+              <a href="https://bit.ly/3DevufY">
                 <img src="assets/icon/insta.png" alt="" />
                 &nbsp;&nbsp;인스타
               </a>
