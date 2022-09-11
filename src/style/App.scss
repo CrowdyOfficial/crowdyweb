@@ -158,12 +158,13 @@ a::after {
       margin: 0 auto;
       margin-top: 5px;
       margin-bottom: 55px;
+      line-height: 15px;
       span {
         display: inline;
         width: 100%;
         font-weight: 400;
         font-size: 12px;
-        line-height: 10px;
+
         color: #5c5c5c;
       }
     }
