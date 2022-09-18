@@ -1,5 +1,8 @@
 import React from "react";
+import QA from "../QA";
 import Space from "./Space";
+
+import "../../style/QA.scss";
 
 const LeReve = () => {
   return (
@@ -33,7 +36,7 @@ const LeReve = () => {
             <span>왕좌의 게임, 반지의 제왕, 앤디 워홀, 스위스.. </span>
             <br />
             <span>
-              많은 요소들이 있겠지만 우선 기억이 나는 것은 이정도인 것{" "}
+              많은 요소들이 있겠지만 우선 기억이 나는 것은 이정도인 것
             </span>
             <span>같습니다.</span>
           </div>
@@ -65,26 +68,14 @@ const LeReve = () => {
         </div>
 
         {/* Question 3 */}
-        <div className="questAnswer">
-          <div className="question">
-            <span>낮과 밤은 어떻게 다른가요?</span>
-          </div>
-          <div className="answer">
-            <span>
-              저녁이 되면 1층과 2층의 분위기는 완전히 달라집니다. 저녁이
-            </span>
-            <span>
-              &nbsp;되면 르레브의 조명은 어두워집니다. 이로 인해, 1층에서는
-            </span>
-            <span>
-              &nbsp;장업함이 느껴지고 2층에서는 연인들이 소파에 기대어 영화를
-            </span>
-            <span>
-              &nbsp;볼 수 있는 편안함이 형성이 됩니다. 르레브의 이 같은 매력을
-            </span>
-            <span>&nbsp;많은 분들이 볼 수 있었으면 좋겠습니다.</span>
-          </div>
-        </div>
+        <QA
+          q1={"낮과 밤은 어떻게 다른가요?"}
+          a1={"저녁이 되면 1층과 2층의 분위기는 완전히 달라집니다. 저녁이 "}
+          a2={"되면 르레브의 조명은 어두워집니다. 이로 인해, 1층에서는 "}
+          a3={"장엄함이 느껴지고 2층에서는 연인들이 소파에 기대어 영화를 "}
+          a4={"볼 수 있는 편안함이 형성이 됩니다. 르레브의 이 같은 매력을 "}
+          a5={"많은 분들이 볼 수 있었으면 좋겠습니다."}
+        ></QA>
 
         <div className="container">
           <img src="assets/LeReve/3-1.png" alt="" />
@@ -94,61 +85,33 @@ const LeReve = () => {
         </div>
 
         {/* Question 4 */}
-        <div className="questAnswer">
-          <div className="question">
-            <span>사장님의 커피 취향이 궁금합니다.</span>
-          </div>
-          <div className="answer">
-            <span>
-              저는 아침에 일어나서 일을 하는 동시에 커피를 내려 먹는데요,
-            </span>
-            <span>
-              &nbsp;오리지널, 싱글 원두를 선호하고 밸런스를 가장 중요하게
-            </span>
-            <span>
-              &nbsp;여깁니다. 가끔은 산미가 높은 커피를 먹는 것도 좋아합니다.
-            </span>
-          </div>
-        </div>
+        <QA
+          q1={"사장님의 커피 취향이 궁금합니다."}
+          a1={"저는 아침에 일어나서 일을 하는 동시에 커피를 내려 먹는데요, "}
+          a2={"오리지널, 싱글 원두를 선호하고 밸런스를 가장 중요하게 "}
+          a3={"여깁니다. 가끔은 산미가 높은 커피를 먹는 것도 좋아합니다."}
+        ></QA>
 
         <img className="LereveMenu" src="assets/LeReve/4.png" alt="" />
 
         {/* Question 5 */}
-        <div className="questAnswer">
-          <div className="question">
-            <span>카페에서 가장 매력 있는 메뉴와 조합은 무엇이라고</span>
-            <span>&nbsp;생각하세요?</span>
-          </div>
-          <div className="answer">
-            <span>
-              르레브는 브런치, 피자, 파스타까지 다양하게 판매하고 있어요.
-            </span>
-            <span>
-              간단하게 드시고 싶으시다면, 에그 크루아상과 에스프레소를
-            </span>
-            <span>
-              &nbsp;추천드리고요. 요즘 자주 먹는 메뉴와 조합은 크로플과 딸기
-            </span>
-            <span>쥬스입니다.</span>
-          </div>
-        </div>
+        <QA
+          q1={"카페에서 가장 매력 있는 메뉴와 조합은 무엇이라고 생각하세요?"}
+          a1={"르레브는 브런치, 피자, 파스타까지 다양하게 판매하고 있어요. "}
+          a2={"간단하게 드시고 싶으시다면, 에그 크루아상과 에스프레소를 "}
+          a3={"추천드리고요. 요즘 자주 먹는 메뉴와 조합은 크로플과 딸기 "}
+          a4={"쥬스입니다."}
+        ></QA>
 
         <img className="LereveMenu" src="assets/LeReve/5.png" alt="" />
 
         {/* Question 6 */}
-        <div className="questAnswer">
-          <div className="question">
-            <span>마지막으로 하시고 싶은 말씀 있으신가요?</span>
-          </div>
-          <div className="answer">
-            <span>
-              고객분들 중에 인터뷰를 보고 방문하셨다면 꼭 저 또는 직원에게
-            </span>
-            <span>
-              &nbsp;말씀해주세요. 해당 고객에게는 소정의 혜택을 드리겠습니다!
-            </span>
-          </div>
-        </div>
+
+        <QA
+          q1={"마지막으로 하시고 싶은 말씀 있으신가요?"}
+          a1={"고객분들 중에 인터뷰를 보고 방문하셨다면 꼭 저 또는 직원에게 "}
+          a2={"말씀해주세요. 해당 고객에게는 소정의 혜택을 드리겠습니다!"}
+        ></QA>
 
         <img src="assets/LeReve/6.png" alt="" />
 
