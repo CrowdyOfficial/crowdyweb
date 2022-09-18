@@ -1,3 +1,4 @@
+// Question and Answer
 import React from "react";
 const QA = (props) => {
   return (
