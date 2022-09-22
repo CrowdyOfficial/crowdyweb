@@ -1,6 +1,7 @@
 import React from "react";
 import QA from "../QA";
 import Space from "./Space";
+import "../../style/Lereve.scss";
 
 import "../../style/QA.scss";
 
