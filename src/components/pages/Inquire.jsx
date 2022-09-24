@@ -1,14 +1,12 @@
 import React from "react";
-import "../../style/Intro.scss";
-import "../../style/magazine.scss";
 import { Link } from "react-router-dom";
+import "../../style/Intro.scss";
+import "../../style/Inquire.scss";
 
-import MagazineMenu from "./magazineComponent/MagazineMenu";
-
-const Magazine = () => {
+const Inquire = () => {
   return (
     <div className="App">
-      <div className="magazinePage">
+      <div className="inquire">
         {/* Navigation */}
         <nav className="SCoreDreamFont">
           <div className="navnav">
@@ -32,34 +30,39 @@ const Magazine = () => {
         <div className="section01 SCoreDreamFont">
           <div className="desc">
             <div className="title">
-              <span>매거진, 사장님이</span>
-              <span>풀어내는 카페 이야기</span>
+              <span>&nbsp;</span>
+              <span>문의하기</span>
             </div>
             <div className="descs">
-              <span>
-                어디에서도 들어보지 못한, 사장님이 직접 말하는 카페 스토리
-              </span>
+              <span>궁금한 사항은 직접 크라우디 팀에게 전달해 주세요</span>
             </div>
           </div>
         </div>
 
         {/* section two */}
-        <div className="section02">
-          <MagazineMenu
-            className="M"
-            to={"./yenani"}
-            thumbnail={"IMG_5431.png"}
-            cafeName={"예나니"}
-            cafeDesc={"끝남동의 매력적인 카페, 아기자기한 감성"}
-          ></MagazineMenu>
-
-          <MagazineMenu
-            className="M"
-            to={"./yenani"}
-            thumbnail={"IMG_5669.png"}
-            cafeName={"텐더리커피앤디저트"}
-            cafeDesc={"따뜻하고 아늑한 공간의 여유로움"}
-          ></MagazineMenu>
+        <div className="section02 SCoreDreamFont">
+          <div className="inquireBox">
+            <div className="inquires inqKakao">
+              <div className="imgBox">
+                <img src="./assets/Inquire/kakao.png" alt="" />
+              </div>
+              <div className="inquireTitle">카카오톡</div>
+              <br />
+              <br />
+              <div className="inquireDesc">
+                http://pf.kakao.com/_xgyHYb/chat
+              </div>
+            </div>
+            <div className="inquires inqMail">
+              <div className="imgBox">
+                <img src="./assets/Inquire/mail.png" alt="" />
+              </div>
+              <div className="inquireTitle">이메일</div>
+              <br />
+              <br />
+              <div className="inquireDesc">crowdy2022@gmail.com</div>
+            </div>
+          </div>
         </div>
 
         {/* bottom */}
@@ -84,4 +87,4 @@ const Magazine = () => {
   );
 };
 
-export default Magazine;
+export default Inquire;

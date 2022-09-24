@@ -6,6 +6,7 @@ import Intro from "./components/pages/Intro";
 import Home from "./components/pages/Home";
 import Magazine from "./components/pages/magazine";
 import LeReve from "./components/pages/Lereve";
+import Inquire from "./components/pages/Inquire";
 
 // Components
 
@@ -20,7 +21,9 @@ function App() {
         {/* LeLeve */}
         <Route path="/lereve" element={<LeReve />} />
         {/* Magazine */}
-        <Route path="magazine" element={<Magazine />} />
+        <Route path="/magazine" element={<Magazine />} />
+        {/* Inquire */}
+        <Route path="/inquire" element={<Inquire />} />
       </Routes>
     </BrowserRouter>
   );

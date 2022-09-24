@@ -19,7 +19,7 @@ const Intro = () => {
             <Link to="/magazine">
               <div className="link">매거진</div>
             </Link>
-            <Link to="moon">
+            <Link to="/inquire">
               <div className="link">문의하기</div>
             </Link>
           </div>
@@ -100,7 +100,7 @@ const Intro = () => {
             <Link to="/magazine">
               <div className="bottomLinks">매거진</div>
             </Link>
-            <Link to="/moon">
+            <Link to="/inquire">
               <div className="bottomLinks">문의하기</div>
             </Link>
           </div>
