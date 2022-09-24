@@ -12,17 +12,17 @@ const Magazine = () => {
         {/* Navigation */}
         <nav className="SCoreDreamFont">
           <div className="navnav">
-            <Link to="/">
+            <Link className="align" to="/">
               <img src="./assets/crowdysymbol.png" alt="" />
               <span>크라우디</span>
             </Link>
-            <Link to="/">
+            <Link className="align" to="/">
               <div className="link">홈</div>
             </Link>
-            <Link to="/magazine">
+            <Link className="align" to="/magazine">
               <div className="link">매거진</div>
             </Link>
-            <Link to="/inquire">
+            <Link className="align" to="/inquire">
               <div className="link">문의하기</div>
             </Link>
           </div>
@@ -65,13 +65,13 @@ const Magazine = () => {
         {/* bottom */}
         <div className="bottom SCoreDreamFont">
           <div className="bottomLink">
-            <Link to="/">
+            <Link className="align" to="/">
               <div className="bottomLinks">홈</div>
             </Link>
-            <Link to="/magazine">
+            <Link className="align" to="/magazine">
               <div className="bottomLinks">매거진</div>
             </Link>
-            <Link to="/inquire">
+            <Link className="align" to="/inquire">
               <div className="bottomLinks">문의하기</div>
             </Link>
           </div>
