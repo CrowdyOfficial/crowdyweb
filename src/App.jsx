@@ -1,11 +1,13 @@
 // import "./style/App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Components
+// Pages
 import Intro from "./components/pages/Intro";
 import Home from "./components/pages/Home";
-
+import Magazine from "./components/pages/magazine";
 import LeReve from "./components/pages/Lereve";
+
+// Components
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         {/* LeLeve */}
         <Route path="/lereve" element={<LeReve />} />
+        {/* Magazine */}
+        <Route path="magazine" element={<Magazine />} />
       </Routes>
     </BrowserRouter>
   );
