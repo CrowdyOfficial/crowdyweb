@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../style/Intro.scss";
 
 const Intro = () => {
@@ -12,7 +12,6 @@ const Intro = () => {
             <img src="./assets/crowdysymbol.png" alt="" />
             <span>크라우디</span>
             <div>홈</div>
-            <div>크라우디란?</div>
             <div>매거진</div>
             <div>문의하기</div>
           </div>
@@ -30,7 +29,47 @@ const Intro = () => {
               </span>
             </div>
           </div>
+
+          <div className="mainIMGs">
+            <img
+              className="third i0"
+              src="./assets/Intro/IMG_5447 1.png"
+              alt=""
+            />
+            <img
+              className="second i1"
+              src="./assets/Intro/IMG_5669.png"
+              alt=""
+            />
+            <img
+              className="first i2"
+              src="./assets/Intro/IMG_5431.png"
+              alt=""
+            />
+            <img
+              className="second i3"
+              src="./assets/Intro/IMG_5447 2.png"
+              alt=""
+            />
+            <img
+              className="third i4"
+              src="./assets/Intro/IMG_5646 1.png"
+              alt=""
+            />
+          </div>
         </div>
+
+        {/* section 02 */}
+        <div className="section02">
+          <div className="mainIMGs">
+            <img className="i0" src="./assets/Intro/Group 29.png" alt="" />
+            <img src="./assets/Intro/Group 28.png" alt="" />
+            <img src="./assets/Intro/Group 32.png" alt="" />
+          </div>
+        </div>
+
+        {/* bottom */}
+        <div>bottom</div>
       </div>
     </div>
   );
