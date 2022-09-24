@@ -9,11 +9,19 @@ const Intro = () => {
         {/* Navigation */}
         <nav className="SCoreDreamFont">
           <div className="navnav">
-            <img src="./assets/crowdysymbol.png" alt="" />
-            <span>크라우디</span>
-            <div>홈</div>
-            <div>매거진</div>
-            <div>문의하기</div>
+            <Link to="/">
+              <img src="./assets/crowdysymbol.png" alt="" />
+              <span>크라우디</span>
+            </Link>
+            <Link to="/">
+              <div className="link">홈</div>
+            </Link>
+            <Link to="/magazine">
+              <div className="link">매거진</div>
+            </Link>
+            <Link to="moon">
+              <div className="link">문의하기</div>
+            </Link>
           </div>
         </nav>
 
@@ -63,13 +71,43 @@ const Intro = () => {
         <div className="section02">
           <div className="mainIMGs">
             <img className="i0" src="./assets/Intro/Group 29.png" alt="" />
-            <img src="./assets/Intro/Group 28.png" alt="" />
-            <img src="./assets/Intro/Group 32.png" alt="" />
+            <img className="i1" src="./assets/Intro/Group 28.png" alt="" />
+            <img className="i2" src="./assets/Intro/Group 32.png" alt="" />
+            <div className="justWhite"></div>
+          </div>
+
+          <div className="desc SCoreDreamFont">
+            <div className="title">
+              <span>서로 다른 사장님,</span>
+              <span>서로 다른 인터뷰, </span>
+              <span>브랜딩을 담은 매거진</span>
+            </div>
+            <div className="descs">
+              카페에 대한 질문과 사장님의 솔직한 답변을 매거진에 담았어요.
+            </div>
+            <Link to="/magazine">
+              <button className="SCoreDreamFont">매거진 보러가기</button>
+            </Link>
           </div>
         </div>
 
         {/* bottom */}
-        <div>bottom</div>
+        <div className="bottom SCoreDreamFont">
+          <div className="bottomLink">
+            <Link to="/">
+              <div className="bottomLinks">홈</div>
+            </Link>
+            <Link to="/magazine">
+              <div className="bottomLinks">매거진</div>
+            </Link>
+            <Link to="/moon">
+              <div className="bottomLinks">문의하기</div>
+            </Link>
+          </div>
+          <div className="email">
+            문의 <span>crowdy2022@gmail.com</span>
+          </div>
+        </div>
       </div>
     </div>
   );

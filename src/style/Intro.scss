@@ -20,11 +20,11 @@
   // top nav
   nav {
     width: 100%;
-    min-height: 5vh;
     .navnav {
+      margin: auto auto;
       display: flex;
       width: 40%;
-      height: 7vh;
+      height: 5vh;
       margin-left: 20vh;
       img {
         margin: auto 0;
@@ -37,7 +37,7 @@
         text-align: center;
         margin: auto 0;
       }
-      div {
+      .link {
         float: left;
         color: #4e5158;
         font-size: 2vh;
@@ -77,7 +77,6 @@
     .mainIMGs {
       width: 50%;
       height: 50%;
-      // border: 1px solid black;
       position: absolute;
       right: 0%;
       top: 20%;
@@ -129,18 +128,110 @@
 
 // section 02
 .section02 {
+  margin: 0;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-color: #ffffff;
   .mainIMGs {
     width: 50%;
-    border: 1px solid black;
+    height: 100%;
     img {
       position: relative;
+      width: 29vh;
     }
     .i0 {
       z-index: 10;
-      left: 10%;
+      left: 35%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .i1 {
+      z-index: 11;
+      top: 40%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+    }
+    .i2 {
+      z-index: 9;
+      top: 60%;
+      left: 5%;
+      transform: translate(-50%, -50%);
+    }
+    .justWhite {
+      position: relative;
+      top: 20%;
+      z-index: 11;
+      width: 100%;
+      background-color: #ffffff;
+      height: 8vh;
+    }
+  }
+  .desc {
+    width: 50vh;
+    position: relative;
+    left: 70%;
+    top: -55%;
+    transform: translate(-50%, -50%);
+    line-height: 5.3vh;
+    span {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 4.4vh;
+    }
+    .descs {
+      margin-top: 20px;
+      line-height: 2vh;
+      span {
+        font-weight: 200;
+        font-size: 1.6vh;
+      }
+    }
+    button {
+      width: 16.5vh;
+      height: 5.7vh;
+      margin-top: 3vh;
+      border: 0;
+      font-weight: 600;
+      font-size: 1.6vh;
+      line-height: 19px;
+      background: #f2f3f5;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+}
+
+// bottom
+.bottom {
+  width: 100%;
+  height: 25vh;
+  border-top: 1px solid #f4f4f6;
+  display: inline-block;
+  .bottomLink {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 7vh;
+    display: flex;
+    div {
+      margin: auto;
+      font-weight: 200;
+      font-size: 1.4vh;
+      line-height: 1.7vh;
+      color: #343438;
+    }
+  }
+  .email {
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9597a0;
+    display: inline-block;
+    span {
+      font-weight: 200;
     }
   }
 }
