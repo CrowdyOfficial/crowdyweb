@@ -47,10 +47,10 @@ const Inquire = () => {
                 <img src="./assets/Inquire/kakao.png" alt="" />
               </div>
               <div className="inquireTitle">카카오톡</div>
-              <br />
-              <br />
               <div className="inquireDesc">
-                http://pf.kakao.com/_xgyHYb/chat
+                <a target="_blank" href="http://pf.kakao.com/_xgyHYb/chat">
+                  http://pf.kakao.com/_xgyHYb/chat
+                </a>
               </div>
             </div>
             <div className="inquires inqMail">
@@ -58,8 +58,6 @@ const Inquire = () => {
                 <img src="./assets/Inquire/mail.png" alt="" />
               </div>
               <div className="inquireTitle">이메일</div>
-              <br />
-              <br />
               <div className="inquireDesc">crowdy2022@gmail.com</div>
             </div>
           </div>

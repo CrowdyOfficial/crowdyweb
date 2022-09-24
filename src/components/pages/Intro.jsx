@@ -31,49 +31,21 @@ const Intro = () => {
             <span>연남동 카페 사장님의 </span>
             <span>자세한 이야기</span>
             <div className="descs">
-              <span>국내 가장 핫한 카페 동네, 연남동</span>
-              <span>
-                이곳 카페에서 사장님의 자세한 카페 이야기를 들어보아요.
-              </span>
+              <span>솔직 담백한 이곳 카페 사장님의</span>
+              <br />
+              <span>자세한 카페 이야기를 들어보아요.</span>
             </div>
           </div>
 
           <div className="mainIMGs">
-            <img
-              className="third i0"
-              src="./assets/Intro/IMG_5447 1.png"
-              alt=""
-            />
-            <img
-              className="second i1"
-              src="./assets/Intro/IMG_5669.png"
-              alt=""
-            />
-            <img
-              className="first i2"
-              src="./assets/Intro/IMG_5431.png"
-              alt=""
-            />
-            <img
-              className="second i3"
-              src="./assets/Intro/IMG_5447 2.png"
-              alt=""
-            />
-            <img
-              className="third i4"
-              src="./assets/Intro/IMG_5646 1.png"
-              alt=""
-            />
+            <img src="./assets/Intro/5imgs.png" alt="" />
           </div>
         </div>
 
         {/* section 02 */}
         <div className="section02">
           <div className="mainIMGs">
-            <img className="i0" src="./assets/Intro/Group 29.png" alt="" />
-            <img className="i1" src="./assets/Intro/Group 28.png" alt="" />
-            <img className="i2" src="./assets/Intro/Group 32.png" alt="" />
-            <div className="justWhite"></div>
+            <img src="./assets/Intro/3phones.png" alt="" />
           </div>
 
           <div className="desc SCoreDreamFont">

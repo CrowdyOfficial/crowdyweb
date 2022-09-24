@@ -54,7 +54,6 @@
       transform: translate(-50%, -50%);
       width: 50%;
       height: 50%;
-      //   border: 1px solid black;
       display: flex;
       .inqMail {
         position: absolute;
@@ -62,14 +61,14 @@
       }
       .inquires {
         width: 40%;
-        // border: 1px solid black;
         height: 100%;
         .imgBox {
           width: 100%;
           text-align: center;
+
           img {
             text-align: center;
-            width: 3.4vh;
+            width: 34px;
           }
         }
         .inquireTitle {
@@ -79,6 +78,7 @@
           font-size: 20px;
           line-height: 24px;
           letter-spacing: -0.02em;
+          margin-top: 15px;
         }
         .inquireDesc {
           text-align: center;
@@ -87,6 +87,7 @@
           font-size: 20px;
           line-height: 24px;
           letter-spacing: -0.02em;
+          margin-top: 28px;
         }
       }
     }
