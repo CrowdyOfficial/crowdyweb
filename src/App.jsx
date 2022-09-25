@@ -5,8 +5,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Intro from "./components/pages/Intro";
 import Home from "./components/pages/Home";
 import Magazine from "./components/pages/magazine";
-import LeReve from "./components/pages/Lereve";
 import Inquire from "./components/pages/Inquire";
+
+// Magazine Pages
+import Yenani from "./components/pages/magazines/yenani";
+import LeReve from "./components/pages/Lereve";
 
 // Components
 import ScrollToTop from "./components/ScrollToTop";
@@ -26,6 +29,9 @@ function App() {
         <Route path="/magazine" element={<Magazine />} />
         {/* Inquire */}
         <Route path="/inquire" element={<Inquire />} />
+
+        {/* Magazines */}
+        <Route path="/yenani" element={<Yenani />} />
       </Routes>
     </BrowserRouter>
   );
