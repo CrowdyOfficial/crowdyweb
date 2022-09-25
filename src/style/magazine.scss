@@ -51,38 +51,39 @@
 }
 
 // MagazineMenu component
-.magazineMenu {
-  width: 60%;
-  height: 30vh;
-  margin: 0 auto;
-  margin-top: 10vh;
-  div {
-    width: 100%;
-    height: 100%;
-    img {
-      float: left;
-      position: relative;
-      left: 0%;
-    }
-    .magazineDesc {
-      float: left;
-      position: relative;
-      top: 40%;
-      left: 30%;
-      transform: translate(-50%, -50%);
-      width: 50%;
-      height: 10%;
-      .cafeName {
-        font-weight: 300;
-        font-size: 2vh;
-        line-height: 2.4vh;
-      }
-      .cafeDesc {
-        position: absolute;
-        font-weight: 500;
-        font-size: 26px;
-        line-height: 31px;
-      }
-    }
-  }
-}
+// .magazineMenu {
+//   width: 60%;
+//   height: 30vh;
+//   margin: 0 auto;
+//   margin-top: 10vh;
+//   border: 1px solid black;
+//   div {
+//     width: 100%;
+//     height: 100%;
+//     img {
+//       float: left;
+//       position: relative;
+//       left: 0%;
+//     }
+//     .magazineDesc {
+//       float: left;
+//       position: relative;
+//       top: 40%;
+//       left: 30%;
+//       transform: translate(-50%, -50%);
+//       width: 50%;
+//       height: 10%;
+//       .cafeName {
+//         font-weight: 300;
+//         font-size: 2vh;
+//         line-height: 2.4vh;
+//       }
+//       .cafeDesc {
+//         position: absolute;
+//         font-weight: 500;
+//         font-size: 26px;
+//         line-height: 31px;
+//       }
+//     }
+//   }
+// }

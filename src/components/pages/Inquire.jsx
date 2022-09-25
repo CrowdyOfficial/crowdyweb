@@ -77,7 +77,7 @@ const Inquire = () => {
             </Link>
           </div>
           <div className="email">
-            문의 <span>crowdy2022@gmail.com</span>
+            문의 <span>&nbsp;&nbsp;crowdy2022@gmail.com</span>
           </div>
         </div>
       </div>
