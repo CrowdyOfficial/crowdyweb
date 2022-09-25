@@ -52,13 +52,13 @@ const Magazine = () => {
             cafeDesc={"끝남동의 매력적인 카페, 아기자기한 감성"}
           ></MagazineMenu>
 
-          <MagazineMenu
+          {/* <MagazineMenu
             className="M"
             to={"./tendery"}
             thumbnail={"IMG_5669.png"}
             cafeName={"텐더리커피앤디저트"}
             cafeDesc={"따뜻하고 아늑한 공간의 여유로움"}
-          ></MagazineMenu>
+          ></MagazineMenu> */}
         </div>
 
         {/* bottom */}
