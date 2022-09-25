@@ -97,17 +97,25 @@
 @media (max-width: 767px) {
   .inquire {
     .section01 {
+      width: 100%;
+      height: 212px;
       .desc {
+        width: 100%;
         .title {
-          font-weight: 600;
-          font-size: 30px;
           line-height: 36px;
+          span {
+            font-size: 30px;
+            font-weight: 600;
+          }
         }
         .descs {
+          width: 80%;
           line-height: 19px;
+          margin: 0 auto;
+          margin-top: 20px;
           span {
             display: inline-block;
-            margin-bottom: 19px;
+            margin-bottom: 10px;
           }
         }
       }
@@ -115,14 +123,15 @@
     .section02 {
       height: 60vh;
       .inquireBox {
+        width: 100%;
         .inquires {
           width: 100%;
-          // position: absolute;
         }
         .inqKakao {
           position: absolute;
           top: 20%;
           left: 50%;
+          width: 100%;
           transform: translate(-50%, -50%);
           .imgBox {
             img {
@@ -135,10 +144,10 @@
             line-height: 19px;
           }
           .inquireDesc {
+            text-align: center;
+            width: 100%;
             font-weight: 200;
             font-size: 16px;
-            line-height: 19px;
-            text-align: center;
           }
         }
         .inqMail {

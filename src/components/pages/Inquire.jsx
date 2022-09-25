@@ -34,7 +34,7 @@ const Inquire = () => {
               <span>문의하기</span>
             </div>
             <div className="descs">
-              <span>궁금한 사항은 </span>
+              <span>궁금한 사항은&nbsp;</span>
               <span>직접 크라우디 팀에게 전달해 주세요</span>
             </div>
           </div>

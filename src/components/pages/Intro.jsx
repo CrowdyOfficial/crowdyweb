@@ -59,6 +59,7 @@ const Intro = () => {
             </div>
             <div className="descs">
               <span>카페에 대한 질문과 사장님의&nbsp;</span>
+
               <span>솔직한 답변을 매거진에 담았어요.</span>
             </div>
             <Link to="/magazine">

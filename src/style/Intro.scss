@@ -58,23 +58,20 @@ nav {
     width: 100%;
     height: 72.4vh;
     .desc {
-      position: relative;
-      top: 50%;
-      left: 30%;
-      transform: translate(-50%, -50%);
+      margin-top: 6.2vh;
       width: 50vh;
-      line-height: 53px;
       span {
         display: inline-block;
         font-weight: 600;
         font-size: 4.4vh;
+        margin-top: 18px;
       }
       .descs {
-        margin-top: 20px;
-        line-height: 2vh;
+        margin-top: 27px;
         span {
           font-weight: 200;
-          font-size: 1.6vh;
+          font-size: 14px;
+          margin-top: 0px;
         }
       }
     }
@@ -84,15 +81,8 @@ nav {
     .mainIMGs {
       width: 50%;
       height: 50%;
-      position: absolute;
-      right: 10%;
-      top: 20%;
       img {
-        position: absolute;
         width: 72.3vh;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
       }
     }
   }
@@ -207,7 +197,7 @@ nav {
       margin-left: 1vh;
       width: 50%;
       span {
-        font-weight: 1000;
+        font-weight: 900;
       }
       .link {
         display: none;
@@ -215,8 +205,14 @@ nav {
     }
   }
   .bottom {
+    .bottomLink {
+      width: 70%;
+      .align {
+        margin: auto auto;
+      }
+    }
     .email {
-      top: 10%;
+      top: 20%;
     }
   }
   .Intro {
@@ -226,12 +222,15 @@ nav {
         width: 100%;
         top: 30%;
         left: 50%;
+        line-height: 25px;
         span {
           font-weight: 900;
           font-size: 30px;
-          line-height: 30px;
           width: 100%;
           text-align: center;
+        }
+        .descs {
+          line-height: 20px;
         }
       }
       .mainIMGs {
@@ -242,7 +241,7 @@ nav {
         width: 100%;
         height: 30vh;
         position: relative;
-        top: 40%;
+        top: 32%;
         left: 50%;
         transform: translate(-50%, -50%);
         img {
@@ -295,6 +294,10 @@ nav {
           font-weight: 200;
           font-size: 14px;
           line-height: 17px;
+          margin-top: 27px;
+          span {
+            margin-top: 5px;
+          }
         }
         button {
           position: relative;

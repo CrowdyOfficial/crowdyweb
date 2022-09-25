@@ -79,12 +79,12 @@
 }
 @media (max-width: 767px) {
   .magazineMenu {
-    // border: 1px solid black;
     width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
     div {
       img {
         position: relative;
-        // top: 50%;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
@@ -102,8 +102,8 @@
           line-height: 17px;
         }
         .cafeDesc {
-          font-weight: 500;
-          font-size: 18px;
+          font-weight: 600;
+          font-size: 16px;
           line-height: 21px;
         }
       }
@@ -111,13 +111,30 @@
   }
   .magazinePage {
     .section01 {
+      width: 100%;
+      height: 258px;
       .desc {
         width: 100%;
+        top: 50%;
         .title {
           width: 100%;
+          line-height: 44px;
           span {
             width: 100%;
-            font-size: 36px;
+            font-weight: 600;
+            font-size: 30px;
+          }
+        }
+        .descs {
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 20px;
+          span {
+            display: inline-block;
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 10px;
           }
         }
       }
