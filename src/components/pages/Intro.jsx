@@ -40,6 +40,10 @@ const Intro = () => {
           <div className="mainIMGs">
             <img src="./assets/Intro/5imgs.png" alt="" />
           </div>
+
+          <div className="mainMobileIMGs">
+            <img src="./assets/Intro/imgs_mobile.png" alt="" />
+          </div>
         </div>
 
         {/* section 02 */}
@@ -47,7 +51,6 @@ const Intro = () => {
           <div className="mainIMGs">
             <img src="./assets/Intro/3phones.png" alt="" />
           </div>
-
           <div className="desc SCoreDreamFont">
             <div className="title">
               <span>서로 다른 사장님,</span>
@@ -60,6 +63,9 @@ const Intro = () => {
             <Link to="/magazine">
               <button className="SCoreDreamFont">매거진 보러가기</button>
             </Link>
+          </div>
+          <div className="mainMobileIMGs">
+            <img src="./assets/Intro/2phones_mobile.png" alt="" />
           </div>
         </div>
 

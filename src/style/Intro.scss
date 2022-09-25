@@ -80,6 +80,9 @@ nav {
         }
       }
     }
+    .mainMobileIMGs {
+      display: none;
+    }
     .mainIMGs {
       width: 50%;
       height: 50%;
@@ -103,6 +106,9 @@ nav {
   width: 100%;
   height: 90vh;
   background-color: #ffffff;
+  .mainMobileIMGs {
+    display: none;
+  }
   .mainIMGs {
     width: 50%;
     height: 100%;
@@ -202,8 +208,8 @@ nav {
     .navnav {
       margin-left: 1vh;
       width: 50%;
-      img,
       span {
+        font-weight: 1000;
       }
       .link {
         display: none;
@@ -217,11 +223,15 @@ nav {
   }
   .Intro {
     .section01 {
+      overflow: hidden;
       .desc {
         width: 100%;
         top: 30%;
         left: 50%;
         span {
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 36px;
           width: 100%;
           text-align: center;
         }
@@ -229,8 +239,37 @@ nav {
       .mainIMGs {
         display: none;
       }
+      .mainMobileIMGs {
+        display: block;
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img {
+          width: 282px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
     }
     .section02 {
+      .mainMobileIMGs {
+        display: block;
+        position: relative;
+        top: -60%;
+        width: 100%;
+        margin: 0 auto;
+        img {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 274.99px;
+        }
+      }
       .mainIMGs {
         img {
           display: none;
@@ -239,17 +278,32 @@ nav {
       .desc {
         top: -70%;
         left: 50%;
+        .title {
+          span {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 31px;
+          }
+        }
         span {
           width: 100%;
           text-align: center;
         }
         .descs {
-          width: 100%;
+          margin: 0 auto;
+          width: 80%;
           text-align: center;
+          font-weight: 200;
+          font-size: 14px;
+          line-height: 17px;
         }
         button {
           position: relative;
           left: 50%;
+          width: 219px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
           transform: translateX(-50%);
         }
       }
