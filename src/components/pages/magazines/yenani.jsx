@@ -1,5 +1,5 @@
 import React from "react";
-import QA from "../../QA";
+// import QA from "../../QA";
 import Space from "../Space";
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
@@ -7,7 +7,7 @@ import "../../../style/QA.scss";
 const Yenani = () => {
   return (
     <div className="M">
-      <div id="magazine" className="magazine">
+      <div id="magazine notoSans" className="magazine">
         <div className="crowdyMagazine">크라우디 매거진</div>
         <img src="./assets/magazinePages/yenani/1.png" alt="" />
         <div className="title">
@@ -17,17 +17,33 @@ const Yenani = () => {
             예나니 / 서울 마포구 성미산로17길 112, 1층
           </span>
         </div>
-
-        <div className="cafeDesc">
-          <span className="topSpan">
-            커피의 깊은 풍미를 일반인들이 느끼기 쉽지 않다.
-          </span>
-          <span>다만, 공간이 주는 풍요로움이</span>
-          <span className="bottomSpan">
-            커피의 풍미를 느끼는 데 도움을 준다.
-          </span>
+        <div className="cafeDesc containerDesc">
+          <div className="one">
+            <img src="./assets/magazinePages/yenani/icons/coffee.png" alt="" />
+            <div className="iconDesc">테이크아웃 전문점</div>
+          </div>
+          <div className="two">
+            <img src="./assets/magazinePages/yenani/icons/alarm.png" alt="" />
+            <div className="iconDesc">월~토 11시 ~ 20시</div>
+          </div>
+          <div class="three">
+            <img src="./assets/magazinePages/yenani/icons/won.png" alt="" />
+            <div className="iconDesc">3000원 이상</div>
+          </div>
+          <div class="four">
+            <img src="./assets/magazinePages/yenani/icons/car.png" alt="" />
+            <div className="iconDesc">잠시 10분 주차 가능</div>
+          </div>
+          <div class="five">
+            <img src="./assets/magazinePages/yenani/icons/table.png" alt="" />
+            <div className="iconDesc iconDescNone">테이블 수 0개</div>
+          </div>
+          <div class="six">
+            <img src="./assets/magazinePages/yenani/icons/walking.png" alt="" />
+            <div className="iconDesc">홍대입구역 도보 20분</div>
+          </div>
         </div>
-
+        여기에 이미지 슬라이드
         {/* Question 1 */}
         <div className="questAnswer">
           <div className="question">
@@ -46,9 +62,10 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-
-        <img src="assets/LeReve/2.png" alt="" />
-
+        <div className="imgTwo">
+          <img src="./assets/magazinePages/yenani/3-1.png" alt="" />
+          <img src="./assets/magazinePages/yenani/3-2.png" alt="" />
+        </div>
         {/* Question 2 */}
         <div className="questAnswer">
           <div className="question">
@@ -66,13 +83,11 @@ const Yenani = () => {
             <span>아 물론 저도 매일매일 알아가는 중입니다 😂</span>
           </div>
         </div>
-
         <img
           className="LereveMenu"
           src="assets/magazinePages/yenani/4.png"
           alt=""
         />
-
         {/* Question 3 */}
         <div className="questAnswer">
           <div className="question">
@@ -101,14 +116,11 @@ const Yenani = () => {
             <span>맛은 정말 뒤쳐지지 않다고 자신 있게 말씀드릴 수 있어요!</span>
           </div>
         </div>
-
         {/* 5-1, 5-2 */}
-        {/* <img
-          className="LereveMenu"
-          src="assets/magazinePages/yenani/5-1.png"
-          alt=""
-        /> */}
-
+        <div className="imgTwo">
+          <img src="./assets/magazinePages/yenani/5-1.png" alt="" />
+          <img src="./assets/magazinePages/yenani/5-2.png" alt="" />
+        </div>
         {/* Question 4 */}
         <div className="questAnswer">
           <div className="question">
@@ -138,13 +150,11 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-
         <img
           className="LereveMenu"
           src="assets/magazinePages/yenani/6.png"
           alt=""
         />
-
         {/* Question 5 */}
         <div className="questAnswer">
           <div className="question">
@@ -163,13 +173,11 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-
         <img
           className="LereveMenu"
           src="assets/magazinePages/yenani/7.png"
           alt=""
         />
-
         {/* Question 6 */}
         <div className="questAnswer">
           <div className="question">
@@ -200,13 +208,11 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-
         <img
           className="LereveMenu"
           src="assets/magazinePages/yenani/8.png"
           alt=""
         />
-
         <div className="questAnswer">
           <div className="question">
             <span>과일을 활용한 시즌 메뉴가 눈에 띄는데요,</span>
@@ -232,7 +238,10 @@ const Yenani = () => {
             <span>맞춰보세요 😋</span>
           </div>
         </div>
-
+        <div className="imgTwo">
+          <img src="./assets/magazinePages/yenani/9-1.png" alt="" />
+          <img src="./assets/magazinePages/yenani/9-2.png" alt="" />
+        </div>
         <div className="questAnswer">
           <div className="question">
             <span>혹시 주문 제작도 진행하시나요?</span>
@@ -253,7 +262,10 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-
+        <div className="imgTwo">
+          <img src="./assets/magazinePages/yenani/10-1.png" alt="" />
+          <img src="./assets/magazinePages/yenani/10-2.png" alt="" />
+        </div>
         <div className="questAnswer">
           <div className="question">
             <span>예나니 인스타그램에는 어떤 내용을 올리시나요?</span>
@@ -275,11 +287,55 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-
+        <div className="imgTwo">
+          <img src="./assets/magazinePages/yenani/11-1.png" alt="" />
+          <img src="./assets/magazinePages/yenani/11-2.png" alt="" />
+        </div>
         <div className="bottom">
           <span className="address">
             예나니 / 서울 마포구 성미산로17길 112, 1층
           </span>
+          <br />
+          <div className="openingHours">
+            <span>월 - 토</span>
+            <span>&nbsp;11:00 ~ 20:00</span>
+            <br />
+            <span className="sunday">일요일 &nbsp;정기 휴무</span>
+          </div>
+          <div className="linkTwo">
+            <span className="titleSNS">SNS</span>
+            <div className="linklink">
+              <a target={"_blank"} href="/">
+                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                &nbsp;예나니
+              </a>
+              <a href="">
+                <img
+                  className="linkicon rightlinkicon"
+                  src="assets/icon/insta.png"
+                  alt=""
+                />
+                &nbsp;@_yena_ni_
+              </a>
+            </div>
+          </div>
+          <div className="linkTwo">
+            <span className="titleSNS">길찾기</span>
+            <div className="linklink">
+              <a target={"_blank"} href="/">
+                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                &nbsp;네이버맵
+              </a>
+              <a href="">
+                <img
+                  className="linkicon rightlinkicon"
+                  src="assets/icon/kakaomap.png"
+                  alt=""
+                />
+                &nbsp;카카오맵
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div></div>
