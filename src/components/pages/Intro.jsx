@@ -28,7 +28,7 @@ const Intro = () => {
         {/* section one */}
         <div className="section01">
           <div className="desc SCoreDreamFont">
-            <span>연남동 카페 사장님의 </span>
+            <span>카페 사장님의 </span>
             <span>자세한 이야기</span>
             <div className="descs">
               <span>솔직 담백한 이곳 카페 사장님의</span>
@@ -58,7 +58,8 @@ const Intro = () => {
               <span>브랜딩을 담은 매거진</span>
             </div>
             <div className="descs">
-              카페에 대한 질문과 사장님의 솔직한 답변을 매거진에 담았어요.
+              <span>카페에 대한 질문과 사장님의&nbsp;</span>
+              <span>솔직한 답변을 매거진에 담았어요.</span>
             </div>
             <Link to="/magazine">
               <button className="SCoreDreamFont">매거진 보러가기</button>
