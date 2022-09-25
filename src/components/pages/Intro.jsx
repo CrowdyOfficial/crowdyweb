@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 import "../../style/Intro.scss";
 
 const Intro = () => {
+  const [isOpen, setMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setMenu((isOpen) => !isOpen);
+  };
+
   return (
     <div className="App">
       <div className="Intro">
@@ -23,7 +30,44 @@ const Intro = () => {
               <div className="link">문의하기</div>
             </Link>
           </div>
+
+          <div id="menu" onClick={() => toggleMenu()}>
+            <span id="openButton">
+              <img
+                src={
+                  isOpen
+                    ? "./assets/icon/closeButton.png"
+                    : "./assets/icon/openButton.png"
+                }
+                alt=""
+              />
+            </span>
+          </div>
         </nav>
+
+        <div id="topDownMenu" className={isOpen ? "showMenu" : "hideMenu"}>
+          <div className="slideBarMenu SCoreDreamFont">
+            <ul>
+              <Link to="/">
+                <li>
+                  <span className="nowPageColor">홈</span>
+                </li>
+              </Link>
+              <Link to="/magazine">
+                <li>
+                  <span>매거진</span>
+                </li>
+              </Link>
+              <Link to="/inquire">
+                <li>
+                  <span>문의하기</span>
+                </li>
+              </Link>
+            </ul>
+          </div>
+        </div>
+
+        <div className={isOpen ? "showModal" : "hideModal"}></div>
 
         {/* section one */}
         <div className="section01">
