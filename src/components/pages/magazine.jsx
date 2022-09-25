@@ -67,7 +67,10 @@ const Magazine = () => {
             </ul>
           </div>
         </div>
-        <div className={isOpen ? "showModal" : "hideModal"}></div>
+        <div
+          className={isOpen ? "showModal" : "hideModal"}
+          onClick={() => toggleMenu()}
+        ></div>
 
         {/* section one */}
         <div className="section01 SCoreDreamFont">
