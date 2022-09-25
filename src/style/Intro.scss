@@ -34,7 +34,7 @@ nav {
     span {
       color: #00705b;
       font-size: 2vh;
-      font-weight: 900;
+      font-weight: 1000;
       text-align: center;
     }
     .link {
@@ -44,6 +44,9 @@ nav {
       text-align: center;
       margin: auto auto;
       font-weight: 500;
+    }
+    .nowPageColor {
+      color: #00705b;
     }
   }
 }
@@ -189,6 +192,67 @@ nav {
     display: inline-block;
     span {
       font-weight: 200;
+    }
+  }
+}
+
+//모바일
+@media (max-width: 767px) {
+  nav {
+    .navnav {
+      margin-left: 1vh;
+      width: 50%;
+      img,
+      span {
+      }
+      .link {
+        display: none;
+      }
+    }
+  }
+  .bottom {
+    .email {
+      top: 10%;
+    }
+  }
+  .Intro {
+    .section01 {
+      .desc {
+        width: 100%;
+        top: 30%;
+        left: 50%;
+        span {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .mainIMGs {
+        display: none;
+      }
+    }
+    .section02 {
+      .mainIMGs {
+        img {
+          display: none;
+        }
+      }
+      .desc {
+        top: -70%;
+        left: 50%;
+        span {
+          width: 100%;
+          text-align: center;
+        }
+        .descs {
+          width: 100%;
+          text-align: center;
+        }
+        button {
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
     }
   }
 }

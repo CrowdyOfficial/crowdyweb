@@ -77,3 +77,50 @@
     }
   }
 }
+@media (max-width: 767px) {
+  .magazineMenu {
+    // border: 1px solid black;
+    width: 100%;
+    div {
+      img {
+        position: relative;
+        // top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+      }
+      .magazineDesc {
+        width: 80%;
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: left;
+        .cafeName {
+          font-weight: 200;
+          font-size: 14px;
+          line-height: 17px;
+        }
+        .cafeDesc {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+  .magazinePage {
+    .section01 {
+      .desc {
+        width: 100%;
+        .title {
+          width: 100%;
+          span {
+            width: 100%;
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+}

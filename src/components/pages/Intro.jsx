@@ -14,7 +14,7 @@ const Intro = () => {
               <span>크라우디</span>
             </Link>
             <Link className="align" to="/">
-              <div className="link">홈</div>
+              <div className="link nowPageColor">홈</div>
             </Link>
             <Link className="align" to="/magazine">
               <div className="link">매거진</div>

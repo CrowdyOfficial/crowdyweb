@@ -21,7 +21,7 @@ const Inquire = () => {
               <div className="link">매거진</div>
             </Link>
             <Link className="align" to="/inquire">
-              <div className="link">문의하기</div>
+              <div className="link nowPageColor">문의하기</div>
             </Link>
           </div>
         </nav>
@@ -34,7 +34,8 @@ const Inquire = () => {
               <span>문의하기</span>
             </div>
             <div className="descs">
-              <span>궁금한 사항은 직접 크라우디 팀에게 전달해 주세요</span>
+              <span>궁금한 사항은 </span>
+              <span>직접 크라우디 팀에게 전달해 주세요</span>
             </div>
           </div>
         </div>

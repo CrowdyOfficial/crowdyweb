@@ -20,7 +20,7 @@ const Magazine = () => {
               <div className="link">홈</div>
             </Link>
             <Link className="align" to="/magazine">
-              <div className="link">매거진</div>
+              <div className="link nowPageColor">매거진</div>
             </Link>
             <Link className="align" to="/inquire">
               <div className="link">문의하기</div>
@@ -55,7 +55,7 @@ const Magazine = () => {
 
           <MagazineMenu
             className="M"
-            to={"./yenani"}
+            to={"./tendery"}
             thumbnail={"IMG_5669.png"}
             cafeName={"텐더리커피앤디저트"}
             cafeDesc={"따뜻하고 아늑한 공간의 여유로움"}

@@ -93,3 +93,75 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .inquire {
+    .section01 {
+      .desc {
+        .title {
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 36px;
+        }
+        .descs {
+          line-height: 19px;
+          span {
+            display: inline-block;
+            margin-bottom: 19px;
+          }
+        }
+      }
+    }
+    .section02 {
+      height: 60vh;
+      .inquireBox {
+        .inquires {
+          width: 100%;
+          // position: absolute;
+        }
+        .inqKakao {
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          .imgBox {
+            img {
+              width: 56px;
+            }
+          }
+          .inquireTitle {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+          }
+          .inquireDesc {
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+        .inqMail {
+          position: absolute;
+          top: 110%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          .imgBox {
+            img {
+              width: 56px;
+            }
+          }
+          .inquireTitle {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+          }
+          .inquireDesc {
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+  }
+}
