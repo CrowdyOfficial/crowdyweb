@@ -9,10 +9,12 @@ import LeReve from "./components/pages/Lereve";
 import Inquire from "./components/pages/Inquire";
 
 // Components
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         {/* /intro */}
         <Route path="/" element={<Intro />} />
