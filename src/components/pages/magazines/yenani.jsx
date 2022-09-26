@@ -43,7 +43,11 @@ const Yenani = () => {
             <div className="iconDesc">홍대입구역 도보 20분</div>
           </div>
         </div>
-        여기에 이미지 슬라이드
+        <img
+          className="LereveMenu"
+          src="assets/magazinePages/yenani/2-1.png"
+          alt=""
+        />
         {/* Question 1 */}
         <div className="questAnswer">
           <div className="question">
