@@ -26,15 +26,15 @@ const Yenani = () => {
             <img src="./assets/magazinePages/yenani/icons/alarm.png" alt="" />
             <div className="iconDesc">월~토 11시 ~ 20시</div>
           </div>
-          <div class="three">
+          <div className="three">
             <img src="./assets/magazinePages/yenani/icons/won.png" alt="" />
             <div className="iconDesc">3000원 이상</div>
           </div>
-          <div class="four">
+          <div className="four">
             <img src="./assets/magazinePages/yenani/icons/car.png" alt="" />
             <div className="iconDesc">잠시 10분 주차 가능</div>
           </div>
-          <div class="five">
+          <div className="five">
             <img src="./assets/magazinePages/yenani/icons/table.png" alt="" />
             <div className="iconDesc iconDescNone">테이블 수 0개</div>
           </div>
