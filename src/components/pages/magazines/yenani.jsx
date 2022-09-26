@@ -1,14 +1,21 @@
 import React from "react";
 // import QA from "../../QA";
+import { useNavigate } from "react-router-dom";
 import Space from "../Space";
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 
 const Yenani = () => {
+  const nav = useNavigate();
   return (
     <div className="M">
       <div id="magazine notoSans" className="magazine">
-        <div className="crowdyMagazine">크라우디 매거진</div>
+        <div className="crowdyMagazine">
+          크라우디 매거진
+          <div onClick={() => nav(-1)} className="goBack">
+            <img src="./assets/icon/Back.png" alt="" />
+          </div>
+        </div>
         <img src="./assets/magazinePages/yenani/1.png" alt="" />
         <div className="title">
           <span>섬세함과 깊은 맛으로</span>
