@@ -17,6 +17,14 @@ const Yenani = () => {
             예나니 / 서울 마포구 성미산로17길 112, 1층
           </span>
         </div>
+        <div className="cafeDesc">
+          <span className="topSpan">농장에서 직접 공수한 재료로,</span>
+          <span>선별된 설탕 및 밀가루,</span>
+          <span>직접 만든 콩버터부터 필링지까지.</span>
+          <span className="bottomSpan">
+            모든 메뉴는 사장님의 손길이 닿아있다.
+          </span>
+        </div>
         <div className="cafeDesc containerDesc">
           <div className="one">
             <img src="./assets/magazinePages/yenani/icons/coffee.png" alt="" />
@@ -43,11 +51,11 @@ const Yenani = () => {
             <div className="iconDesc">홍대입구역 도보 20분</div>
           </div>
         </div>
-        <img
-          className="LereveMenu"
-          src="assets/magazinePages/yenani/2-1.png"
-          alt=""
-        />
+
+        <div className="slideIMGs">
+          <img className="" src="assets/magazinePages/yenani/2-1.png" alt="" />
+        </div>
+
         {/* Question 1 */}
         <div className="questAnswer">
           <div className="question">
@@ -301,6 +309,8 @@ const Yenani = () => {
           </span>
           <br />
           <div className="openingHours">
+            <span className="openingHourTitle">운영시간</span>
+            <br />
             <span>월 - 토</span>
             <span>&nbsp;11:00 ~ 20:00</span>
             <br />
@@ -309,11 +319,19 @@ const Yenani = () => {
           <div className="linkTwo">
             <span className="titleSNS">SNS</span>
             <div className="linklink">
-              <a target={"_blank"} href="/">
+              <a
+                target={"_blank"}
+                rel="noreferrer"
+                href="https://search.naver.com/search.naver?where=nexearch&sm=top_sly.hst&fbm=0&acr=1&acq=%EC%98%88%EB%82%98%EB%8B%88&qdt=0&ie=utf8&query=%EC%98%88%EB%82%98%EB%8B%88"
+              >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
                 &nbsp;예나니
               </a>
-              <a href="">
+              <a
+                target={"_blank"}
+                rel="noreferrer"
+                href="https://www.instagram.com/_yena_ni_/"
+              >
                 <img
                   className="linkicon rightlinkicon"
                   src="assets/icon/insta.png"
@@ -326,11 +344,19 @@ const Yenani = () => {
           <div className="linkTwo">
             <span className="titleSNS">길찾기</span>
             <div className="linklink">
-              <a target={"_blank"} href="/">
+              <a
+                target={"_blank"}
+                rel="noreferrer"
+                href="http://m.map.naver.com/route.nhn?menu=route&ename=예나니&ex=126.9171&ey=37.5664&pathType=0&showMap=true"
+              >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
                 &nbsp;네이버맵
               </a>
-              <a href="">
+              <a
+                target={"_blank"}
+                rel="noreferrer"
+                href="https://map.kakao.com/link/to/예나니,37.5664,126.9171"
+              >
                 <img
                   className="linkicon rightlinkicon"
                   src="assets/icon/kakaomap.png"
