@@ -259,6 +259,12 @@ a::after {
   }
   .magazine {
     width: 50%;
+    .imgTwo {
+      height: 100%;
+      img {
+        width: 48%;
+      }
+    }
     .bottom {
       .address {
         font-size: 1.8vh;
