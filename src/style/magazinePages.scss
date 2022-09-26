@@ -3,10 +3,11 @@
   padding: 0;
 }
 
-// Font
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+// Font: Noto Sans Korean
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
 .notoSans {
-  font-family: "Shadows Into Light", cursive;
+  // can use: font-weight: 300, 400, 500
+  font-family: "Noto Sans KR", sans-serif;
 }
 a,
 a:visited,
@@ -15,6 +16,7 @@ a::after {
   color: black;
   text-decoration: none;
 }
+
 .Space {
   width: 100%;
   min-height: 70px;
@@ -105,7 +107,8 @@ a::after {
       color: #00705b;
       font-size: 12px;
     }
-    .linkTwo {
+    .linkTwo,
+    .linkThird {
       margin-top: 10px;
       width: 100%;
       height: 55px;
@@ -123,6 +126,9 @@ a::after {
           line-height: 20px;
         }
       }
+    }
+    .linkThird {
+      margin-top: 25px;
     }
   }
   .linkicon {
@@ -168,8 +174,8 @@ a::after {
       "four five six";
     div {
       margin: 0 auto;
-      margin-bottom: 30px;
-      margin-top: 30px;
+      margin-bottom: 15px;
+      margin-top: 20px;
       width: 80%;
       img {
         width: 40px;

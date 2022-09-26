@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
 }
+
+// Font: S-Core Dream
 @font-face {
   font-family: "S-CoreDream-3Light";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
@@ -11,8 +13,8 @@
 }
 .SCoreDreamFont {
   font-family: "S-CoreDream-3Light";
-  font-style: normal;
 }
+
 // top nav
 .align {
   margin: auto auto;
@@ -35,7 +37,7 @@ nav {
     span {
       color: #00705b;
       font-size: 2vh;
-      font-weight: 1000;
+      font-weight: 900;
       text-align: center;
     }
     .link {

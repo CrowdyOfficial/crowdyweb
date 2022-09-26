@@ -46,7 +46,7 @@ const Yenani = () => {
             <img src="./assets/magazinePages/yenani/icons/table.png" alt="" />
             <div className="iconDesc iconDescNone">테이블 수 0개</div>
           </div>
-          <div class="six">
+          <div className="six">
             <img src="./assets/magazinePages/yenani/icons/walking.png" alt="" />
             <div className="iconDesc">홍대입구역 도보 20분</div>
           </div>
@@ -66,7 +66,11 @@ const Yenani = () => {
           <div className="answer">
             <span>네 맞습니다.</span>
             <br />
-            <span>일본의 나카무라 제과 아카데미를 졸업했습니다.</span>
+            <span>
+              일본의{" "}
+              <span className="highlightSpan">나카무라 제과 아카데미</span>를
+              졸업했습니다.
+            </span>
             <span>덕분에 기본기를 제대로 익힐 수 있었습니다.</span>
             <span>
               라인업에 없는 제품도 미리 의뢰만 해주시면 대부분 상품으로
@@ -84,7 +88,10 @@ const Yenani = () => {
             <span>사장님이 생각하시는 맛있는 빵의 기준은 무엇인가요?</span>
           </div>
           <div className="answer">
-            <span>재료와 재료에 대한 상식이라고 생각합니다.</span>
+            <span>
+              <span className="highlightSpan">재료와 재료에 대한 상식</span>
+              이라고 생각합니다.
+            </span>
             <br />
             <span>
               아무리 좋은 재료를 사용한다고 해도 사용법을 제대로 모른다면 최상의
@@ -121,8 +128,9 @@ const Yenani = () => {
             <span>
               그래서 시즌별로 수소문해서 따로 구매를 하여 제품으로 만들고
               있는데, 여름 시즌상품으로 만들었던 옥수수휘낭시에의 초당옥수수도,
-              지금의 단호박 제품에 사용되는 단호박도 전부 속칭 못난이 재료를
-              가지고 만들고 있습니다.
+              지금의 단호박 제품에 사용되는 단호박도 전부
+              <span className="highlightSpan"> 속칭 못난이 재료</span>를 가지고
+              만들고 있습니다.
             </span>
             <br />
             <span>맛은 정말 뒤쳐지지 않다고 자신 있게 말씀드릴 수 있어요!</span>
@@ -147,8 +155,11 @@ const Yenani = () => {
             </span>
             <br />
             <span>
-              휘낭시에의 주재료는 계란흰자, 설탕, 아몬드파우더 등등인데 추가재료
-              및 재료비율 따라 식감이 달라지는 것도 하나의 특징입니다.
+              휘낭시에의 주재료는 계란흰자, 설탕, 아몬드파우더 등등인데{" "}
+              <span className="highlightSpan">
+                추가재료 및 재료비율 따라 식감이 달라지는 것
+              </span>
+              도 하나의 특징입니다.
             </span>
             <br />
             <span>먹는 방법도 다양하게 있어요!</span>
@@ -176,7 +187,11 @@ const Yenani = () => {
             </span>
           </div>
           <div className="answer">
-            <span>시그니처 메뉴인 계절과일 생크림케이크 입니다.</span>
+            <span>
+              시그니처 메뉴인{" "}
+              <span className="highlightSpan">계절과일 생크림케이크</span>{" "}
+              입니다.
+            </span>
             <br />
             <span>
               계절마다 샌드되는 과일이 바뀌고, 생크림도 100% 동물성크림으로
@@ -210,8 +225,11 @@ const Yenani = () => {
             <br />
             <span>
               전국에 정말 많고 많은 디저트 집이 있는데 예나니라는 존재를 알고
-              와주시는 고객님들께 재료를 아끼지 않고 최상의 맛으로 선사하여
-              감사의 마음을 전하고 싶어요.
+              와주시는 고객님들께{" "}
+              <span className="highlightSpan">
+                재료를 아끼지 않고 최상의 맛
+              </span>
+              으로 선사하여 감사의 마음을 전하고 싶어요.
             </span>
             <br />
             <span>
@@ -243,8 +261,9 @@ const Yenani = () => {
             </span>
             <br />
             <span>
-              겨울에는 고객뿐만 아니라 많은 제과제빵인들이 기다리고 있는 빨갛고
-              달달한 그 과일이 돌아옵니다.
+              겨울에는 고객뿐만 아니라 많은 제과제빵인들이 기다리고 있는{" "}
+              <span className="hightlightSpan">빨갛고 달달한 그 과일</span>이
+              돌아옵니다.
             </span>
             <br />
             <span>맞춰보세요 😋</span>
@@ -265,8 +284,10 @@ const Yenani = () => {
             </span>
             <br />
             <span>
-              신청을 원하시면 최소 2일 전까지는 말씀해주셔야 저도 더 완성도 높게
-              정성을 들여 만들 수 있을 거 같습니다.
+              신청을 원하시면{" "}
+              <span className="highlightSpan">최소 2일 전까지</span>는
+              말씀해주셔야 저도 더 완성도 높게 정성을 들여 만들 수 있을 거
+              같습니다.
             </span>
             <br />
             <span>
@@ -284,7 +305,11 @@ const Yenani = () => {
           </div>
           <div className="answer">
             <span>
-              매장 영업 날에는 아침 오픈 시간에 맞춰 라인업이 올라가고 있어요!
+              매장 영업 날에는{" "}
+              <span className="highlightSpan">
+                아침 오픈 시간에 맞춰 라인업
+              </span>
+              이 올라가고 있어요!
             </span>
             <br />
             <span>
@@ -328,6 +353,7 @@ const Yenani = () => {
                 &nbsp;예나니
               </a>
               <a
+                className="notoSans"
                 target={"_blank"}
                 rel="noreferrer"
                 href="https://www.instagram.com/_yena_ni_/"
@@ -341,7 +367,7 @@ const Yenani = () => {
               </a>
             </div>
           </div>
-          <div className="linkTwo">
+          <div className="linkThird">
             <span className="titleSNS">길찾기</span>
             <div className="linklink">
               <a
