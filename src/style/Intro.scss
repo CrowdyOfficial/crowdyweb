@@ -264,8 +264,9 @@ nav {
   #menu {
     display: block;
     position: absolute;
-    right: 5%;
+    right: 2vh;
     top: 2.5%;
+    cursor: pointer;
   }
   nav {
     z-index: 999;
