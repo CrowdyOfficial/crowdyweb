@@ -20,13 +20,13 @@ const Inquire = () => {
               <span>크라우디</span>
             </Link>
             <Link className="align" to="/">
-              <div className="link nowPageColor">홈</div>
+              <div className="link">홈</div>
             </Link>
             <Link className="align" to="/magazine">
               <div className="link">매거진</div>
             </Link>
             <Link className="align" to="/inquire">
-              <div className="link">문의하기</div>
+              <div className="link nowPageColor">문의하기</div>
             </Link>
           </div>
 
@@ -94,7 +94,11 @@ const Inquire = () => {
               </div>
               <div className="inquireTitle">카카오톡</div>
               <div className="inquireDesc">
-                <a target="_blank" href="http://pf.kakao.com/_xgyHYb/chat">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="http://pf.kakao.com/_xgyHYb/chat"
+                >
                   http://pf.kakao.com/_xgyHYb/chat
                 </a>
               </div>

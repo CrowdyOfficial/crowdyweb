@@ -259,7 +259,9 @@ a::after {
     grid-auto-flow: row;
   }
 }
-
+#nav {
+  display: none;
+}
 // 1025px --> pc
 @media only screen and (min-width: 1025px) {
   table {
@@ -276,7 +278,7 @@ a::after {
     }
   }
   .magazine {
-    width: 50%;
+    width: 100vh;
     .imgTwo {
       height: 100%;
       img {
@@ -303,6 +305,10 @@ a::after {
     img {
       width: 100%;
       background-position: inherit;
+    }
+    .magazineThumbnail {
+      position: relative;
+      width: 100%;
     }
     .LereveMenu {
       height: 100%;

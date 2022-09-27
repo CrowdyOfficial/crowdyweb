@@ -1,14 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 // import QA from "../../QA";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Space from "../Space";
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
+import "../../../style/Intro.scss";
 
 const Yenani = () => {
+  const [isOpen, setMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setMenu((isOpen) => !isOpen);
+  };
   const nav = useNavigate();
   return (
     <div className="M">
+      {/* Navigation */}
+      <nav id="nav" className="SCoreDreamFont">
+        <div className="navnav">
+          <Link className="align" to="/">
+            <img src="./assets/crowdysymbol.png" alt="" />
+            <span>크라우디</span>
+          </Link>
+          <Link className="align" to="/">
+            <div className="link">홈</div>
+          </Link>
+          <Link className="align" to="/magazine">
+            <div className="link nowPageColor">매거진</div>
+          </Link>
+          <Link className="align" to="/inquire">
+            <div className="link">문의하기</div>
+          </Link>
+        </div>
+
+        <div id="menu" onClick={() => toggleMenu()}>
+          <span id="openButton">
+            <img
+              src={
+                isOpen
+                  ? "./assets/icon/closeButton.png"
+                  : "./assets/icon/openButton.png"
+              }
+              alt=""
+            />
+          </span>
+        </div>
+      </nav>
+
       <div id="magazine notoSans" className="magazine">
         <div className="crowdyMagazine">
           크라우디 매거진
@@ -16,7 +54,11 @@ const Yenani = () => {
             <img src="./assets/icon/Back.png" alt="" />
           </div>
         </div>
-        <img src="./assets/magazinePages/yenani/1.png" alt="" />
+        <img
+          className="magazineThumbnail"
+          src="./assets/magazinePages/yenani/1.png"
+          alt=""
+        />
         <div className="title">
           <span>섬세함과 깊은 맛으로</span>
           <span>끝남동 어르신들까지 사로잡다</span>
