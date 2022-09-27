@@ -9,6 +9,7 @@
   // can use: font-weight: 300, 400, 500
   font-family: "Noto Sans KR", sans-serif;
 }
+
 a,
 a:visited,
 a:hover,
@@ -144,9 +145,9 @@ a::after {
     }
   }
   .linkicon {
-    flex: left;
+    display: inline-block;
     width: 14px;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
   .rightlinkicon {
     margin-left: 20px;
@@ -184,10 +185,11 @@ a::after {
     grid-template-areas:
       "one two three"
       "four five six";
+
     div {
       margin: 0 auto;
-      margin-bottom: 20px;
-      margin-top: 25px;
+      margin-bottom: 35px;
+      margin-top: 42px;
       width: 80%;
       img {
         width: 40px;
@@ -204,6 +206,7 @@ a::after {
       }
     }
   }
+
   .one {
     grid-area: one;
   }
@@ -262,6 +265,7 @@ a::after {
 #nav {
   display: none;
 }
+
 // 1025px --> pc
 @media only screen and (min-width: 1025px) {
   table {
