@@ -91,7 +91,7 @@ const Magazine = () => {
           <MagazineMenu
             className="M"
             to={"/yenani"}
-            thumbnail={"IMG_5431.png"}
+            thumbnail={"./assets/magazinePages/yenani/thumbnail.png"}
             cafeName={"예나니"}
             cafeDesc={"끝남동의 매력적인 카페, 아기자기한 감성"}
           ></MagazineMenu>

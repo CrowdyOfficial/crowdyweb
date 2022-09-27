@@ -52,7 +52,7 @@ a::after {
         width: 10px;
         position: absolute;
         top: 2.7%;
-        left: 3%;
+        left: 8%;
       }
     }
   }
@@ -64,6 +64,8 @@ a::after {
   // LeReve 1, 2, 4, 5, 6 png
   img {
     width: 98%;
+    display: block;
+    margin: 0 auto;
   }
   .title {
     flex: 1;
@@ -94,7 +96,7 @@ a::after {
     line-height: 34px;
     text-align: center;
     .openingHours {
-      margin-top: 20px;
+      // margin-top: 20px;
       width: 100%;
       display: inline-block;
       .openingHourTitle {
@@ -115,6 +117,7 @@ a::after {
     .address {
       color: #00705b;
       font-size: 12px;
+      margin-top: 40px;
     }
     .linkTwo,
     .linkThird {
@@ -174,7 +177,7 @@ a::after {
     border-top: 0;
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1.1fr 0.8fr 1.1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -183,8 +186,8 @@ a::after {
       "four five six";
     div {
       margin: 0 auto;
-      margin-bottom: 15px;
-      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-top: 25px;
       width: 80%;
       img {
         width: 40px;

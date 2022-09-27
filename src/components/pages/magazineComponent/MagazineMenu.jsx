@@ -8,7 +8,7 @@ const MagazineMenu = (props) => {
         <div className="magazineMenu">
           <Link to={props.to}>
             <div>
-              <img src={"./assets/magazine/" + props.thumbnail} alt="" />
+              <img src={props.thumbnail} alt="" />
               <div className="magazineDesc">
                 <div className="cafeName">{props.cafeName}</div>
                 <div className="cafeDesc">{props.cafeDesc}</div>

@@ -336,9 +336,9 @@ const Yenani = () => {
           <img src="./assets/magazinePages/yenani/11-2.png" alt="" />
         </div>
         <div className="bottom">
-          <span className="address">
+          <div className="address">
             예나니 / 서울 마포구 성미산로17길 112, 1층
-          </span>
+          </div>
           <br />
           <div className="openingHours">
             <span className="openingHourTitle">운영시간</span>
