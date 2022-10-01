@@ -69,6 +69,7 @@ a::after {
     display: block;
     margin: 0 auto;
   }
+
   .title {
     flex: 1;
     margin-top: 50px;
@@ -177,54 +178,52 @@ a::after {
   }
   .containerDesc {
     border-top: 0;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1.1fr 0.8fr 1.1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "one two three"
-      "four five six";
+    .flexbox {
+      display: flex;
+      width: 100%;
+      margin-top: 30px;
 
-    div {
-      margin: 0 auto;
-      margin-bottom: 35px;
-      margin-top: 42px;
-      width: 80%;
-      img {
-        width: 40px;
+      .left {
+        position: absolute;
+        left: 20%;
+        transform: translateX(-50%);
       }
-      .iconDesc {
-        margin-top: 9px;
-        width: 100%;
+      .center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .right {
+        position: absolute;
+        left: 80%;
+        transform: translateX(-50%);
+      }
+    }
+    .secondLine {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    div {
+      margin: auto auto;
+
+      img {
+        width: 34px;
+      }
+      div {
+        margin-top: 10px;
         font-weight: 500;
         font-size: 8px;
         line-height: 10px;
-      }
-      .iconDescNone {
-        opacity: 0.4;
+        span {
+          font-weight: 500;
+          font-size: 8px;
+          color: black;
+        }
+        .toNone {
+          opacity: 0.4;
+        }
       }
     }
-  }
-
-  .one {
-    grid-area: one;
-  }
-  .two {
-    grid-area: two;
-  }
-  .three {
-    grid-area: three;
-  }
-  .four {
-    grid-area: four;
-  }
-  .five {
-    grid-area: five;
-  }
-  .six {
-    grid-area: six;
   }
 
   .answerOne {
@@ -284,6 +283,41 @@ a::after {
   }
   .magazine {
     width: 100vh;
+    .cafeDesc {
+      .flexbox {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+
+        .left {
+          position: absolute;
+          left: 35%;
+          transform: translateX(-50%);
+        }
+        .center {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .right {
+          position: absolute;
+          left: 65%;
+          transform: translateX(-50%);
+        }
+      }
+      .secondLine {
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      div {
+        img {
+          width: 3.4vh;
+          font-weight: 500;
+          font-size: 1vh;
+          line-height: 10px;
+        }
+      }
+    }
     .imgTwo {
       height: 100%;
       img {
@@ -291,67 +325,74 @@ a::after {
       }
     }
     .bottom {
-      .address {
-        font-size: 1.8vh;
-        font-weight: 400;
+      .cafeMenu {
+        width: 100%;
+        img {
+          width: 370px;
+        }
       }
     }
-    .answerOne {
+    .address {
+      font-size: 1.8vh;
+      font-weight: 400;
+    }
+  }
+  .answerOne {
+    line-height: 2vh;
+    margin-bottom: 0;
+    span {
+      font-size: 1.7vh;
       line-height: 2vh;
-      margin-bottom: 0;
-      span {
-        font-size: 1.7vh;
-        line-height: 2vh;
-      }
     }
-    .One {
-      margin-bottom: 0;
-    }
-    img {
-      width: 100%;
-      background-position: inherit;
-    }
-    .magazineThumbnail {
-      position: relative;
-      width: 100%;
-    }
-    .LereveMenu {
-      height: 100%;
-    }
+  }
+  .One {
+    margin-bottom: 0;
+  }
+  img {
+    width: 100%;
+    background-position: inherit;
+  }
+  .magazineThumbnail {
+    position: relative;
+    width: 100%;
+  }
+  .LereveMenu {
+    height: 100%;
+  }
 
-    .crowdyMagazine {
-      display: none;
+  .crowdyMagazine {
+    display: none;
+  }
+  .title {
+    display: inline;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    line-height: 5vh;
+    span {
+      font-size: 4vh;
+      font-weight: 400;
     }
-    .title {
-      display: inline;
-      margin-top: 7vh;
-      margin-bottom: 3vh;
-      line-height: 5vh;
-      span {
-        font-size: 4vh;
-        font-weight: 400;
-      }
-      .address {
-        margin-top: 1vh;
-        font-size: 1.8vh;
-        font-weight: 400;
-      }
+    .address {
+      margin-top: 1vh;
+      font-size: 1.8vh;
+      font-weight: 400;
     }
-    .cafeDesc {
-      width: 100%;
-      line-height: 3vh;
-      span {
-        font-size: 1.8vh;
-      }
-      .topSpan {
-        margin-top: 5vh;
-      }
-      .bottomSpan {
-        margin-bottom: 5vh;
-      }
+  }
+  .cafeDesc {
+    width: 100%;
+    line-height: 3vh;
+    span {
+      font-size: 1.8vh;
+    }
+    .topSpan {
+      margin-top: 5vh;
+    }
+    .bottomSpan {
+      margin-bottom: 5vh;
     }
   }
 }
+
 table {
   margin: 0 auto;
   font-weight: 400;

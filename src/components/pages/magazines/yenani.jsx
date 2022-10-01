@@ -1,51 +1,17 @@
-import React, { useState } from "react";
-// import QA from "../../QA";
-import { useNavigate, Link } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import Space from "../Space";
+import MNav from "./components/MNav";
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 import "../../../style/Intro.scss";
 
 const Yenani = () => {
-  const [isOpen, setMenu] = useState(false);
-
-  const toggleMenu = () => {
-    setMenu((isOpen) => !isOpen);
-  };
   const nav = useNavigate();
   return (
     <div className="M">
       {/* Navigation */}
-      <nav id="nav" className="SCoreDreamFont">
-        <div className="navnav">
-          <Link className="align" to="/">
-            <img src="./assets/crowdysymbol.png" alt="" />
-            <span>크라우디</span>
-          </Link>
-          <Link className="align" to="/">
-            <div className="link">홈</div>
-          </Link>
-          <Link className="align" to="/magazine">
-            <div className="link nowPageColor">매거진</div>
-          </Link>
-          <Link className="align" to="/inquire">
-            <div className="link">문의하기</div>
-          </Link>
-        </div>
-
-        <div id="menu" onClick={() => toggleMenu()}>
-          <span id="openButton">
-            <img
-              src={
-                isOpen
-                  ? "./assets/icon/closeButton.png"
-                  : "./assets/icon/openButton.png"
-              }
-              alt=""
-            />
-          </span>
-        </div>
-      </nav>
+      <MNav></MNav>
 
       <div id="magazine notoSans" className="magazine">
         <div className="crowdyMagazine">
@@ -75,29 +41,41 @@ const Yenani = () => {
           </span>
         </div>
         <div className="cafeDesc containerDesc">
-          <div className="one">
-            <img src="./assets/magazinePages/yenani/icons/coffee.png" alt="" />
-            <div className="iconDesc">테이크아웃 전문점</div>
+          <div className="flexbox">
+            <div className="left">
+              <img src="./assets/magazinePages/icons/coffee.png" alt="" />
+              <div>테이크아웃 전문점</div>
+            </div>
+            <div className="center">
+              <img src="./assets/magazinePages/icons/alarm.png" alt="" />
+              <div>월~토 11시 ~ 20시</div>
+            </div>
+            <div className="right">
+              <img src="./assets/magazinePages/icons/won.png" alt="" />
+              <div>
+                3000원 이상<span>베이커리 기준</span>
+              </div>
+            </div>
           </div>
-          <div className="two">
-            <img src="./assets/magazinePages/yenani/icons/alarm.png" alt="" />
-            <div className="iconDesc">월~토 11시 ~ 20시</div>
-          </div>
-          <div className="three">
-            <img src="./assets/magazinePages/yenani/icons/won.png" alt="" />
-            <div className="iconDesc">3000원 이상</div>
-          </div>
-          <div className="four">
-            <img src="./assets/magazinePages/yenani/icons/car.png" alt="" />
-            <div className="iconDesc">잠시 10분 주차 가능</div>
-          </div>
-          <div className="five">
-            <img src="./assets/magazinePages/yenani/icons/table.png" alt="" />
-            <div className="iconDesc iconDescNone">테이블 수 0개</div>
-          </div>
-          <div className="six">
-            <img src="./assets/magazinePages/yenani/icons/walking.png" alt="" />
-            <div className="iconDesc">홍대입구역 도보 20분</div>
+          <div className="flexbox secondLine">
+            <div className="left">
+              <img src="./assets/magazinePages/icons/car.png" alt="" />
+              <div>
+                주차 가능<span>가게 앞 최대 10분</span>
+              </div>
+            </div>
+            <div className="center">
+              <img src="./assets/magazinePages/icons/table_none.png" alt="" />
+              <div className="toNone">
+                테이블 수<span>0개</span>
+              </div>
+            </div>
+            <div className="right">
+              <img src="./assets/magazinePages/icons/walking.png" alt="" />
+              <div>
+                홍대입구역<span>도보 20분</span>
+              </div>
+            </div>
           </div>
         </div>
 

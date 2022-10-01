@@ -8,8 +8,9 @@ import Magazine from "./components/pages/magazine";
 import Inquire from "./components/pages/Inquire";
 
 // Magazine Pages
+// import LeReve from "./components/pages/Lereve";
 import Yenani from "./components/pages/magazines/yenani";
-import LeReve from "./components/pages/Lereve";
+import TDLCoffee from "./components/pages/magazines/tdlcofee";
 
 // Components
 import ScrollToTop from "./components/ScrollToTop";
@@ -24,7 +25,7 @@ function App() {
         {/* /home */}
         <Route path="/home" element={<Home />} />
         {/* LeLeve */}
-        <Route path="/lereve" element={<LeReve />} />
+        {/* <Route path="/lereve" element={<LeReve />} /> */}
         {/* Magazine */}
         <Route path="/magazine" element={<Magazine />} />
         {/* Inquire */}
@@ -32,6 +33,7 @@ function App() {
 
         {/* Magazines */}
         <Route path="/yenani" element={<Yenani />} />
+        <Route path="/tenderly" element={<TDLCoffee />} />
       </Routes>
     </BrowserRouter>
   );
