@@ -2,8 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Space from "../Space";
 import MNav from "./components/MNav";
+import H from "./components/H";
 import "../../../style/magazinePages.scss";
-import "../../../style/QA.scss";
 import "../../../style/Intro.scss";
 
 const TDLCoffee = () => {
@@ -106,8 +106,8 @@ const TDLCoffee = () => {
             <br />
             <span>
               저도 누군가에게&nbsp;
-              <span className="highlightSpan">힐링을 줄 수 있는 공간</span>을
-              만든든 것을 목표로 지금의 텐더리 카페를 기획하게 되었습니다.
+              <H text={"힐링을 줄 수 있는 공간"} />을 만든든 것을 목표로 지금의
+              텐더리 카페를 기획하게 되었습니다.
             </span>
           </div>
         </div>
@@ -124,9 +124,7 @@ const TDLCoffee = () => {
           <div className="answer">
             <span>
               Tenderly는&nbsp;
-              <span className="highlightSpan">
-                '부드럽게, 상냥하게, 친절하게'
-              </span>
+              <H text={"'부드럽게, 상냥하게, 친절하게'"} />
               라는 뜻을 담고 있습니다.
             </span>
             <br />
@@ -155,8 +153,8 @@ const TDLCoffee = () => {
           </div>
           <div className="answer">
             <span>
-              여러 요소가 있겠지만 <span className="highlightSpan">안정감</span>
-              을 느끼게 기획한 인테리어가 편안함으로 이어진다고 생각합니다.
+              여러 요소가 있겠지만 <H text={"안정감"} />을 느끼게 기획한
+              인테리어가 편안함으로 이어진다고 생각합니다.
             </span>
             <br />
             <span>
@@ -179,7 +177,7 @@ const TDLCoffee = () => {
           </div>
           <div className="answer">
             <span>
-              <span className="highlightSpan">카페를 창업한 지 3개월</span>
+              <H text={"카페를 창업한 지 3개월"} />
               &nbsp;밖에 되지 않았습니다.
             </span>
             <br />
@@ -213,7 +211,7 @@ const TDLCoffee = () => {
             <br />
             <span>
               감사함을 돌려드리고 싶은 마음이 새로운 메뉴를 개발하는데{" "}
-              <span className="highlightSpan">동기부여</span>가 됩니다.
+              <H text={"동기부여"} />가 됩니다.
             </span>
             <br />
             <span>새로운 메뉴는 거의 매일 개발하는 거 같아요.</span>
@@ -239,9 +237,9 @@ const TDLCoffee = () => {
             </span>
             <br />
             <span>
-              <span className="highlightSpan">소금빵을 당일 제조 및 판매</span>
-              를 원칙으로 하고 있기 때문에 판매 후에 남는 빵의 경우 제가 먹거나
-              모두 폐기하고 있습니다.
+              <H text={"소금빵을 당일 제조 및 판매"}></H>를 원칙으로 하고 있기
+              때문에 판매 후에 남는 빵의 경우 제가 먹거나 모두 폐기하고
+              있습니다.
             </span>
             <br />
             <span>
@@ -261,9 +259,8 @@ const TDLCoffee = () => {
           </div>
           <div className="answer">
             <span>
-              현재{" "}
-              <span className="highlightSpan">그린티 라떼와 디카페인 커피</span>
-              를 준비하고 있습니다.
+              현재 <H text={"그린티 라떼와 디카페인 커피"}></H>를 준비하고
+              있습니다.
             </span>
             <br />
             <span>
@@ -297,8 +294,7 @@ const TDLCoffee = () => {
             <br />
             <span>
               일반적으로는&nbsp;
-              <span className="highlightSpan">소금빵과 카야버터 소금빵</span>을
-              추천드리고 싶습니다.
+              <H text={"소금빵과 카야버터 소금빵"}></H>을 추천드리고 싶습니다.
             </span>
             <br />
             <span>
@@ -316,9 +312,8 @@ const TDLCoffee = () => {
             <span>네 맞습니다.</span>
             <br />
             <span>
-              <span className="hightlightSpan">쇼핑몰</span>&nbsp;쪽에서 연락을
-              많이 주시고 카페에서{" "}
-              <span className="highlightSpan">연극 공연</span>도 하시더라구요.
+              <H text={"쇼핑몰"}></H>&nbsp;쪽에서 연락을 많이 주시고 카페에서{" "}
+              <H text={"연극 공연"}></H>도 하시더라구요.
             </span>
             <br />
             <span>

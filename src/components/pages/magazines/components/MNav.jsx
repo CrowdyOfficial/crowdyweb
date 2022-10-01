@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 
 const MNav = () => {
   // Magazine's Navigation
-  const [isOpen, setMenu] = useState(false);
 
+  const [isOpen, setMenu] = useState(false);
   const toggleMenu = () => {
     setMenu((isOpen) => !isOpen);
   };
-  // const nav = useNavigate();
   return (
     <div className="App">
       <nav id="nav" className="SCoreDreamFont">
