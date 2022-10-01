@@ -109,7 +109,7 @@ const Magazine = () => {
             to={"/atthemoment"}
             thumbnail={"./assets/magazinePages/atthemoment/1.png"}
             cafeName={"앳더모먼트"}
-            cafeDesc={"엣더모먼트입니다~!"}
+            cafeDesc={"계절에 따라 바뀌는 향과글루텐프리 바스크 치즈케이크"}
           ></MagazineMenu>
         </div>
 
