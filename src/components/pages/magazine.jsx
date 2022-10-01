@@ -4,7 +4,7 @@ import "../../style/magazine.scss";
 import { Link } from "react-router-dom";
 
 import MagazineMenu from "./magazineComponent/MagazineMenu";
-
+import Space from "./Space";
 const Magazine = () => {
   const [isOpen, setMenu] = useState(false);
 
@@ -96,13 +96,21 @@ const Magazine = () => {
             cafeDesc={"끝남동의 매력적인 카페, 아기자기한 감성"}
           ></MagazineMenu>
 
-          {/* <MagazineMenu
+          <MagazineMenu
             className="M"
-            to={"./tendery"}
-            thumbnail={"IMG_5669.png"}
+            to={"/tenderly"}
+            thumbnail={"./assets/magazinePages/tenderlycoffee/1.png"}
             cafeName={"텐더리커피앤디저트"}
             cafeDesc={"따뜻하고 아늑한 공간의 여유로움"}
-          ></MagazineMenu> */}
+          ></MagazineMenu>
+
+          <MagazineMenu
+            className="M"
+            to={"/atthemoment"}
+            thumbnail={"./assets/magazinePages/atthemoment/1.png"}
+            cafeName={"앳더모먼트"}
+            cafeDesc={"엣더모먼트입니다~!"}
+          ></MagazineMenu>
         </div>
 
         {/* bottom */}

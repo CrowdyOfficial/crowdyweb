@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Space from "../Space";
 import MNav from "./components/MNav";
 import H from "./components/H";
+import Img1 from "./components/img1";
+import Img2 from "./components/img2";
 import "../../../style/magazinePages.scss";
 import "../../../style/Intro.scss";
 
@@ -82,7 +84,6 @@ const TDLCoffee = () => {
             </div>
           </div>
         </div>
-
         <div className="slideIMGs">
           <img
             className=""
@@ -90,7 +91,6 @@ const TDLCoffee = () => {
             alt=""
           />
         </div>
-
         {/* Question 1 */}
         <div className="questAnswer">
           <div className="question">
@@ -111,11 +111,7 @@ const TDLCoffee = () => {
             </span>
           </div>
         </div>
-        <img
-          className="LereveMenu"
-          src="assets/magazinePages/tenderlycoffee/3.png"
-          alt=""
-        />
+        <Img1 img="assets/magazinePages/tenderlycoffee/3.png" />
         {/* Question 2 */}
         <div className="questAnswer">
           <div className="question">
@@ -139,11 +135,7 @@ const TDLCoffee = () => {
             </span>
           </div>
         </div>
-        <img
-          className="LereveMenu"
-          src="assets/magazinePages/tenderlycoffee/4.png"
-          alt=""
-        />
+        <Img1 img={"assets/magazinePages/tenderlycoffee/4.png"} />
         {/* Question 3 */}
         <div className="questAnswer">
           <div className="question">
@@ -166,10 +158,10 @@ const TDLCoffee = () => {
             <span>많은 사람들이 좋아해주셔서 너무 감사하고 뿌듯합니다😀</span>
           </div>
         </div>
-        <div className="imgTwo">
-          <img src="./assets/magazinePages/tenderlycoffee/5-1.png" alt="" />
-          <img src="./assets/magazinePages/tenderlycoffee/5-2.png" alt="" />
-        </div>
+        <Img2
+          img1="./assets/magazinePages/tenderlycoffee/5-1.png"
+          img2="./assets/magazinePages/tenderlycoffee/5-2.png"
+        />
         {/* Question 4 */}
         <div className="questAnswer">
           <div className="question">
@@ -193,10 +185,10 @@ const TDLCoffee = () => {
             </span>
           </div>
         </div>
-        <div className="imgTwo">
-          <img src="./assets/magazinePages/tenderlycoffee/6-1.png" alt="" />
-          <img src="./assets/magazinePages/tenderlycoffee/6-2.png" alt="" />
-        </div>
+        <Img2
+          img1="./assets/magazinePages/tenderlycoffee/6-1.png"
+          img2="./assets/magazinePages/tenderlycoffee/6-2.png"
+        />
         {/* Question 5 */}
         <div className="questAnswer">
           <div className="question">
@@ -222,10 +214,10 @@ const TDLCoffee = () => {
             </span>
           </div>
         </div>
-        <div className="imgTwo">
-          <img src="./assets/magazinePages/tenderlycoffee/7-1.png" alt="" />
-          <img src="./assets/magazinePages/tenderlycoffee/7-2.png" alt="" />
-        </div>
+        <Img2
+          img1="./assets/magazinePages/tenderlycoffee/7-1.png"
+          img2="./assets/magazinePages/tenderlycoffee/7-2.png"
+        />
         {/* Question 6 */}
         <div className="questAnswer">
           <div className="question">
@@ -249,10 +241,10 @@ const TDLCoffee = () => {
             <br />
           </div>
         </div>
-        <div className="imgTwo">
-          <img src="./assets/magazinePages/tenderlycoffee/8-1.png" alt="" />
-          <img src="./assets/magazinePages/tenderlycoffee/8-2.png" alt="" />
-        </div>
+        <Img2
+          img1="./assets/magazinePages/tenderlycoffee/8-1.png"
+          img2="./assets/magazinePages/tenderlycoffee/8-2.png"
+        />
         <div className="questAnswer">
           <div className="question">
             <span>곧 출시될 메뉴가 있을까요?</span>
@@ -275,11 +267,7 @@ const TDLCoffee = () => {
             <span>메뉴가 출시되면 인스타그램으로 공유드릴 예정입니다 :)</span>
           </div>
         </div>
-        <img
-          className="LereveMenu"
-          src="assets/magazinePages/tenderlycoffee/9.png"
-          alt=""
-        />
+        <Img1 img="assets/magazinePages/tenderlycoffee/9.png" />
         <div className="questAnswer">
           <div className="question">
             <span>
@@ -327,7 +315,6 @@ const TDLCoffee = () => {
           src="assets/magazinePages/tenderlycoffee/10.png"
           alt=""
         />
-
         {/* Bottom */}
         <div className="bottom">
           <div className="cafeMenu">

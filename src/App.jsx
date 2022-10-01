@@ -11,6 +11,7 @@ import Inquire from "./components/pages/Inquire";
 // import LeReve from "./components/pages/Lereve";
 import Yenani from "./components/pages/magazines/yenani";
 import TDLCoffee from "./components/pages/magazines/tdlcofee";
+import AtTheMoment from "./components/pages/magazines/atthemoment";
 
 // Components
 import ScrollToTop from "./components/ScrollToTop";
@@ -34,6 +35,7 @@ function App() {
         {/* Magazines */}
         <Route path="/yenani" element={<Yenani />} />
         <Route path="/tenderly" element={<TDLCoffee />} />
+        <Route path="/atthemoment" element={<AtTheMoment />} />
       </Routes>
     </BrowserRouter>
   );
