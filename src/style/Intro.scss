@@ -297,8 +297,14 @@ nav {
     }
   }
   .bottom {
+    height: 250px;
     .bottomLink {
+      margin-top: 70px;
       width: 70%;
+      div {
+        font-size: 14px;
+        line-height: 17px;
+      }
       .align {
         margin: auto auto;
       }
@@ -310,6 +316,7 @@ nav {
   .Intro {
     .section01 {
       overflow: hidden;
+      height: 600px;
       .desc {
         overflow: hidden;
         width: 100%;
@@ -324,6 +331,7 @@ nav {
           text-align: center;
         }
         .descs {
+          margin-top: 27px;
           line-height: 20px;
           span {
             font-weight: 200;
@@ -334,6 +342,9 @@ nav {
       .mainIMGs {
         display: none;
         overflow: hidden;
+        img {
+          width: 723px;
+        }
       }
       .mainMobileIMGs {
         display: block;
@@ -373,6 +384,7 @@ nav {
       .mainIMGs {
         img {
           display: none;
+          width: 638px;
         }
       }
       .desc {
@@ -410,6 +422,8 @@ nav {
           font-size: 16px;
           line-height: 19px;
           transform: translateX(-50%);
+          margin-top: 30px;
+          height: 55px;
         }
       }
     }
