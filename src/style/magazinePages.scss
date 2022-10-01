@@ -53,8 +53,9 @@ a::after {
       img {
         width: 10px;
         position: absolute;
-        top: 2.7%;
+        top: 33px;
         left: 8%;
+        transform: translate(-50%, -50%);
       }
     }
   }

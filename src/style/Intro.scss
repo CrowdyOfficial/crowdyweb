@@ -277,16 +277,20 @@ nav {
   #menu {
     display: block;
     position: absolute;
-    right: 3vh;
-    top: 2.7%;
+    right: 30px;
+    top: 30px;
     cursor: pointer;
   }
   nav {
     z-index: 999;
-    height: 8vh;
+    height: 80px;
     .navnav {
-      margin-left: 1vh;
+      margin-left: 10px;
       width: 50%;
+      height: 80px;
+      img {
+        width: 20px;
+      }
       span {
         font-weight: 900;
         font-size: 18px;
@@ -320,7 +324,7 @@ nav {
       .desc {
         overflow: hidden;
         width: 100%;
-        top: 25%;
+        top: 230px;
         left: 50%;
         line-height: 15px;
         span {
@@ -351,7 +355,7 @@ nav {
         width: 90%;
         height: 360px;
         position: relative;
-        top: 50%;
+        top: 300px;
         left: 50%;
         transform: translateX(-50%);
         img {
