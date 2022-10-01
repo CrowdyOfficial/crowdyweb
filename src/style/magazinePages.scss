@@ -98,6 +98,12 @@ a::after {
     font-weight: 400;
     line-height: 34px;
     text-align: center;
+    .cafeMenu {
+      width: 100%;
+      img {
+        width: 370px;
+      }
+    }
     .openingHours {
       // margin-top: 20px;
       width: 100%;
@@ -328,7 +334,7 @@ a::after {
       .cafeMenu {
         width: 100%;
         img {
-          width: 370px;
+          width: 98%;
         }
       }
     }
