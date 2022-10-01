@@ -324,6 +324,10 @@ nav {
         }
         .descs {
           line-height: 20px;
+          span {
+            font-weight: 200;
+            font-size: 16px;
+          }
         }
       }
       .mainIMGs {
@@ -333,7 +337,7 @@ nav {
       .mainMobileIMGs {
         display: block;
         width: 90%;
-        height: 36vh;
+        height: 360px;
         position: relative;
         top: 50%;
         left: 50%;
@@ -393,6 +397,7 @@ nav {
           margin-top: 27px;
           span {
             margin-top: 5px;
+            font-size: 16px;
           }
         }
         button {
