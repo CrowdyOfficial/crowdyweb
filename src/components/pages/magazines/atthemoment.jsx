@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Space from "../Space";
 import MNav from "./components/MNav";
-// import H from "./components/H";
+import H from "./components/H";
 import Img1 from "./components/img1";
 import Img2 from "./components/img2";
 import "../../../style/magazinePages.scss";
@@ -27,7 +27,7 @@ const AtTheMoment = () => {
           alt=""
         />
         <div className="title">
-          <span>계절에 따라 바뀌는 향과</span>
+          <span>계절의 향과</span>
           <span>글루텐프리 바스크 치즈케이크</span>
           <span className="address">
             앳더모먼트 / 서울 마포구 동교로38길 42-6 102호
@@ -109,8 +109,12 @@ const AtTheMoment = () => {
             </span>
             <br />
             <span>
-              대중적인 빵들과는 굽는 방식이 다르기 때문에, 많이 드시는 치즈
-              케이크와는 다른 풍미들을 은은하게 더 느끼실 수 있을거에요.
+              대중적인 빵들과는 굽는 방식이 다르기 때문에, 많이 드시는{" "}
+              <H
+                text="치즈
+              케이크와는 다른 풍미"
+              />
+              들을 은은하게 더 느끼실 수 있을거에요.
             </span>
           </div>
         </div>
@@ -126,8 +130,11 @@ const AtTheMoment = () => {
             <span>네 맞아요.</span>
             <br />
             <span>
-              앳더모먼트 바스크 치즈 케이크는 글루텐프리로 놀랍게도 밀가루가
-              들어가지 않았어요.
+              앳더모먼트 바스크 치즈 케이크는 글루텐프리로 놀랍게도{" "}
+              <H
+                text="밀가루가
+              들어가지 않았어요."
+              />
             </span>
             <br />
             <span>
@@ -141,6 +148,7 @@ const AtTheMoment = () => {
         <Img2
           img1="./assets/magazinePages/atthemoment/4-1.png"
           img2="./assets/magazinePages/atthemoment/4-2.png"
+          desc2="@atthemoment_cafe 게시글"
         />
 
         <div className="questAnswer">
@@ -154,9 +162,9 @@ const AtTheMoment = () => {
             </span>
             <br />
             <span>
-              저는 카페를 창업하면서 테라스가 있는 카페를 테라스까지 갖춘 카페를
-              열고 싶다고 생각을 했고 지금의 앳더모먼트의 공간에 카페를
-              열었습니다.
+              저는 카페를 창업하면서 테라스가 있는 카페를{" "}
+              <H text="테라스까지 갖춘 카페" />를 열고 싶다고 생각을 했고 지금의
+              앳더모먼트의 공간에 카페를 열었습니다.
             </span>
           </div>
         </div>
@@ -180,21 +188,22 @@ const AtTheMoment = () => {
             </span>
             <br />
             <span>
-              크게는 봄, 여름, 가을, 겨울의 계절을 느낄 수 있는 향을 준비하고
-              비가 오거나 눈이 갑자기 오면 그 날의 분위기에 어울리는 향을 갑자기
-              바꾸기도 해요.
+              크게는 봄, 여름, 가을, 겨울의 <H text="계절을 느낄 수 있는 향" />
+              을 준비하고 비가 오거나 눈이 갑자기 오면 그 날의 분위기에 어울리는
+              향을 갑자기 바꾸기도 해요.
             </span>
           </div>
         </div>
 
-        <div className="questAnswer">
+        <div className="questAnswer twoQuestion">
           <div className="question">
             <span>향으로 게절을 어떻게 표현하셨나요?</span>
           </div>
           <div className="answer">
             <span>
-              여름에는 여름을 잘 표현할 수 있는 코코넛 베이스의 산뜻한 느낌의
-              인센스 스틱을 가장 많이 사용했어요.
+              여름에는 여름을 잘 표현할 수 있는{" "}
+              <H text="코코넛 베이스의 산뜻한 느낌의 인센스 스틱" />을 가장 많이
+              사용했어요.
             </span>
             <br />
             <span>
@@ -204,10 +213,6 @@ const AtTheMoment = () => {
             <br />
             <span>겨울에는 또 겨울에 맞는 향을 사용할 생각입니다.</span>
           </div>
-        </div>
-        <div className="imgTwo">
-          <img src="./assets/magazinePages/tenderlycoffee/6-1.png" alt="" />
-          <img src="./assets/magazinePages/tenderlycoffee/6-2.png" alt="" />
         </div>
 
         <Img2
@@ -221,7 +226,8 @@ const AtTheMoment = () => {
           </div>
           <div className="answer">
             <span>
-              호텔조리학과를 졸업하고 요식업계에서 거의 5년을 근무했어요.
+              호텔조리학과를 졸업하고 <H text="요식업계에서 거의 5년을 근무" />
+              했어요.
             </span>
             <br />
             <span>
@@ -252,7 +258,8 @@ const AtTheMoment = () => {
           </div>
           <div className="answer">
             <span>
-              아무래도 앳더모먼트만의 차별점을 항상 고민하는 것 같아요.
+              아무래도 <H text="앳더모먼트만의 차별점" />을 항상 고민하는 것
+              같아요.
             </span>
             <br />
             <span>
@@ -284,7 +291,8 @@ const AtTheMoment = () => {
             </span>
             <br />
             <span>
-              근데 제가 추천드리고 싶은 것은 바나나 카라멜 바스크 치즈케이크
+              근데 제가 추천드리고 싶은 것은{" "}
+              <H text="바나나 카라멜 바스크 치즈케이크" />
               인데요.
             </span>
             <br />
@@ -296,13 +304,14 @@ const AtTheMoment = () => {
           </div>
         </div>
 
-        <div className="questAnswer">
+        <div className="questAnswer twoQuestion">
           <div className="question">
             <span>준비 중인 신메뉴가 있을까요?</span>
           </div>
           <div className="answer">
             <span>
-              얼마 전에 블루베리 에이드, 샤인머스켓 에이드를 출시했어요!
+              얼마 전에 <H text="블루베리 에이드, 샤인머스켓 에이드를 출시" />
+              했어요!
             </span>
             <br />
             <span>
@@ -322,20 +331,21 @@ const AtTheMoment = () => {
 
         {/* Bottom */}
         <div className="bottom">
-          <Space></Space>
           <div className="cafeMenu">
-            <div className="menupan">메뉴판</div>
+            <div className="menupan cafeMenuTopMargin">메뉴판</div>
             <img src="assets/magazinePages/atthemoment/menu.png" alt="" />
           </div>
           <div className="openingHours">
             <span className="openingHourTitle">운영시간</span>
             <br />
-            <span>월~금 </span>
-            <span>&nbsp;12:00 ~ 22:00</span>
-            <br />
-            <span>토~일 </span>
-            <span>&nbsp;12:00 ~ 22:30</span>
-            <br />
+            <div className="open">
+              <span>월~금 </span>
+              <span>&nbsp;12:00 ~ 22:00</span>
+            </div>
+            <div className="open">
+              <span>토~일 </span>
+              <span>&nbsp;12:00 ~ 22:30</span>
+            </div>
           </div>
           <div className="linkTwo">
             <span className="titleSNS">SNS</span>
@@ -343,7 +353,7 @@ const AtTheMoment = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://search.naver.com/search.naver?where=nexearch&sm=top_sly.hst&fbm=0&acr=1&acq=%EC%98%88%EB%82%98%EB%8B%88&qdt=0&ie=utf8&query=%EC%98%88%EB%82%98%EB%8B%88"
+                href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%95%B3%EB%8D%94%EB%AA%A8%EB%A8%BC%ED%8A%B8&oquery=%ED%85%90%EB%8D%94%EB%A6%AC%EC%BB%A4%ED%94%BC&tqi=hzC72sprvh8sseEMjZlssssstS4-318524"
               >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
                 &nbsp;앳더모먼트
@@ -369,7 +379,7 @@ const AtTheMoment = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="http://m.map.naver.com/route.nhn?menu=route&ename=예나니&ex=126.9171&ey=37.5664&pathType=0&showMap=true"
+                href="http://m.map.naver.com/route.nhn?menu=route&ename=앳더모먼트&ex=126.9255&ey=37.5611&pathType=0&showMap=true"
               >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
                 &nbsp;네이버맵
@@ -377,7 +387,7 @@ const AtTheMoment = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://map.kakao.com/link/to/예나니,37.5664,126.9171"
+                href="https://map.kakao.com/link/to/앳더모먼트,37.5611,126.9255"
               >
                 <img
                   className="linkicon rightlinkicon"

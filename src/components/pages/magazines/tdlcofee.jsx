@@ -12,7 +12,6 @@ const TDLCoffee = () => {
   const nav = useNavigate();
   return (
     <div className="M">
-      {/* Navigation */}
       <MNav></MNav>
 
       <div id="magazine notoSans" className="magazine">
@@ -53,7 +52,7 @@ const TDLCoffee = () => {
               <img src="./assets/magazinePages/icons/alarm.png" alt="" />
               <div>
                 월~목 12시 ~ 21시<span>금~토 12시~22시</span>
-                <span>일 14시~21시</span>
+                <span className="thirdLine">일 14시~21시</span>
               </div>
             </div>
             <div className="right">
@@ -91,7 +90,7 @@ const TDLCoffee = () => {
             alt=""
           />
         </div>
-        {/* Question 1 */}
+
         <div className="questAnswer">
           <div className="question">
             <span>텐더리 카페를 만들게 된 계기가 궁금합니다.</span>
@@ -112,7 +111,7 @@ const TDLCoffee = () => {
           </div>
         </div>
         <Img1 img="assets/magazinePages/tenderlycoffee/3.png" />
-        {/* Question 2 */}
+
         <div className="questAnswer">
           <div className="question">
             <span>"텐더리"는 무슨 뜻인가요?</span>
@@ -136,7 +135,7 @@ const TDLCoffee = () => {
           </div>
         </div>
         <Img1 img={"assets/magazinePages/tenderlycoffee/4.png"} />
-        {/* Question 3 */}
+
         <div className="questAnswer">
           <div className="question">
             <span>
@@ -162,7 +161,7 @@ const TDLCoffee = () => {
           img1="./assets/magazinePages/tenderlycoffee/5-1.png"
           img2="./assets/magazinePages/tenderlycoffee/5-2.png"
         />
-        {/* Question 4 */}
+
         <div className="questAnswer">
           <div className="question">
             <span>사람들이 카페를 찾는데 어려움을 느끼지는 않나요?</span>
@@ -189,7 +188,7 @@ const TDLCoffee = () => {
           img1="./assets/magazinePages/tenderlycoffee/6-1.png"
           img2="./assets/magazinePages/tenderlycoffee/6-2.png"
         />
-        {/* Question 5 */}
+
         <div className="questAnswer">
           <div className="question">
             <span>
@@ -216,9 +215,11 @@ const TDLCoffee = () => {
         </div>
         <Img2
           img1="./assets/magazinePages/tenderlycoffee/7-1.png"
+          desc1="@tenderly_coffee 게시글"
           img2="./assets/magazinePages/tenderlycoffee/7-2.png"
+          desc2="@tenderly_coffee 게시글"
         />
-        {/* Question 6 */}
+
         <div className="questAnswer">
           <div className="question">
             <span>소금빵이 텐더리의 시그니처 빵인 것 같은데요?</span>
@@ -243,7 +244,9 @@ const TDLCoffee = () => {
         </div>
         <Img2
           img1="./assets/magazinePages/tenderlycoffee/8-1.png"
+          desc1="@tenderly_coffee 게시글"
           img2="./assets/magazinePages/tenderlycoffee/8-2.png"
+          desc2="@tenderly_coffee 게시글"
         />
         <div className="questAnswer">
           <div className="question">
@@ -292,7 +295,7 @@ const TDLCoffee = () => {
             </span>
           </div>
         </div>
-        <div className="questAnswer">
+        <div className="questAnswer twoQuestion">
           <div className="question">
             <span>마지막으로, 카페 대관이 가능한가요?</span>
           </div>
@@ -310,27 +313,28 @@ const TDLCoffee = () => {
             </span>
           </div>
         </div>
-        <img
-          className="LereveMenu"
-          src="assets/magazinePages/tenderlycoffee/10.png"
-          alt=""
-        />
+        <Img1 img="assets/magazinePages/tenderlycoffee/10.png" />
         {/* Bottom */}
         <div className="bottom">
           <div className="cafeMenu">
+            <div className="menupan cafeMenuTopMargin">메뉴판</div>
             <img src="assets/magazinePages/tenderlycoffee/menu.png" alt="" />
           </div>
           <div className="openingHours">
             <span className="openingHourTitle">운영시간</span>
             <br />
-            <span>월~목 </span>
-            <span>&nbsp;12:00 ~ 21:00</span>
-            <br />
-            <span>금~토 </span>
-            <span>&nbsp;12:00 ~ 21:00</span>
-            <br />
-            <span>일요일 </span>
-            <span>&nbsp;14:00 ~ 21:00</span>
+            <div className="open">
+              <span>월~목 </span>
+              <span>&nbsp;12:00 ~ 21:00</span>
+            </div>
+            <div>
+              <span>금~토 </span>
+              <span>&nbsp;12:00 ~ 21:00</span>
+            </div>
+            <div>
+              <span>일요일 </span>
+              <span>&nbsp;14:00 ~ 21:00</span>
+            </div>
           </div>
           <div className="linkTwo">
             <span className="titleSNS">SNS</span>
@@ -338,10 +342,10 @@ const TDLCoffee = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://search.naver.com/search.naver?where=nexearch&sm=top_sly.hst&fbm=0&acr=1&acq=%EC%98%88%EB%82%98%EB%8B%88&qdt=0&ie=utf8&query=%EC%98%88%EB%82%98%EB%8B%88"
+                href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%ED%85%90%EB%8D%94%EB%A6%AC%EC%BB%A4%ED%94%BC"
               >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
-                &nbsp;텐더리커피
+                &nbsp;&nbsp;텐더리커피
               </a>
               <a
                 className="notoSans"
@@ -354,7 +358,7 @@ const TDLCoffee = () => {
                   src="assets/icon/insta.png"
                   alt=""
                 />
-                &nbsp;@tenderly_coffee
+                &nbsp;&nbsp;@tenderly_coffee
               </a>
             </div>
           </div>
@@ -364,22 +368,22 @@ const TDLCoffee = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="http://m.map.naver.com/route.nhn?menu=route&ename=예나니&ex=126.9171&ey=37.5664&pathType=0&showMap=true"
+                href="http://m.map.naver.com/route.nhn?menu=route&ename=텐더리커피&ex=126.9217&ey=37.5657&pathType=0&showMap=true"
               >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
-                &nbsp;네이버맵
+                &nbsp;&nbsp;네이버맵
               </a>
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://map.kakao.com/link/to/예나니,37.5664,126.9171"
+                href="https://map.kakao.com/link/to/텐더리커피,37.5657,126.9217"
               >
                 <img
                   className="linkicon rightlinkicon"
                   src="assets/icon/kakaomap.png"
                   alt=""
                 />
-                &nbsp;카카오맵
+                &nbsp;&nbsp;카카오맵
               </a>
             </div>
           </div>

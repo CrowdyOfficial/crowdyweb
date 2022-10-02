@@ -2,6 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Space from "../Space";
 import MNav from "./components/MNav";
+import H from "./components/H";
+import Img1 from "./components/img1";
+import Img2 from "./components/img2";
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 import "../../../style/Intro.scss";
@@ -85,7 +88,6 @@ const Yenani = () => {
           <img className="" src="assets/magazinePages/yenani/2-1.png" alt="" />
         </div>
 
-        {/* Question 1 */}
         <div className="questAnswer">
           <div className="question">
             <span>
@@ -96,9 +98,7 @@ const Yenani = () => {
             <span>네 맞습니다.</span>
             <br />
             <span>
-              일본의{" "}
-              <span className="highlightSpan">나카무라 제과 아카데미</span>를
-              졸업했습니다.
+              일본의 <H text="나카무라 제과 아카데미" />를 졸업했습니다.
             </span>
             <span>덕분에 기본기를 제대로 익힐 수 있었습니다.</span>
             <span>
@@ -107,18 +107,19 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-        <div className="imgTwo">
-          <img src="./assets/magazinePages/yenani/3-1.png" alt="" />
-          <img src="./assets/magazinePages/yenani/3-2.png" alt="" />
-        </div>
-        {/* Question 2 */}
+
+        <Img2
+          img1="./assets/magazinePages/yenani/3-1.png"
+          img2="./assets/magazinePages/yenani/3-2.png"
+        />
+
         <div className="questAnswer">
           <div className="question">
             <span>사장님이 생각하시는 맛있는 빵의 기준은 무엇인가요?</span>
           </div>
           <div className="answer">
             <span>
-              <span className="highlightSpan">재료와 재료에 대한 상식</span>
+              <H text="재료와 재료에 대한 상식" />
               이라고 생각합니다.
             </span>
             <br />
@@ -131,12 +132,7 @@ const Yenani = () => {
             <span>아 물론 저도 매일매일 알아가는 중입니다 😂</span>
           </div>
         </div>
-        <img
-          className="LereveMenu"
-          src="assets/magazinePages/yenani/4.png"
-          alt=""
-        />
-        {/* Question 3 */}
+        <Img1 img="assets/magazinePages/yenani/4.png" />
         <div className="questAnswer">
           <div className="question">
             <span>특별히 못난이 재료를 직접 공수하시는 이유가 있으신가요?</span>
@@ -158,22 +154,20 @@ const Yenani = () => {
               그래서 시즌별로 수소문해서 따로 구매를 하여 제품으로 만들고
               있는데, 여름 시즌상품으로 만들었던 옥수수휘낭시에의 초당옥수수도,
               지금의 단호박 제품에 사용되는 단호박도 전부
-              <span className="highlightSpan"> 속칭 못난이 재료</span>를 가지고
-              만들고 있습니다.
+              <H text=" 속칭 못난이 재료" />를 가지고 만들고 있습니다.
             </span>
             <br />
             <span>맛은 정말 뒤쳐지지 않다고 자신 있게 말씀드릴 수 있어요!</span>
           </div>
         </div>
-        {/* 5-1, 5-2 */}
-        <div className="imgTwo">
-          <img src="./assets/magazinePages/yenani/5-1.png" alt="" />
-          <img src="./assets/magazinePages/yenani/5-2.png" alt="" />
-        </div>
+        <Img2
+          img1="./assets/magazinePages/yenani/5-1.png"
+          img2="./assets/magazinePages/yenani/5-2.png"
+        />
         {/* Question 4 */}
         <div className="questAnswer">
           <div className="question">
-            <span>휘낭시에에 대한 극찬이 많은데요,</span>
+            <span>휘낭시에 대한 극찬이 많은데요,</span>
             <br />
             <span>인기 비결과 더 맛있게 먹는 방법을 추천해주세요!</span>
           </div>
@@ -185,10 +179,8 @@ const Yenani = () => {
             <br />
             <span>
               휘낭시에의 주재료는 계란흰자, 설탕, 아몬드파우더 등등인데{" "}
-              <span className="highlightSpan">
-                추가재료 및 재료비율 따라 식감이 달라지는 것
-              </span>
-              도 하나의 특징입니다.
+              <H text="추가재료 및 재료비율 따라 식감이 달라지는 것" />도 하나의
+              특징입니다.
             </span>
             <br />
             <span>먹는 방법도 다양하게 있어요!</span>
@@ -202,12 +194,8 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-        <img
-          className="LereveMenu"
-          src="assets/magazinePages/yenani/6.png"
-          alt=""
-        />
-        {/* Question 5 */}
+        <Img1 img="assets/magazinePages/yenani/6.png" />
+
         <div className="questAnswer">
           <div className="question">
             <span>
@@ -217,9 +205,7 @@ const Yenani = () => {
           </div>
           <div className="answer">
             <span>
-              시그니처 메뉴인{" "}
-              <span className="highlightSpan">계절과일 생크림케이크</span>{" "}
-              입니다.
+              시그니처 메뉴인 <H text="계절과일 생크림케이크" /> 입니다.
             </span>
             <br />
             <span>
@@ -229,12 +215,8 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-        <img
-          className="LereveMenu"
-          src="assets/magazinePages/yenani/7.png"
-          alt=""
-        />
-        {/* Question 6 */}
+        <Img1 img="assets/magazinePages/yenani/7.png" />
+
         <div className="questAnswer">
           <div className="question">
             <span>
@@ -254,10 +236,7 @@ const Yenani = () => {
             <br />
             <span>
               전국에 정말 많고 많은 디저트 집이 있는데 예나니라는 존재를 알고
-              와주시는 고객님들께{" "}
-              <span className="highlightSpan">
-                재료를 아끼지 않고 최상의 맛
-              </span>
+              와주시는 고객님들께 <H text="재료를 아끼지 않고 최상의 맛" />
               으로 선사하여 감사의 마음을 전하고 싶어요.
             </span>
             <br />
@@ -267,11 +246,7 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-        <img
-          className="LereveMenu"
-          src="assets/magazinePages/yenani/8.png"
-          alt=""
-        />
+        <Img1 img="assets/magazinePages/yenani/8.png" />
         <div className="questAnswer">
           <div className="question">
             <span>과일을 활용한 시즌 메뉴가 눈에 띄는데요,</span>
@@ -291,17 +266,18 @@ const Yenani = () => {
             <br />
             <span>
               겨울에는 고객뿐만 아니라 많은 제과제빵인들이 기다리고 있는{" "}
-              <span className="hightlightSpan">빨갛고 달달한 그 과일</span>이
-              돌아옵니다.
+              <H text="빨갛고 달달한 그 과일" />이 돌아옵니다.
             </span>
             <br />
             <span>맞춰보세요 😋</span>
           </div>
         </div>
-        <div className="imgTwo">
-          <img src="./assets/magazinePages/yenani/9-1.png" alt="" />
-          <img src="./assets/magazinePages/yenani/9-2.png" alt="" />
-        </div>
+        <Img2
+          img1="./assets/magazinePages/yenani/9-1.png"
+          desc1="@_yena_ni_ 게시글"
+          img2="./assets/magazinePages/yenani/9-2.png"
+          desc2="@_yena_ni_ 게시글"
+        />
         <div className="questAnswer">
           <div className="question">
             <span>혹시 주문 제작도 진행하시나요?</span>
@@ -313,10 +289,8 @@ const Yenani = () => {
             </span>
             <br />
             <span>
-              신청을 원하시면{" "}
-              <span className="highlightSpan">최소 2일 전까지</span>는
-              말씀해주셔야 저도 더 완성도 높게 정성을 들여 만들 수 있을 거
-              같습니다.
+              신청을 원하시면 <H text="최소 2일 전까지" />는 말씀해주셔야 저도
+              더 완성도 높게 정성을 들여 만들 수 있을 거 같습니다.
             </span>
             <br />
             <span>
@@ -324,21 +298,19 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-        <div className="imgTwo">
-          <img src="./assets/magazinePages/yenani/10-1.png" alt="" />
-          <img src="./assets/magazinePages/yenani/10-2.png" alt="" />
-        </div>
+        <Img2
+          img1="./assets/magazinePages/yenani/10-1.png"
+          img2="./assets/magazinePages/yenani/10-2.png"
+          desc2="@_yena_ni_ 게시글"
+        />
         <div className="questAnswer">
           <div className="question">
             <span>예나니 인스타그램에는 어떤 내용을 올리시나요?</span>
           </div>
           <div className="answer">
             <span>
-              매장 영업 날에는{" "}
-              <span className="highlightSpan">
-                아침 오픈 시간에 맞춰 라인업
-              </span>
-              이 올라가고 있어요!
+              매장 영업 날에는 <H text="아침 오픈 시간에 맞춰 라인업" />이
+              올라가고 있어요!
             </span>
             <br />
             <span>
@@ -353,14 +325,11 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-        <div className="imgTwo">
-          <img src="./assets/magazinePages/yenani/11-1.png" alt="" />
-          <img src="./assets/magazinePages/yenani/11-2.png" alt="" />
-        </div>
+        <Img2
+          img1="./assets/magazinePages/yenani/11-1.png"
+          img2="./assets/magazinePages/yenani/11-2.png"
+        />
         <div className="bottom">
-          <div className="address">
-            예나니 / 서울 마포구 성미산로17길 112, 1층
-          </div>
           <br />
           <div className="openingHours">
             <span className="openingHourTitle">운영시간</span>

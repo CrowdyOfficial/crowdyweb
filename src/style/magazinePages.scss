@@ -20,7 +20,7 @@ a::after {
 
 .Space {
   width: 100%;
-  min-height: 40px;
+  min-height: 100px;
 }
 .M {
   width: 100%;
@@ -115,10 +115,19 @@ a::after {
         width: 370px;
       }
     }
+    .cafeMenuTopMargin {
+      margin-top: 40px;
+    }
     .openingHours {
       width: 100%;
       display: inline-block;
       margin-top: 25px;
+      .open {
+        margin-top: 0px;
+      }
+      div {
+        margin-top: -15px;
+      }
       .openingHourTitle {
         font-weight: 500;
         font-size: 16px;
@@ -144,19 +153,17 @@ a::after {
       margin-top: 20px;
       width: 100%;
       height: 55px;
+      .linklink {
+        a {
+          color: #5c5c5c;
+        }
+      }
       .titleSNS {
         font-weight: 500;
         font-size: 16px;
         line-height: 23px;
         color: #5c5c5c;
         margin: 0 auto;
-        .linklink {
-          display: flex;
-          width: 100%;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 20px;
-        }
       }
     }
     .linkThird {
@@ -165,8 +172,9 @@ a::after {
   }
   .linkicon {
     display: inline-block;
-    width: 14px;
-    // margin: 0 auto;
+    width: 18px;
+    position: relative;
+    transform: translateY(23%);
   }
   .rightlinkicon {
     margin-left: 20px;
@@ -229,8 +237,11 @@ a::after {
       div {
         margin-top: 10px;
         font-weight: 500;
-        font-size: 8px;
+        font-size: 10px;
         line-height: 10px;
+        .thirdLine {
+          margin-top: -3px;
+        }
         span {
           font-weight: 500;
           font-size: 8px;
@@ -261,10 +272,22 @@ a::after {
     width: 100%;
     height: 180px;
     display: flex;
-    img {
-      flex: left;
-      width: 180px;
+    .imgDesc {
       margin: 0 auto;
+      height: 210px;
+      img {
+        flex: left;
+        width: 180px;
+        margin: 0 auto;
+      }
+      div {
+        margin-top: 2px;
+        font-weight: 200;
+        font-size: 1px;
+        width: 100%;
+        text-align: right;
+        color: #5c5c5c;
+      }
     }
   }
 
