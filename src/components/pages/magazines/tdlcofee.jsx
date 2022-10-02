@@ -52,7 +52,7 @@ const TDLCoffee = () => {
               <img src="./assets/magazinePages/icons/alarm.png" alt="" />
               <div>
                 월~목 12시 ~ 21시<span>금~토 12시~22시</span>
-                <span className="thirdLine">일 14시~21시</span>
+                <span className="thirdLine">일요일 14시~21시</span>
               </div>
             </div>
             <div className="right">

@@ -89,7 +89,7 @@ const Magazine = () => {
           <MagazineMenu
             className="M"
             to={"/yenani"}
-            thumbnail={"./assets/magazinePages/yenani/1.png"}
+            thumbnail={"./assets/magazinePages/yenani/yenani_thumbnail.png"}
             cafeName={"예나니"}
             cafeDesc={"끝남동의 매력적인 카페, 아기자기한 감성"}
           ></MagazineMenu>
@@ -97,7 +97,9 @@ const Magazine = () => {
           <MagazineMenu
             className="M"
             to={"/tenderly"}
-            thumbnail={"./assets/magazinePages/tenderlycoffee/1.png"}
+            thumbnail={
+              "./assets/magazinePages/tenderlycoffee/tenderly_thumbnail.png"
+            }
             cafeName={"텐더리커피앤디저트"}
             cafeDesc={"따뜻하고 아늑한 공간의 여유로움"}
           ></MagazineMenu>
@@ -105,7 +107,9 @@ const Magazine = () => {
           <MagazineMenu
             className="M"
             to={"/atthemoment"}
-            thumbnail={"./assets/magazinePages/atthemoment/1.png"}
+            thumbnail={
+              "./assets/magazinePages/atthemoment/atthemoment_thumbnail.png"
+            }
             cafeName={"앳더모먼트"}
             cafeDesc={"계절에 따라 바뀌는 향과 글루텐프리 바스크 치즈케이크"}
           ></MagazineMenu>

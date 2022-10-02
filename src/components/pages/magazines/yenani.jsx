@@ -327,7 +327,9 @@ const Yenani = () => {
         </div>
         <Img2
           img1="./assets/magazinePages/yenani/11-1.png"
+          desc1="@_yena_ni_ 게시글"
           img2="./assets/magazinePages/yenani/11-2.png"
+          desc2="@_yena_ni_ 게시글"
         />
         <div className="bottom">
           <br />
