@@ -318,20 +318,24 @@ const TDLCoffee = () => {
         <div className="bottom">
           <div className="cafeMenu">
             <div className="menupan cafeMenuTopMargin">메뉴판</div>
-            <img src="assets/magazinePages/tenderlycoffee/menu.png" alt="" />
+            <img
+              className="menupanMargin"
+              src="assets/magazinePages/tenderlycoffee/menu.png"
+              alt=""
+            />
           </div>
           <div className="openingHours">
-            <span className="openingHourTitle">운영시간</span>
+            <div className="openingHourTitle">운영시간</div>
             <br />
             <div className="open">
               <span>월~목 </span>
               <span>&nbsp;12:00 ~ 21:00</span>
             </div>
-            <div>
+            <div className="open">
               <span>금~토 </span>
               <span>&nbsp;12:00 ~ 21:00</span>
             </div>
-            <div>
+            <div className="open">
               <span>일요일 </span>
               <span>&nbsp;14:00 ~ 21:00</span>
             </div>

@@ -162,9 +162,8 @@ const AtTheMoment = () => {
             </span>
             <br />
             <span>
-              저는 카페를 창업하면서 테라스가 있는 카페를{" "}
-              <H text="테라스까지 갖춘 카페" />를 열고 싶다고 생각을 했고 지금의
-              앳더모먼트의 공간에 카페를 열었습니다.
+              저는 카페를 창업하면서 <H text="테라스까지 갖춘 카페" />를 열고
+              싶다고 생각을 했고 지금의 앳더모먼트의 공간에 카페를 열었습니다.
             </span>
           </div>
         </div>
@@ -333,10 +332,14 @@ const AtTheMoment = () => {
         <div className="bottom">
           <div className="cafeMenu">
             <div className="menupan cafeMenuTopMargin">메뉴판</div>
-            <img src="assets/magazinePages/atthemoment/menu.png" alt="" />
+            <img
+              className="menupanMargin"
+              src="assets/magazinePages/atthemoment/menu.png"
+              alt=""
+            />
           </div>
           <div className="openingHours">
-            <span className="openingHourTitle">운영시간</span>
+            <div className="openingHourTitle">운영시간</div>
             <br />
             <div className="open">
               <span>월~금 </span>

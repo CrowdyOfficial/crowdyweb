@@ -38,7 +38,7 @@ const Yenani = () => {
         <div className="cafeDesc">
           <span className="topSpan">농장에서 직접 공수한 재료로,</span>
           <span>선별된 설탕 및 밀가루,</span>
-          <span>직접 만든 콩버터부터 필링지까지.</span>
+          <span>직접 만든 콩포트부터 필링지까지.</span>
           <span className="bottomSpan">
             모든 메뉴는 사장님의 손길이 닿아있다.
           </span>
@@ -332,12 +332,15 @@ const Yenani = () => {
         <div className="bottom">
           <br />
           <div className="openingHours">
-            <span className="openingHourTitle">운영시간</span>
+            <div className="openingHourTitle">운영시간</div>
             <br />
-            <span>월 - 토</span>
-            <span>&nbsp;11:00 ~ 20:00</span>
-            <br />
-            <span className="sunday">일요일 &nbsp;정기 휴무</span>
+            <div className="open">
+              <span>월 - 토</span>
+              <span>&nbsp;11:00 ~ 20:00</span>
+            </div>
+            <div className="open">
+              <span className="sunday">일요일 &nbsp;정기 휴무</span>
+            </div>
           </div>
           <div className="linkTwo">
             <span className="titleSNS">SNS</span>
