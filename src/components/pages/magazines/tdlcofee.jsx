@@ -31,7 +31,7 @@ const TDLCoffee = () => {
           <span>따듯함 속에서 맛보는</span>
           <span>소금빵과 커피</span>
           <span className="address">
-            텐더리커피 / 서울 마포구 성미산로 29길 35 2층 202호
+            텐더리커피 / 서울 마포구 성미산로29길 35, 2층
           </span>
         </div>
         <div className="cafeDesc">

@@ -120,6 +120,8 @@
         .title {
           width: 100%;
           line-height: 44px;
+          position: relative;
+          top: 15px;
           span {
             width: 100%;
             font-weight: 600;
@@ -130,6 +132,8 @@
           width: 80%;
           margin: 0 auto;
           margin-top: 20px;
+          position: relative;
+          top: 15px;
           span {
             display: inline-block;
             font-weight: 200;

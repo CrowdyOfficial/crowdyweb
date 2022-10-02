@@ -43,8 +43,10 @@ const Yenani = () => {
         <div className="cafeDesc containerDesc">
           <div className="flexbox">
             <div className="left">
-              <img src="./assets/magazinePages/icons/coffee.png" alt="" />
-              <div>테이크아웃 전문점</div>
+              <img src="./assets/magazinePages/icons/cake.png" alt="" />
+              <div>
+                시그니처 메뉴<span>계절 과일 생크림 케이크</span>
+              </div>
             </div>
             <div className="center">
               <img src="./assets/magazinePages/icons/alarm.png" alt="" />
@@ -61,7 +63,7 @@ const Yenani = () => {
             <div className="left">
               <img src="./assets/magazinePages/icons/car.png" alt="" />
               <div>
-                주차 가능<span>가게 앞 최대 10분</span>
+                잠시 가게 앞<span>10분 주차 가능</span>
               </div>
             </div>
             <div className="center">

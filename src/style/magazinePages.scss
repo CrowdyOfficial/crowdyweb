@@ -20,7 +20,7 @@ a::after {
 
 .Space {
   width: 100%;
-  min-height: 70px;
+  min-height: 40px;
 }
 .M {
   width: 100%;
@@ -70,6 +70,10 @@ a::after {
     display: block;
     margin: 0 auto;
   }
+  .magazineThumbnail {
+    position: relative;
+    width: 100%;
+  }
 
   .title {
     flex: 1;
@@ -94,13 +98,14 @@ a::after {
   }
   .bottom {
     flex: 1;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 400;
     line-height: 34px;
     text-align: center;
     .cafeMenu {
       width: 100%;
+      margin-top: 30px;
       .menupan {
         font-weight: 500;
         font-size: 16px;
@@ -111,9 +116,9 @@ a::after {
       }
     }
     .openingHours {
-      // margin-top: 20px;
       width: 100%;
       display: inline-block;
+      margin-top: 25px;
       .openingHourTitle {
         font-weight: 500;
         font-size: 16px;
@@ -136,7 +141,7 @@ a::after {
     }
     .linkTwo,
     .linkThird {
-      margin-top: 10px;
+      margin-top: 20px;
       width: 100%;
       height: 55px;
       .titleSNS {
@@ -155,7 +160,7 @@ a::after {
       }
     }
     .linkThird {
-      margin-top: 25px;
+      margin-top: 30px;
     }
   }
   .linkicon {
@@ -193,8 +198,8 @@ a::after {
     .flexbox {
       display: flex;
       width: 100%;
-      margin-top: 30px;
-      margin-bottom: 100px;
+      margin-top: 20px;
+      margin-bottom: 80px;
       height: 40px;
       .left {
         position: absolute;
@@ -213,7 +218,7 @@ a::after {
       }
     }
     .secondLine {
-      margin-top: 100px;
+      margin-top: 60px;
     }
     div {
       margin: auto auto;

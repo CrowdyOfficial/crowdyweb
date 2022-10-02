@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Space from "../Space";
 import MNav from "./components/MNav";
-import H from "./components/H";
+// import H from "./components/H";
 import Img1 from "./components/img1";
 import Img2 from "./components/img2";
 import "../../../style/magazinePages.scss";
@@ -23,7 +23,7 @@ const AtTheMoment = () => {
         </div>
         <img
           className="magazineThumbnail"
-          src="./assets/magazinePages/tenderlycoffee/1.png"
+          src="./assets/magazinePages/atthemoment/1.png"
           alt=""
         />
         <div className="title">

@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "../../style/Intro.scss";
 import "../../style/magazine.scss";
 import { Link } from "react-router-dom";
-
 import MagazineMenu from "./magazineComponent/MagazineMenu";
-import Space from "./Space";
 const Magazine = () => {
   const [isOpen, setMenu] = useState(false);
 
@@ -91,7 +89,7 @@ const Magazine = () => {
           <MagazineMenu
             className="M"
             to={"/yenani"}
-            thumbnail={"./assets/magazinePages/yenani/thumbnail.png"}
+            thumbnail={"./assets/magazinePages/yenani/1.png"}
             cafeName={"예나니"}
             cafeDesc={"끝남동의 매력적인 카페, 아기자기한 감성"}
           ></MagazineMenu>
