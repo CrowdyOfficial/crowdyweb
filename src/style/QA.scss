@@ -9,25 +9,28 @@
       display: inline;
       width: 100%;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 16px;
       color: #191919;
     }
   }
   .answer {
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 40px;
-    line-height: 15px;
+    line-height: 20px;
     span {
       display: inline;
       width: 100%;
       font-weight: 400;
-      font-size: 12px;
+      font-size: 14px;
       color: #5c5c5c;
       .highlightSpan {
         font-weight: 500;
       }
     }
+  }
+  .lastAnswer {
+    margin-bottom: 0;
   }
 }
 .twoQuestion {

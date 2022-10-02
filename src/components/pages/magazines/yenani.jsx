@@ -5,6 +5,7 @@ import MNav from "./components/MNav";
 import H from "./components/H";
 import Img1 from "./components/img1";
 import Img2 from "./components/img2";
+import SectionSpace from "./components/SectionSpace";
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 import "../../../style/Intro.scss";
@@ -331,6 +332,7 @@ const Yenani = () => {
           img2="./assets/magazinePages/yenani/11-2.png"
           desc2="@_yena_ni_ 게시글"
         />
+        <SectionSpace></SectionSpace>
         <div className="bottom">
           <br />
           <div className="openingHours">

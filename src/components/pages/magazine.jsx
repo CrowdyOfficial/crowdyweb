@@ -111,7 +111,7 @@ const Magazine = () => {
               "./assets/magazinePages/atthemoment/atthemoment_thumbnail.png"
             }
             cafeName={"앳더모먼트"}
-            cafeDesc={"계절에 따라 바뀌는 향과 글루텐프리 바스크 치즈케이크"}
+            cafeDesc={"계절의 향과 글루텐프리 바스크 치즈케이크"}
           ></MagazineMenu>
         </div>
 

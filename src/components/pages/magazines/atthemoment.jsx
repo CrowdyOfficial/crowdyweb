@@ -5,6 +5,7 @@ import MNav from "./components/MNav";
 import H from "./components/H";
 import Img1 from "./components/img1";
 import Img2 from "./components/img2";
+import SectionSpace from "./components/SectionSpace";
 import "../../../style/magazinePages.scss";
 import "../../../style/Intro.scss";
 
@@ -307,7 +308,7 @@ const AtTheMoment = () => {
           <div className="question">
             <span>준비 중인 신메뉴가 있을까요?</span>
           </div>
-          <div className="answer">
+          <div className="answer lastAnswer">
             <span>
               얼마 전에 <H text="블루베리 에이드, 샤인머스켓 에이드를 출시" />
               했어요!
@@ -327,7 +328,7 @@ const AtTheMoment = () => {
             <span>다른 곳에서는 먹어볼 수 없는 맛일 거에요 😊</span>
           </div>
         </div>
-
+        <SectionSpace></SectionSpace>
         {/* Bottom */}
         <div className="bottom">
           <div className="cafeMenu">
