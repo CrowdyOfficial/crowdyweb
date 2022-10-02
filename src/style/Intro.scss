@@ -141,7 +141,7 @@ nav {
     position: relative;
     left: 70%;
     top: -55%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     line-height: 53px;
     span {
       display: inline-block;
@@ -370,7 +370,7 @@ nav {
 
     .section02 {
       overflow: hidden;
-      height: 900px;
+      height: 800px;
       .mainMobileIMGs {
         display: block;
         position: relative;
@@ -379,9 +379,8 @@ nav {
         margin: 0 auto;
         img {
           position: relative;
-          top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%);
+          transform: translate(-50%, -70%);
           width: 274.99px;
         }
       }
