@@ -31,7 +31,7 @@ const AtTheMoment = () => {
           <span>계절의 향과</span>
           <span>글루텐프리 바스크 치즈케이크</span>
           <span className="address">
-            앳더모먼트 / 서울 마포구 동교로38길 42-6 102호
+            앳더모먼트 / 서울 마포구 동교로38길 42-6, 1층
           </span>
         </div>
         <div className="cafeDesc">
