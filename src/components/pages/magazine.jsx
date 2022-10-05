@@ -1,74 +1,61 @@
-import React, { useState } from "react";
-import "../../style/Intro.scss";
-import "../../style/magazine.scss";
-import { Link } from "react-router-dom";
+import React from "react";
 import MagazineMenu from "./magazineComponent/MagazineMenu";
+import NAV from "./pageComponent/Nav";
+import Bottom from "./pageComponent/Bottom";
+import "../../style/magazine.scss";
 const Magazine = () => {
-  const [isOpen, setMenu] = useState(false);
-
-  const toggleMenu = () => {
-    setMenu((isOpen) => !isOpen);
+  const cafes = {
+    /*
+    example
+    {
+        to: "",
+        thumbnail: "",
+        cafeName: "",
+        cafeDesc: "",
+      },
+    */
+    list: [
+      {
+        to: "/yenani",
+        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.png",
+        cafeName: "예나니",
+        cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
+      },
+      {
+        to: "/tenderly",
+        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.png",
+        cafeName: "텐더리커피앤디저트",
+        cafeDesc: "따뜻하고 아늑한 공간의 여유로움",
+      },
+      {
+        to: "/atthemoment",
+        thumbnail:
+          "./assets/magazinePages/atthemoment/atthemoment_thumbnail.png",
+        cafeName: "앳더모먼트",
+        cafeDesc: "계절의 향과 글루텐프리 바스크 치즈케이크",
+      },
+    ],
+  };
+  const makeCafe = (start) => {
+    let result = [];
+    for (let i = start; i < start + 3; i++) {
+      result.push(
+        <MagazineMenu
+          className="M"
+          to={cafes.list[0].to}
+          thumbnail={cafes.list[0].thumbnail}
+          cafeName={cafes.list[0].cafeName}
+          cafeDesc={cafes.list[0].cafeDesc}
+        />
+      );
+    }
+    console.log(result);
+    return result;
   };
   return (
     <div className="App">
       <div className="magazinePage">
-        {/* Navigation */}
-        <nav className="SCoreDreamFont">
-          <div className="navnav">
-            <Link className="align" to="/">
-              <img src="./assets/crowdysymbol.png" alt="" />
-              <span>크라우디</span>
-            </Link>
-            <Link className="align" to="/">
-              <div className="link">홈</div>
-            </Link>
-            <Link className="align" to="/magazine">
-              <div className="link nowPageColor">매거진</div>
-            </Link>
-            <Link className="align" to="/inquire">
-              <div className="link">문의하기</div>
-            </Link>
-          </div>
-
-          <div id="menu" onClick={() => toggleMenu()}>
-            <span id="openButton">
-              <img
-                src={
-                  isOpen
-                    ? "./assets/icon/closeButton.png"
-                    : "./assets/icon/openButton.png"
-                }
-                alt=""
-              />
-            </span>
-          </div>
-        </nav>
-
-        <div id="topDownMenu" className={isOpen ? "showMenu" : "hideMenu"}>
-          <div className="slideBarMenu SCoreDreamFont">
-            <ul>
-              <Link to="/">
-                <li>
-                  <span>홈</span>
-                </li>
-              </Link>
-              <Link to="/magazine">
-                <li>
-                  <span className="nowPageColor">매거진</span>
-                </li>
-              </Link>
-              <Link to="/inquire">
-                <li>
-                  <span>문의하기</span>
-                </li>
-              </Link>
-            </ul>
-          </div>
-        </div>
-        <div
-          className={isOpen ? "showModal" : "hideModal"}
-          onClick={() => toggleMenu()}
-        ></div>
+        <NAV></NAV>
 
         {/* section one */}
         <div className="section01 SCoreDreamFont">
@@ -85,53 +72,10 @@ const Magazine = () => {
         </div>
 
         {/* section two */}
-        <div className="section02">
-          <MagazineMenu
-            className="M"
-            to={"/yenani"}
-            thumbnail={"./assets/magazinePages/yenani/yenani_thumbnail.png"}
-            cafeName={"예나니"}
-            cafeDesc={"끝남동의 매력적인 카페, 아기자기한 감성"}
-          ></MagazineMenu>
-
-          <MagazineMenu
-            className="M"
-            to={"/tenderly"}
-            thumbnail={
-              "./assets/magazinePages/tenderlycoffee/tenderly_thumbnail.png"
-            }
-            cafeName={"텐더리커피앤디저트"}
-            cafeDesc={"따뜻하고 아늑한 공간의 여유로움"}
-          ></MagazineMenu>
-
-          <MagazineMenu
-            className="M"
-            to={"/atthemoment"}
-            thumbnail={
-              "./assets/magazinePages/atthemoment/atthemoment_thumbnail.png"
-            }
-            cafeName={"앳더모먼트"}
-            cafeDesc={"계절의 향과 글루텐프리 바스크 치즈케이크"}
-          ></MagazineMenu>
-        </div>
+        <div className="section02">{makeCafe(0)}</div>
 
         {/* bottom */}
-        <div className="bottom SCoreDreamFont">
-          <div className="bottomLink">
-            <Link className="align" to="/">
-              <div className="bottomLinks">홈</div>
-            </Link>
-            <Link className="align" to="/magazine">
-              <div className="bottomLinks">매거진</div>
-            </Link>
-            <Link className="align" to="/inquire">
-              <div className="bottomLinks">문의하기</div>
-            </Link>
-          </div>
-          <div className="email">
-            문의 <span>&nbsp;&nbsp;crowdy2022@gmail.com</span>
-          </div>
-        </div>
+        <Bottom></Bottom>
       </div>
     </div>
   );

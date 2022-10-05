@@ -4,9 +4,11 @@ import "./NavStyle.scss";
 
 const NAV = () => {
   const [isOpen, setMenu] = useState(false);
+
   const toggleMenu = () => {
     setMenu((isOpen) => !isOpen);
   };
+
   return (
     <div className="App">
       <nav className="SCoreDreamFont">
