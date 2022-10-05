@@ -1,0 +1,47 @@
+.pcmnav {
+  nav {
+    background-color: #ffffff;
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    .mnavnav {
+      margin: auto auto;
+      display: flex;
+      width: 30%;
+      height: 8vh;
+      margin-left: 20vh;
+      img {
+        margin: auto 0;
+        width: 2.3vh;
+      }
+      span {
+        color: #00705b;
+        font-size: 2vh;
+        font-weight: 900;
+        text-align: center;
+      }
+      .link {
+        float: left;
+        color: #4e5158;
+        font-size: 2vh;
+        text-align: center;
+        margin: auto auto;
+        font-weight: 500;
+      }
+      .link:hover {
+        color: #00705b;
+      }
+      .nowPageColor {
+        color: #00705b;
+      }
+    }
+  }
+}
+// mobile
+@media (max-width: 767px) {
+  .pcmnav {
+    nav {
+      display: none;
+    }
+  }
+}

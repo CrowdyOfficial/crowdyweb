@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Space from "../Space";
+import PCMNav from "./components/PCMNav";
 import MNav from "./components/MNav";
 import H from "./components/H";
 import Img1 from "./components/img1";
@@ -8,13 +9,11 @@ import Img2 from "./components/img2";
 import SectionSpace from "./components/SectionSpace";
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
-import "../../../style/Intro.scss";
-
 const Yenani = () => {
   const nav = useNavigate();
   return (
     <div className="M">
-      {/* Navigation */}
+      <PCMNav></PCMNav>
       <MNav></MNav>
 
       <div id="magazine notoSans" className="magazine">
