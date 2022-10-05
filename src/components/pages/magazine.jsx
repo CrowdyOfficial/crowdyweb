@@ -23,7 +23,8 @@ const Magazine = () => {
       },
       {
         to: "/tenderly",
-        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.png",
+        thumbnail:
+          "./assets/magazinePages/tenderlycoffee/tenderly_thumbnail.png",
         cafeName: "텐더리커피앤디저트",
         cafeDesc: "따뜻하고 아늑한 공간의 여유로움",
       },
