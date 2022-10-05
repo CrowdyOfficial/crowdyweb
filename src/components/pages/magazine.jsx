@@ -41,15 +41,15 @@ const Magazine = () => {
     for (let i = start; i < start + 3; i++) {
       result.push(
         <MagazineMenu
+          key={i}
           className="M"
-          to={cafes.list[0].to}
-          thumbnail={cafes.list[0].thumbnail}
-          cafeName={cafes.list[0].cafeName}
-          cafeDesc={cafes.list[0].cafeDesc}
+          to={cafes.list[i].to}
+          thumbnail={cafes.list[i].thumbnail}
+          cafeName={cafes.list[i].cafeName}
+          cafeDesc={cafes.list[i].cafeDesc}
         />
       );
     }
-    console.log(result);
     return result;
   };
   return (
@@ -74,7 +74,6 @@ const Magazine = () => {
         {/* section two */}
         <div className="section02">{makeCafe(0)}</div>
 
-        {/* bottom */}
         <Bottom></Bottom>
       </div>
     </div>

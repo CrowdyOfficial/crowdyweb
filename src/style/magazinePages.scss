@@ -284,7 +284,6 @@ a::after {
       margin: 0 auto;
       height: 210px;
       img {
-        flex: left;
         width: 180px;
         margin: 0 auto;
       }
@@ -366,9 +365,11 @@ a::after {
       }
     }
     .imgTwo {
-      height: 100%;
-      img {
-        width: 48%;
+      height: 45vh;
+      .imgDesc {
+        img {
+          width: 45vh;
+        }
       }
     }
     .bottom {
