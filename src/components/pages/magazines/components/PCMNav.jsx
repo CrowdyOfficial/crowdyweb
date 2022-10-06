@@ -15,7 +15,7 @@ const PCMNav = () => {
             <div className="link">홈</div>
           </Link>
           <Link className="align" to="/magazine">
-            <div className="link">매거진</div>
+            <div className="link nowPageColor">매거진</div>
           </Link>
           <Link className="align" to="/inquire">
             <div className="link">문의하기</div>

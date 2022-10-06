@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavStyle.scss";
-
+import { useLocation } from "react-router-dom";
 const NAV = () => {
   const [isOpen, setMenu] = useState(false);
 
   const toggleMenu = () => {
     setMenu((isOpen) => !isOpen);
   };
+  const getURL = useLocation();
+  console.log(getURL.pathname);
 
   return (
     <div className="App">
@@ -18,13 +20,29 @@ const NAV = () => {
             <span>크라우디</span>
           </Link>
           <Link className="align" to="/">
-            <div className="link">홈</div>
+            <div
+              className={getURL.pathname === "/" ? "link nowPageColor" : "link"}
+            >
+              홈
+            </div>
           </Link>
           <Link className="align" to="/magazine">
-            <div className="link">매거진</div>
+            <div
+              className={
+                getURL.pathname === "/magazine" ? "link" : "link nowPageColor"
+              }
+            >
+              매거진
+            </div>
           </Link>
           <Link className="align" to="/inquire">
-            <div className="link">문의하기</div>
+            <div
+              className={
+                getURL.pathname === "/inquire" ? "link nowPageColor" : "link"
+              }
+            >
+              문의하기
+            </div>
           </Link>
         </div>
 
@@ -47,17 +65,39 @@ const NAV = () => {
           <ul>
             <Link to="/">
               <li>
-                <span className="nowPageColor">홈</span>
+                <span
+                  className={
+                    getURL.pathname === "/" ? "link nowPageColor" : "link"
+                  }
+                >
+                  홈
+                </span>
               </li>
             </Link>
             <Link to="/magazine">
               <li>
-                <span>매거진</span>
+                <span
+                  className={
+                    getURL.pathname === "/magazine"
+                      ? "link nowPageColor"
+                      : "link"
+                  }
+                >
+                  매거진
+                </span>
               </li>
             </Link>
             <Link to="/inquire">
               <li>
-                <span>문의하기</span>
+                <span
+                  className={
+                    getURL.pathname === "/inquire"
+                      ? "link nowPageColor"
+                      : "link"
+                  }
+                >
+                  문의하기
+                </span>
               </li>
             </Link>
           </ul>

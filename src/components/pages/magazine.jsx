@@ -3,6 +3,7 @@ import MagazineMenu from "./magazineComponent/MagazineMenu";
 import NAV from "./pageComponent/Nav";
 import Bottom from "./pageComponent/Bottom";
 import "../../style/magazine.scss";
+
 const Magazine = () => {
   const cafes = {
     /*
@@ -53,6 +54,7 @@ const Magazine = () => {
     }
     return result;
   };
+
   return (
     <div className="App">
       <div className="magazinePage">

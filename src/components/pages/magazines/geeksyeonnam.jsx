@@ -106,7 +106,7 @@ const GeeksYeonnam = () => {
             <span>
               커피라고는 맥심만 먹어봤는데 우연히 이탈리아에서 인생 커피를
               맛보았습니다. 단순히 원두를 에스프레소 형태로 내린 커피였는데
-              에스프레소가 달달하고 쓰지 않을 수 있다는 것을 처음 알게해줬어요.
+              <H text="에스프레소가 달달하고 쓰지 않을 수 있다는 것을 처음 알게해줬어요." />
               믿기지 않으시겠지만 그 커피를 먹고 카페 사업을 하기로
               결정했습니다.
             </span>
@@ -131,10 +131,11 @@ const GeeksYeonnam = () => {
           <div className="answer">
             <span>
               저를 반하게 했던 원두는 이탈리아의 아구스트 크레모소라는 원두에요.
-              이탈리아에서 항공 수입권을 독점으로 가지고 있어서 긱스에서만 이
-              원두를 제대로 맛 볼 수 있습니다. 원두의 맛과 향은 굉장히 민감해서
-              수입하는 과정에 맛이 변질될 수 있어요. 수입하는 과정에서도 이것을
-              지키는 것이 소위 말하는 수출용 로스팅 프로세스라는 기술력입니다.
+              이탈리아에서 항공 수입권을 독점으로 가지고 있어서{" "}
+              <H text="긱스에서만 이 원두를 제대로 맛 볼 수 있습니다." /> 원두의
+              맛과 향은 굉장히 민감해서 수입하는 과정에 맛이 변질될 수 있어요.
+              수입하는 과정에서도 이것을 지키는 것이 소위 말하는 수출용 로스팅
+              프로세스라는 기술력입니다.
             </span>
             <br />
             <span>
@@ -159,7 +160,9 @@ const GeeksYeonnam = () => {
           <div className="answer">
             <span>정확하게 봐주셨어요.</span>
             <br />
-            <span>이탈리아에서는 바에서 커피와 술을 함께 팔아요.</span>
+            <span>
+              <H text="이탈리아에서는 바에서 커피와 술을 함께 팔아요." />
+            </span>
             <br />
             <span>
               처음보는 옆사람과 이야기를 하기도하고 바리스타에게 커피나 술에
@@ -185,13 +188,14 @@ const GeeksYeonnam = () => {
           <div className="answer">
             <span>
               샴페인 잔에 담긴 맥주 메뉴도 있고, 위스키와 커피를 블랜딩한 커피
-              칵테일 메뉴도 있습니다. 방문하시는 고객분들께 즐거움을 드릴 수
-              있는 메뉴를 계속해서 연구하고 있습니다.
+              칵테일 메뉴도 있습니다. 방문하시는 고객분들께{" "}
+              <H text="즐거움을 드릴 수 있는 메뉴" />를 계속해서 연구하고
+              있습니다.
             </span>
           </div>
         </div>
         <Img1 img="./assets/magazinePages/geeksyeonnam/6.png" />
-        <div className="questAnswer twoQuestion">
+        <div className="questAnswer">
           <div className="question">
             <span>
               Q. 가까운 시일 내에 새로운 메뉴도 출시할 계획이 있으신가요?
@@ -203,8 +207,9 @@ const GeeksYeonnam = () => {
             </span>
             <br />
             <span>
-              하나의 원두를 에스프레서 머신, 드립, 사이폰 등 다양한 방식으로
-              내린 커피를 동시에 맛 볼 수 있는 커피 샘플러를 기획하고 있어요.
+              하나의 원두를 에스프레서 머신, 드립, 사이폰 등{" "}
+              <H text="다양한 방식으로 내린 커피를 동시에 맛 볼 수 있는 커피 샘플러" />
+              를 기획하고 있어요.
             </span>
             <br />
             <span>
@@ -227,7 +232,8 @@ const GeeksYeonnam = () => {
           </div>
           <div className="answer">
             <span>
-              사람들이 긱스에서 자신만의 커피 취향을 찾으면 좋겠다라는 뜻입니다.
+              사람들이 <H text="긱스에서 자신만의 커피 취향을 찾으면 좋겠다" />
+              라는 뜻입니다.
             </span>
             <br />
             <span>
@@ -254,8 +260,11 @@ const GeeksYeonnam = () => {
           </div>
           <div className="answer">
             <span>
-              방문하시는 고객분의 커피 취향을 찾을 수 있도록 바리스타가 산미,
-              고소함, 과일 향, 드립, 사이폰 등 디테일한 질문을 드릴거에요.
+              방문하시는 고객분의 커피 취향을 찾을 수 있도록{" "}
+              <H
+                text="바리스타가 산미,
+              고소함, 과일 향, 드립, 사이폰 등 디테일한 질문을 드릴거에요."
+              />
               질문에 대한 답을 주시면 바리스타가 이를 종합하여 가장 어울리는
               커피를 추천드립니다.
             </span>
@@ -278,7 +287,9 @@ const GeeksYeonnam = () => {
             </span>
           </div>
           <div className="answer">
-            <span>그래서 너무 뿌듯합니다.</span>
+            <span>
+              <H text="그래서 너무 뿌듯합니다." />
+            </span>
             <br />
             <span>
               긱스 연남점은 올해 7월 오픈으로 이제 막 3개월이 넘은 것 같아요.
@@ -298,7 +309,8 @@ const GeeksYeonnam = () => {
           </div>
           <div className="answer">
             <span>
-              가장 인기가 많은 메뉴는 카페 피스타치오라는 에스프레소 메뉴입니다.
+              가장 인기가 많은 메뉴는 <H text="카페 피스타치오" />
+              라는 에스프레소 메뉴입니다.
             </span>
             <br />
             <span>개인적으로 추천하는 메뉴는 클립 더 연남인 것 같아요.</span>
@@ -307,8 +319,6 @@ const GeeksYeonnam = () => {
               긱스 연남점에서만 맛 볼 수 있는 자체 개발 메뉴로 가벼우면서도
               우유와 꽃향이 어우러져 풍미있는 달달함이 느껴지는 맛입니다.
             </span>
-            <br />
-            <span>참고로</span>
           </div>
         </div>
 
@@ -319,9 +329,10 @@ const GeeksYeonnam = () => {
           </div>
           <div className="answer">
             <span>
-              긱스를 통해 많은 분들이 커피를 취미이자 취향으로 생각했으면
-              좋겠어요. 정말 다양한 원두와 기법을 조합하면서 저와 같이 커피의
-              매력에 빠질 수 있었으면 좋겠습니다.😊
+              긱스를 통해{" "}
+              <H text="많은 분들이 커피를 취미이자 취향으로 생각했으면 좋겠어요." />{" "}
+              정말 다양한 원두와 기법을 조합하면서 저와 같이 커피의 매력에 빠질
+              수 있었으면 좋겠습니다.😊
             </span>
           </div>
         </div>
@@ -343,11 +354,11 @@ const GeeksYeonnam = () => {
             <br />
             <div className="open">
               <span>월~목 </span>
-              <span>&nbsp;12:00 ~ 21:00</span>
+              <span>&nbsp;12시 ~ 21시</span>
             </div>
             <div className="open">
               <span>금~일 </span>
-              <span>&nbsp;11:30 ~ 22</span>
+              <span>&nbsp;11시30분 ~ 22시</span>
             </div>
           </div>
           <div className="linkTwo">
@@ -356,7 +367,7 @@ const GeeksYeonnam = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%95%B3%EB%8D%94%EB%AA%A8%EB%A8%BC%ED%8A%B8&oquery=%ED%85%90%EB%8D%94%EB%A6%AC%EC%BB%A4%ED%94%BC&tqi=hzC72sprvh8sseEMjZlssssstS4-318524"
+                href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B8%B1%EC%8A%A4+%EC%97%B0%EB%82%A8%EC%A0%90"
               >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
                 &nbsp;긱스 연남점
@@ -365,7 +376,7 @@ const GeeksYeonnam = () => {
                 className="notoSans"
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://www.instagram.com/get_your_coffees/?hl=ko"
+                href="https://www.instagram.com/get_your_coffees/"
               >
                 <img
                   className="linkicon rightlinkicon"
@@ -382,7 +393,7 @@ const GeeksYeonnam = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="http://m.map.naver.com/route.nhn?menu=route&ename=앳더모먼트&ex=126.9255&ey=37.5611&pathType=0&showMap=true"
+                href="http://m.map.naver.com/route.nhn?menu=route&ename=긱스 연남점&ex=126.926&ey=37.5619&pathType=0&showMap=true"
               >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
                 &nbsp;네이버맵
@@ -390,7 +401,7 @@ const GeeksYeonnam = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://map.kakao.com/link/to/앳더모먼트,37.5611,126.9255"
+                href="https://map.kakao.com/link/to/긱스 연남점,37.5619,126.926"
               >
                 <img
                   className="linkicon rightlinkicon"
