@@ -39,8 +39,8 @@ const Magazine = () => {
       {
         to: "/geeksyeonnam",
         thumbnail: "./assets/magazinePages/geeksyeonnam/thumbnail.png",
-        cafeName: "긱스",
-        cafeDesc: "",
+        cafeName: "긱스 연남점",
+        cafeDesc: "50가지 원두에서 나의 커피를 찾다",
       },
     ],
   };
