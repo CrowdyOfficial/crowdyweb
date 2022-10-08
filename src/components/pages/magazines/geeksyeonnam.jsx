@@ -26,7 +26,7 @@ const GeeksYeonnam = () => {
         </div>
         <img
           className="magazineThumbnail"
-          src="./assets/magazinePages/atthemoment/1.png"
+          src="./assets/magazinePages/geeksyeonnam/1.png"
           alt=""
         />
         <div className="title">
