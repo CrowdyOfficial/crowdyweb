@@ -275,6 +275,20 @@ a::after {
       color: #5c5c5c;
     }
   }
+  .imgOne {
+    width: 100%;
+    .imgDesc {
+      div {
+        margin-top: 2px;
+        font-weight: 200;
+        font-size: 10px;
+        width: 100%;
+        text-align: right;
+        color: #5c5c5c;
+        z-index: 990;
+      }
+    }
+  }
 
   .imgTwo {
     width: 100%;

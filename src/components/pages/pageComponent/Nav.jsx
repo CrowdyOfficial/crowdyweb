@@ -29,7 +29,7 @@ const NAV = () => {
           <Link className="align" to="/magazine">
             <div
               className={
-                getURL.pathname === "/magazine" ? "link" : "link nowPageColor"
+                getURL.pathname === "/magazine" ? "link nowPageColor" : "link"
               }
             >
               매거진

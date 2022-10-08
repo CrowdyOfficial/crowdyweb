@@ -36,11 +36,17 @@ const Magazine = () => {
         cafeName: "앳더모먼트",
         cafeDesc: "계절의 향과 글루텐프리 바스크 치즈케이크",
       },
+      {
+        to: "/geeksyeonnam",
+        thumbnail: "./assets/magazinePages/geeksyeonnam/thumbnail.png",
+        cafeName: "긱스",
+        cafeDesc: "",
+      },
     ],
   };
   const makeCafe = (start) => {
     let result = [];
-    for (let i = start; i < start + 3; i++) {
+    for (let i = start; i < start + 4; i++) {
       result.push(
         <MagazineMenu
           key={i}
