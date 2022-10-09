@@ -9,7 +9,6 @@ const NAV = () => {
     setMenu((isOpen) => !isOpen);
   };
   const getURL = useLocation();
-  console.log(getURL.pathname);
 
   return (
     <div className="App">
