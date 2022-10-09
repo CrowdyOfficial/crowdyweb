@@ -7,11 +7,34 @@ import H from "./components/H";
 import Img1 from "./components/img1";
 import Img2 from "./components/img2";
 import SectionSpace from "./components/SectionSpace";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 
 const GeeksYeonnam = () => {
   const nav = useNavigate();
+  const images = [
+    "./assets/magazinePages/geeksyeonnam/2-1.png",
+    "./assets/magazinePages/geeksyeonnam/2-2.png",
+    "./assets/magazinePages/geeksyeonnam/2-3.png",
+    "./assets/magazinePages/geeksyeonnam/2-4.png",
+    "./assets/magazinePages/geeksyeonnam/2-5.png",
+    "./assets/magazinePages/geeksyeonnam/2-6.png",
+    "./assets/magazinePages/geeksyeonnam/2-7.png",
+    "./assets/magazinePages/geeksyeonnam/2-8.png",
+  ];
+  const makeSlide = () => {
+    const result = [];
+    for (let i = 0; i < images.length; i++) {
+      result.push(
+        <div className="each-slide-effect">
+          <div style={{ backgroundImage: `url(${images[i]})` }}></div>
+        </div>
+      );
+    }
+    return result;
+  };
   return (
     <div className="M">
       <PCMNav></PCMNav>
@@ -88,12 +111,8 @@ const GeeksYeonnam = () => {
           </div>
         </div>
 
-        <div className="slideIMGs">
-          <img
-            className=""
-            src="./assets/magazinePages/geeksyeonnam/2-1.png"
-            alt=""
-          />
+        <div className="slide">
+          <Slide>{makeSlide()}</Slide>
         </div>
 
         <div className="questAnswer">
