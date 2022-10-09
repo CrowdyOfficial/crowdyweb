@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Space from "../Space";
 import PCMNav from "./components/PCMNav";
 import MNav from "./components/MNav";
@@ -62,7 +62,7 @@ const GeeksYeonnam = () => {
           alt=""
         />
         <div className="title">
-          <span>다양한 원두에서</span>
+          <span>다양한 종류의 원두에서</span>
           <span>나의 커피 취향을 찾다</span>
           <span className="address">
             긱스 연남점 / 서울 마포구 동교로 38길 27-12, 지하 1층
