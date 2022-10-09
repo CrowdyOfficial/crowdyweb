@@ -31,7 +31,6 @@ const GeeksYeonnam = () => {
     "./assets/magazinePages/geeksyeonnam/2-5.png",
     "./assets/magazinePages/geeksyeonnam/2-6.png",
     "./assets/magazinePages/geeksyeonnam/2-7.png",
-    "./assets/magazinePages/geeksyeonnam/2-8.png",
   ];
   const makeSlide = () => {
     const result = [];
