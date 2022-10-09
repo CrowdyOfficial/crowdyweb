@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import RouteChangeTracker from "./components/RouteChangeTracker";
+
 // Pages
 import Intro from "./components/pages/Intro";
 import Home from "./components/pages/Home";
@@ -17,7 +17,6 @@ import GeeksYeonnam from "./components/pages/magazines/geeksyeonnam";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  RouteChangeTracker();
   return (
     <BrowserRouter>
       <ScrollToTop />
@@ -26,8 +25,6 @@ function App() {
         <Route path="/" element={<Intro />} />
         {/* /home */}
         <Route path="/home" element={<Home />} />
-        {/* LeLeve */}
-        {/* <Route path="/lereve" element={<LeReve />} /> */}
         {/* Magazine */}
         <Route path="/magazine" element={<Magazine />} />
         {/* Inquire */}
