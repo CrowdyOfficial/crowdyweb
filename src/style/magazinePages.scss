@@ -333,6 +333,29 @@ a::after {
     }
   }
 }
+.BottomLink {
+  width: 100%;
+  margin-top: 50px;
+  div {
+    font-size: 12px;
+    text-align: center;
+  }
+  a {
+    button {
+      position: relative;
+      left: 50%;
+      top: 35px;
+      transform: translate(-50%, -50%);
+      border: 1px solid #00705b;
+      background-color: #ffffff;
+      width: 270px;
+      height: 50px;
+      border-radius: 4px;
+      color: #00705b;
+      font-weight: 500;
+    }
+  }
+}
 
 // 1025px --> pc
 @media only screen and (min-width: 1025px) {

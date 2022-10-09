@@ -7,6 +7,9 @@ import H from "./components/H";
 import Img1 from "./components/img1";
 import Img2 from "./components/img2";
 import SectionSpace from "./components/SectionSpace";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import BottomLink from "./components/BottomLink";
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 
@@ -398,6 +401,7 @@ const TDLCoffee = () => {
         </div>
       </div>
       <div></div>
+      <BottomLink></BottomLink>
       <Space></Space>
     </div>
   );
