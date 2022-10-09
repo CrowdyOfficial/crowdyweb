@@ -13,6 +13,14 @@ import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 
 const GeeksYeonnam = () => {
+  const properties = {
+    duration: 5000,
+    transitionDuration: 500,
+    infinite: true,
+    // indicators: true,
+    arrows: true,
+    pauseOnHover: true,
+  };
   const nav = useNavigate();
   const images = [
     "./assets/magazinePages/geeksyeonnam/2-1.png",
@@ -28,7 +36,7 @@ const GeeksYeonnam = () => {
     const result = [];
     for (let i = 0; i < images.length; i++) {
       result.push(
-        <div className="each-slide-effect">
+        <div key={i} className="each-slide-effect">
           <div style={{ backgroundImage: `url(${images[i]})` }}></div>
         </div>
       );
@@ -39,7 +47,6 @@ const GeeksYeonnam = () => {
     <div className="M">
       <PCMNav></PCMNav>
       <MNav></MNav>
-
       <div id="magazine notoSans" className="magazine">
         <div className="crowdyMagazine">
           크라우디 매거진
@@ -112,7 +119,7 @@ const GeeksYeonnam = () => {
         </div>
 
         <div className="slide">
-          <Slide>{makeSlide()}</Slide>
+          <Slide {...properties}>{makeSlide()}</Slide>
         </div>
 
         <div className="questAnswer">
@@ -122,14 +129,17 @@ const GeeksYeonnam = () => {
           <div className="answer">
             <span>제가 긱스 창업 이전에 외국 항공사에서 근무를 했었어요.</span>
             <br />
-            <br />
             <span>
               커피라고는 맥심만 먹어봤는데 우연히 이탈리아에서 인생 커피를
               맛보았습니다.
             </span>
+            <br />
             <span>
-              단순히 원두를 에스프레소 형태로 내린 커피였는데
+              단순히 원두를 에스프레소 형태로 내린 커피였는데{" "}
               <H text="에스프레소가 달달하고 쓰지 않을 수 있다는 것을 처음 알게해줬어요." />
+            </span>
+            <br />
+            <span>
               믿기지 않으시겠지만 그 커피를 먹고 커피 사업을 하기로
               결정했습니다.
             </span>
