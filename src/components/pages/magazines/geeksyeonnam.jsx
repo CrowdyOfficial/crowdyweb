@@ -61,7 +61,7 @@ const GeeksYeonnam = () => {
         />
         <div className="title">
           <span>50가지의 원두에서</span>
-          <span>나의 커피를 찾다</span>
+          <span>나의 커피 취향을 찾다</span>
           <span className="address">
             긱스 연남점 / 서울 마포구 동교로 38길 27-12, 지하 1층
           </span>
