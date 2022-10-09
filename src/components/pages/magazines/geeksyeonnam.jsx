@@ -50,8 +50,10 @@ const GeeksYeonnam = () => {
       <div id="magazine notoSans" className="magazine">
         <div className="crowdyMagazine">
           크라우디 매거진
-          <div onClick={() => nav(-1)} className="goBack">
-            <img src="./assets/icon/Back.png" alt="" />
+          <div className="goBack">
+            <Link to="/magazine">
+              <img src="./assets/icon/Back.png" alt="" />
+            </Link>
           </div>
         </div>
         <img
@@ -60,7 +62,7 @@ const GeeksYeonnam = () => {
           alt=""
         />
         <div className="title">
-          <span>50가지의 원두에서</span>
+          <span>다양한 원두에서</span>
           <span>나의 커피 취향을 찾다</span>
           <span className="address">
             긱스 연남점 / 서울 마포구 동교로 38길 27-12, 지하 1층
