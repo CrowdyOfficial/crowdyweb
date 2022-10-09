@@ -14,6 +14,34 @@ import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 
 const TDLCoffee = () => {
+  const properties = {
+    duration: 5000,
+    autoplay: false,
+    transitionDuration: 500,
+    infinite: true,
+    arrows: true,
+    pauseOnHover: true,
+  };
+  const images = [
+    "./assets/magazinePages/tenderlycoffee/2-1.png",
+    "./assets/magazinePages/tenderlycoffee/2-2.png",
+    "./assets/magazinePages/tenderlycoffee/2-3.png",
+    "./assets/magazinePages/tenderlycoffee/2-4.png",
+    "./assets/magazinePages/tenderlycoffee/2-5.png",
+    "./assets/magazinePages/tenderlycoffee/2-6.png",
+    "./assets/magazinePages/tenderlycoffee/2-7.png",
+  ];
+  const makeSlide = () => {
+    const result = [];
+    for (let i = 0; i < images.length; i++) {
+      result.push(
+        <div key={i} className="each-slide-effect">
+          <div style={{ backgroundImage: `url(${images[i]})` }}></div>
+        </div>
+      );
+    }
+    return result;
+  };
   const nav = useNavigate();
   return (
     <div className="M">
@@ -89,12 +117,8 @@ const TDLCoffee = () => {
             </div>
           </div>
         </div>
-        <div className="slideIMGs">
-          <img
-            className=""
-            src="./assets/magazinePages/tenderlycoffee/2-1.png"
-            alt=""
-          />
+        <div className="slide">
+          <Slide {...properties}>{makeSlide()}</Slide>
         </div>
 
         <div className="questAnswer">
