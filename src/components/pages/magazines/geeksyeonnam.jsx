@@ -197,7 +197,7 @@ const GeeksYeonnam = () => {
         <div className="questAnswer">
           <div className="question">
             <span>
-              Q. 긱스의 인테리어는 카페와 캌테일 바, 그 사이 어딘가에 있는 것
+              Q. 긱스의 인테리어는 카페와 칵테일 바, 그 사이 어딘가에 있는 것
               같아요.
             </span>
           </div>
