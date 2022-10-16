@@ -28,7 +28,7 @@ function App() {
         {/* Magazine */}
         <Route path="/magazine" element={<Magazine />} />
         {/* Inquire */}
-        <Route path="/inquire" element={<Inquire />} />
+        <Route path="/inquiry" element={<Inquire />} />
 
         {/* Magazines */}
         <Route path="/yenani" element={<Yenani />} />
