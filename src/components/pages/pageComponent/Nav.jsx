@@ -34,7 +34,7 @@ const NAV = () => {
               매거진
             </div>
           </Link>
-          <Link className="align" to="/inquire">
+          <Link className="align" to="/inquiry">
             <div
               className={
                 getURL.pathname === "/inquire" ? "link nowPageColor" : "link"

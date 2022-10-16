@@ -22,7 +22,7 @@ const MNav = () => {
           <Link className="align" to="/magazine">
             <div className="link nowPageColor">매거진</div>
           </Link>
-          <Link className="align" to="/inquire">
+          <Link className="align" to="/inquiry">
             <div className="link">문의하기</div>
           </Link>
         </div>
