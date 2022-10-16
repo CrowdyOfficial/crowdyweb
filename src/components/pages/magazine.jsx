@@ -75,6 +75,7 @@ const Magazine = () => {
             </div>
             <div className="descs">
               <span>어디에서도 들어보지 못한,</span>
+              <br />
               <span>사장님이 직접 말하는 카페 스토리</span>
             </div>
           </div>
