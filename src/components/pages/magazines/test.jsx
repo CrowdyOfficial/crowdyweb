@@ -13,7 +13,7 @@ import BottomLink from "./components/BottomLink";
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 
-const GeeksYeonnam = () => {
+const Test = () => {
   const images = [
     "./assets/magazinePages/geeksyeonnam/2-1.png",
     "./assets/magazinePages/geeksyeonnam/2-2.png",
@@ -449,4 +449,4 @@ const GeeksYeonnam = () => {
   );
 };
 
-export default GeeksYeonnam;
+export default Test;

@@ -7,12 +7,11 @@ import Magazine from "./components/pages/magazine";
 import Inquire from "./components/pages/Inquire";
 
 // Magazine Pages
-// import LeReve from "./components/pages/Lereve";
 import Yenani from "./components/pages/magazines/yenani";
 import TDLCoffee from "./components/pages/magazines/tdlcofee";
 import AtTheMoment from "./components/pages/magazines/atthemoment";
 import GeeksYeonnam from "./components/pages/magazines/geeksyeonnam";
-
+import Test from "./components/pages/magazines/test";
 // Components
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -35,6 +34,9 @@ function App() {
         <Route path="/tenderly" element={<TDLCoffee />} />
         <Route path="/atthemoment" element={<AtTheMoment />} />
         <Route path="/geeksyeonnam" element={<GeeksYeonnam />} />
+
+        {/* Magazine Test */}
+        <Route path="magazinetestpage" element={<Test />} />
       </Routes>
     </BrowserRouter>
   );
