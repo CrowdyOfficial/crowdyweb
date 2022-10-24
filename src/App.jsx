@@ -7,13 +7,14 @@ import Magazine from "./components/pages/magazine";
 import Inquire from "./components/pages/Inquire";
 
 // Magazine Pages
-// import LeReve from "./components/pages/Lereve";
 import Yenani from "./components/pages/magazines/yenani";
 import TDLCoffee from "./components/pages/magazines/tdlcofee";
 import AtTheMoment from "./components/pages/magazines/atthemoment";
 import GeeksYeonnam from "./components/pages/magazines/geeksyeonnam";
 import Pyojeong from "./components/pages/magazines/pyojeong";
 
+// Test page
+import Test from "./components/pages/magazines/test";
 // Components
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -26,12 +27,10 @@ function App() {
         <Route path="/" element={<Intro />} />
         {/* /home */}
         <Route path="/home" element={<Home />} />
-        {/* LeLeve */}
-        {/* <Route path="/lereve" element={<LeReve />} /> */}
         {/* Magazine */}
         <Route path="/magazine" element={<Magazine />} />
         {/* Inquire */}
-        <Route path="/inquire" element={<Inquire />} />
+        <Route path="/inquiry" element={<Inquire />} />
 
         {/* Magazines */}
         <Route path="/yenani" element={<Yenani />} />
@@ -39,6 +38,9 @@ function App() {
         <Route path="/atthemoment" element={<AtTheMoment />} />
         <Route path="/geeksyeonnam" element={<GeeksYeonnam />} />
         <Route path="/pyojeong" element={<Pyojeong />} />
+
+        {/* Magazine Test */}
+        <Route path="magazinetestpage" element={<Test />} />
       </Routes>
     </BrowserRouter>
   );

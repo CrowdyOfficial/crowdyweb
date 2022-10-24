@@ -1,5 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+// magazine Components
+import BottomLink from "./components/BottomLink";
 import Space from "../Space";
 import PCMNav from "./components/PCMNav";
 import MNav from "./components/MNav";
@@ -7,85 +9,70 @@ import H from "./components/H";
 import Img1 from "./components/img1";
 import Img2 from "./components/img2";
 import SectionSpace from "./components/SectionSpace";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
+import SlideIMG from "./components/SlideIMG";
+// style
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 
+const asset = "./assets/magazinePages/pyojeong/";
 const Pyojeong = () => {
-  const nav = useNavigate();
   const images = [
-    "./assets/magazinePages/geeksyeonnam/2-1.png",
-    "./assets/magazinePages/geeksyeonnam/2-2.png",
-    "./assets/magazinePages/geeksyeonnam/2-3.png",
-    "./assets/magazinePages/geeksyeonnam/2-4.png",
-    "./assets/magazinePages/geeksyeonnam/2-5.png",
-    "./assets/magazinePages/geeksyeonnam/2-6.png",
-    "./assets/magazinePages/geeksyeonnam/2-7.png",
-    "./assets/magazinePages/geeksyeonnam/2-8.png",
+    asset + "2-1.png",
+    asset + "2-2.png",
+    asset + "2-3.png",
+    asset + "2-4.png",
+    asset + "2-5.png",
+    asset + "2-6.png",
+    asset + "2-7.png",
+    asset + "2-8.png",
+    asset + "2-9.png",
   ];
-  const makeSlide = () => {
-    const result = [];
-    for (let i = 0; i < images.length; i++) {
-      result.push(
-        <div className="each-slide-effect">
-          <div style={{ backgroundImage: `url(${images[i]})` }}></div>
-        </div>
-      );
-    }
-    return result;
-  };
   return (
     <div className="M">
       <PCMNav></PCMNav>
       <MNav></MNav>
-
       <div id="magazine notoSans" className="magazine">
         <div className="crowdyMagazine">
           크라우디 매거진
-          <div onClick={() => nav(-1)} className="goBack">
-            <img src="./assets/icon/Back.png" alt="" />
+          <div className="goBack">
+            <Link to="/magazine">
+              <img src="./assets/icon/Back.png" alt="" />
+            </Link>
           </div>
         </div>
-        <img
-          className="magazineThumbnail"
-          src="./assets/magazinePages/geeksyeonnam/1.png"
-          alt=""
-        />
+        <img className="magazineThumbnail" src={asset + "1.png"} alt="" />
         <div className="title">
-          <span>50가지의 원두에서</span>
-          <span>나의 커피를 찾다</span>
-          <span className="address">
-            긱스 연남점 / 서울 마포구 동교로 38길 27-12, 지하 1층
-          </span>
+          <span>작은 공간에서</span>
+          <span>구겔호프가 주는 특별함</span>
+          <span className="address">표정 / 서울 마포구 동교로 262-10 1층</span>
         </div>
         <div className="cafeDesc">
           <span className="topSpan">
-            커피 한 잔에서 얻을 수 있는 즐거움을 알 수 있는 곳.
+            커피와 디저트의 제작 공간이 홀과 비슷한 이유는
           </span>
-          <span>긱스의 전문 바리스타와 함께</span>
+          <span>커피와 디저트의 본질과 퀄리티를 중요시 여기기 때문이며,</span>
           <span className="bottomSpan">
-            나의 입맛에 맞는 커피 취향을 찾아보세요.
+            커피와 디저트를 동해 감정을 긍정적으로 변화시키기에 충분하다.
           </span>
         </div>
         <div className="cafeDesc containerDesc">
           <div className="flexbox">
             <div className="left">
-              <img src="./assets/magazinePages/icons/coffee.png" alt="" />
+              <img src="./assets/magazinePages/icons/cake.png" alt="" />
               <div>
-                시그니처 메뉴<span>카페 피스타치오</span>
+                시그니처 메뉴<span>초코 하트 구겔호프케이크</span>
               </div>
             </div>
             <div className="center">
               <img src="./assets/magazinePages/icons/alarm.png" alt="" />
               <div>
-                월~목 12시 ~ 21시<span>금~일 11시30분~22시</span>
+                월~일 12시 ~ 20시<span>(매주 화요일 휴무)</span>
               </div>
             </div>
             <div className="right">
               <img src="./assets/magazinePages/icons/won.png" alt="" />
               <div>
-                3500원 이상<span>(음료 기준)</span>
+                6000원 이상<span>(음료 기준)</span>
               </div>
             </div>
           </div>
@@ -93,314 +80,320 @@ const Pyojeong = () => {
             <div className="left">
               <img src="./assets/magazinePages/icons/car.png" alt="" />
               <div>
-                주변 공용 주차장 6분 거리<span>1500원/30분</span>
+                주변 공용 주차장 3분 거리<span>250원/5분</span>
               </div>
             </div>
             <div className="center">
               <img src="./assets/magazinePages/icons/table.png" alt="" />
               <div>
-                테이블 수<span>8개</span>
+                좌석 수<span>4 개</span>
               </div>
             </div>
             <div className="right">
               <img src="./assets/magazinePages/icons/walking.png" alt="" />
               <div>
-                홍대입구역<span>도보 12분</span>
+                홍대입구역<span>도보 9분</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="slide">
-          <Slide>{makeSlide()}</Slide>
-        </div>
-
-        <div className="questAnswer">
-          <div className="question">
-            <span>Q. 긱스 브랜드를 창업하게 된 이유가 궁금합니다.</span>
-          </div>
-          <div className="answer">
-            <span>제가 긱스 창업 이전에 외국 항공사에서 근무를 했었어요.</span>
-            <br />
-            <br />
-            <span>
-              커피라고는 맥심만 먹어봤는데 우연히 이탈리아에서 인생 커피를
-              맛보았습니다.
-            </span>
-            <span>
-              단순히 원두를 에스프레소 형태로 내린 커피였는데
-              <H text="에스프레소가 달달하고 쓰지 않을 수 있다는 것을 처음 알게해줬어요." />
-              믿기지 않으시겠지만 그 커피를 먹고 커피 사업을 하기로
-              결정했습니다.
-            </span>
-            <br />
-            <span>
-              저와 함께 긱스를 만든 이사님께서도 저를 반하게 했던 원두의 커피를
-              드시고 긱스에 합류하기로 결정을 하셨어요 😁
-            </span>
-          </div>
-        </div>
-        <Img2
-          img1="./assets/magazinePages/geeksyeonnam/3-1.png"
-          img2="./assets/magazinePages/geeksyeonnam/3-2.png"
-        />
+        <SlideIMG imgArray={images} />
 
         <div className="questAnswer">
           <div className="question">
             <span>
-              Q. 사장님을 반하게 했던 그 커피를 긱스에서 맛볼 수 있나요?
+              많은 분들이 관심을 갖는 하트 모양 케이크에 대해서도 당연히
+              여쭤봐야할 거 같은데요,
             </span>
+            <br />
+            <span>초코 하트 구겔호프 케이크의 탄생 배경이 궁급합니다.</span>
           </div>
           <div className="answer">
             <span>
-              <H text="저를 반하게 했던 원두는 이탈리아의 아구스트 크레모소라는 원두에요." />
+              사실 지금의 초코 하트 구겔호프케이크는 오픈하고 3달 정도 후인{" "}
+              <H text="발렌타인데이 시즌 한정 케이크로 출시를 했었어요." />
             </span>
             <br />
             <span>
-              저희가 한국 독점판매권을 가지고 있고 국내에 백화점, 호텔등을
-              비롯한 다양한 곳에 유통하고 있습니다.
-            </span>
-            <span>
-              원두의 맛과 향은 굉장히 민감해서 수입하는 과정에 맛이 변질될 수
-              있어요.
+              하트 모양의 케이크를 출시했었는데 기대 이상으로 반응이 엄청
+              뜨거웠었어요.
             </span>
             <br />
             <span>
-              수입하는 과정에서도 이것을 지키는 것이 소위 말하는 수출용 로스팅
-              프로세스라는 기술력입니다.
-            </span>
-            <br />
-            <span>
-              또한, 매장에서는 원두 상태, 습도, 기기 등을 고려해 최상의 맛을 낼
-              수 있도록 매일 아침마다 세팅을 진행한 이후 손님을 받고 있습니다.
-            </span>
-          </div>
-        </div>
-
-        <Img2
-          img1="./assets/magazinePages/geeksyeonnam/4-1.png"
-          img2="./assets/magazinePages/geeksyeonnam/4-2.png"
-        />
-
-        <div className="questAnswer">
-          <div className="question">
-            <span>
-              Q. 긱스의 인테리어는 카페와 캌테일 바, 그 사이 어딘가에 있는 것
-              같아요.
-            </span>
-          </div>
-          <div className="answer">
-            <span>정확하게 봐주셨어요.</span>
-            <br />
-            <span>
-              <H text="이탈리아에서는 바에서 커피와 술을 함께 팔아요." />
-            </span>
-            <br />
-            <span>
-              처음보는 옆사람과 이야기를 하기도하고 바리스타에게 커피나 술에
-              대한 이야기를 나누는 모습에 감명을 받아 긱스에 적용하게 되었어요.
-            </span>
-            <br />
-            <span>
-              현재 긱스에서도 술과 커피 모두 판매하고 있고 낮에는 조명의 감도를
-              조절하여 밝고 환한 분위기를, 저녁에는 감도가 좀 더 어둡고 주황
-              또는 보라색으로 조명을 조절해서 더욱 고급스러운 분위기를 연출하고
-              있어요.
-            </span>
-          </div>
-        </div>
-
-        <Img2
-          img1="./assets/magazinePages/geeksyeonnam/5-1.png"
-          img2="./assets/magazinePages/geeksyeonnam/5-2.png"
-        />
-
-        <div className="questAnswer">
-          <div className="question">
-            <span>Q. 생소한 메뉴도 눈에 보이네요.</span>
-          </div>
-          <div className="answer">
-            <span>
-              샴페인 잔에 담긴 맥주 메뉴도 있고, 위스키와 커피를 블랜딩한 커피
-              칵테일 메뉴도 있습니다.
-            </span>
-            <br />
-            <span>
-              <H
-                text="방문하시는 고객분들께 즐거움을 드릴 수 있는 메뉴를
-              계속해서 연구하고 있습니다."
-              />
-            </span>
-          </div>
-        </div>
-        <Img1 img="./assets/magazinePages/geeksyeonnam/6.png" />
-        <div className="questAnswer">
-          <div className="question">
-            <span>
-              Q. 가까운 시일 내에 새로운 메뉴도 출시할 계획이 있으신가요?
-            </span>
-          </div>
-          <div className="answer">
-            <span>
-              사실 지금 많은 시간과 노력을 들여 준비 중인 메뉴가 있습니다.
-            </span>
-            <br />
-            <span>
-              하나의 원두를 에스프레서 머신, 드립, 사이폰 등{" "}
-              <H text="다양한 방식으로 내린 커피를 동시에 맛 볼 수 있는 커피 샘플러" />
-              를 기획하고 있어요.
-            </span>
-            <br />
-            <span>
-              이 이외에도 칵테일 바에서 제공하는 "킵" 서비스를 본 딴 "원두 킵"
-              서비스, 커피 오마카세를 변형한 "다이닝 커피"등 메뉴 이외에도
-              다양한 방식으로 사람들의 취향을 채워 줄 수 있는 고민을 하고
-              있습니다.
-            </span>
-          </div>
-        </div>
-
-        <Img2
-          img1="./assets/magazinePages/geeksyeonnam/7-1.png"
-          img2="./assets/magazinePages/geeksyeonnam/7-2.png"
-        />
-
-        <div className="questAnswer">
-          <div className="question">
-            <span>Q. 긱스(Get Your Coffee)는 어떤 의미인가요?</span>
-          </div>
-          <div className="answer">
-            <span>
-              <H text="사람들이 긱스에서 자신만의 커피 취향을 찾으면 좋겠다라는 뜻입니다." />
-            </span>
-            <br />
-            <span>
-              긱스에는 50가지가 넘는 원두가 있고 로스팅 방식, 압력, 열 등
-              여러가지 요소를 고려하면 훨씬 다양한 맛의 커피를 만들어 낼 수
-              있습니다.
-            </span>
-            <br />
-            <span>
-              바리스타의 큐레이팅을 통해 사람들이 원하는 커피 맛을 찾을 수
-              있도록 도와드리고 있습니다.
-            </span>
-          </div>
-        </div>
-
-        <Img2
-          img1="./assets/magazinePages/geeksyeonnam/8-1.png"
-          img2="./assets/magazinePages/geeksyeonnam/8-2.png"
-        />
-
-        <div className="questAnswer">
-          <div className="question">
-            <span>Q. 바리스타의 큐레이팅은 어떻게 진행되나요?</span>
-          </div>
-          <div className="answer">
-            <span>
-              방문하시는 고객분의 커피 취향을 찾을 수 있도록 바리스타가 산미,
-              고소함, 과일 향, 드립, 사이폰 등 디테일한 질문을 드릴거에요.
-            </span>
-            <br />
-            <span>
-              <H
-                text="질문에 대한 답을 주시면 바리스타가 이를 종합하여 가장 어울리는
-              커피를 추천드립니다."
-              />
-            </span>
-            <br />
-            <span>
-              바로 원하는 취향의 커피를 찾지 못할 수 있지만, 다양한 원두의
-              설명을 들으면서 맛의 감각이 넓어지면 본인의 취향과 최대한 비슷한
-              커피를 머지않아 찾을 수 있게 될거에요 😀
-            </span>
-          </div>
-        </div>
-
-        <Img1 img="./assets/magazinePages/geeksyeonnam/9.png" />
-
-        <div className="questAnswer">
-          <div className="question">
-            <span>
-              Q. 그래서 커피 애호가분들에게 긱스가 요즘 자주 언급되는 거
-              같습니다.
-            </span>
-          </div>
-          <div className="answer">
-            <span>그래서 너무 뿌듯합니다.</span>
-            <br />
-            <span>
-              긱스 연남점은 올해 7월 오픈으로 이제 막 3개월이 넘은 것 같아요.
-            </span>
-            <br />
-            <span>
-              <H text="커피의 취향을 찾을 수 있는 공간" />이 되기 위해 노력하는
-              긱스의 매력을 알아봐주시는 거 같아서 너무 행복하고 앞으로도 초심을
-              잃지 않도록 하겠습니다.
+              그 이후로도 계속 많은 분들이 관심을 가져주셔서 계속 판매를 하게
+              되었고 어느새 표정 카페를 대표하는 케이크로 인식된 거 같아요.
             </span>
           </div>
         </div>
 
         <div className="questAnswer twoQuestion">
           <div className="question">
-            <span>Q. 특별히 추천하는 메뉴가 있으신가요?</span>
+            <span>하트 모양의 케이크는 예약만 받으시나요?</span>
           </div>
           <div className="answer">
             <span>
-              <H text="가장 인기가 많은 메뉴는 카페 피스타치오라는 에스프레소 메뉴입니다." />
+              <H text="네, 예약으로만 받고 있고, 예약은 인스타그램 DM으로 해주시는게 좋습니다!" />
             </span>
             <br />
-            <span>개인적으로 추천하는 메뉴는 클립 더 연남인 것 같아요.</span>
-            <br />
             <span>
-              긱스 연남점에서만 맛 볼 수 있는 자체 개발 메뉴로 가벼우면서도
-              우유와 꽃향이 어우러져 풍미있는 달달함이 느껴지는 맛입니다.
+              추가로 말씀드리면, 초코 하트 구겔호프 케이크(하트모양 케이크)는
+              인기가 많아서 당일 급하게 원하시는 분들을 위해 여유분으로 몇 개 더
+              만들고 있어요.
             </span>
           </div>
         </div>
 
-        <Img1
-          img="./assets/magazinePages/geeksyeonnam/10.png"
-          desc="@get_your_coffees 사진"
+        <Img2
+          img1={asset + "3-1.png"}
+          img2={asset + "3-2.png"}
+          desc2="@pyojeong_x_x 게시글"
         />
+
         <div className="questAnswer">
           <div className="question">
-            <span>Q. 마지막으로 인터뷰를 보시는 분들께 한 말씀해 주세요.</span>
+            <span>표정의 카페는 협소한 편인데요,</span>
+            <br />
+            <span>
+              공간이 적은데도 많은 분들이 찾아와주시는 이유가 무엇이라고
+              생각하시나요?
+            </span>
           </div>
           <div className="answer">
+            <span>카페 실평수가 한 10평에서 11평 정도 돼요.</span>
+            <br />
             <span>
-              <H text="긱스를 통해 많은 분들이 커피를 취미이자 취향으로 생각했으면 좋겠어요." />{" "}
+              '홀 공간을 많이 활용해야할까?"라는 생각도 했지만,{" "}
+              <H text="카페 공간을 디저트와 커피의 품질을 올리는 데 활용하자고 결정했습니다." />
             </span>
             <br />
             <span>
-              정말 다양한 원두와 기법을 조합하면서 저와 같이 커피의 매력에 빠질
-              수 있었으면 좋겠습니다.😊
+              저희도 홀이 작아서 아쉽기는 하지만, 양질의 디저트와 커피를 많은
+              분들이 좋아해주시는 거 같아서 후회는 없어요 😊
             </span>
           </div>
         </div>
-        <Img1 img="./assets/magazinePages/geeksyeonnam/11.png" />
+
+        <Img2 img1={asset + "4-1.png"} img2={asset + "4-2.png"} />
+
+        <div className="questAnswer">
+          <div className="question">
+            <span>
+              표정을 만드시는데 가장 크게 신경쓰셨던 부분은 무엇인가요?
+            </span>
+          </div>
+          <div className="answer">
+            <span>
+              <H text="표정의 공간을 기획할 때, 커피와 디저트에만 집중할 수 있는 공간을 만들고 싶었어요." />
+            </span>
+            <br />
+            <span>
+              그래서 카페 내부에는 액자나 인테리어 소품을 많이 두지 않았고 검정,
+              회색, 연회색 3가지 커러만 활용하여 톤앤매너를 맞췄습니다.
+            </span>
+            <br />
+            <span>
+              그리고 음식과 음료를 여유있게 즐기실 수 있도록 커피를 내리는
+              공간에 밖을 바라볼 수 있는 창문도 기획을 했습니다.
+            </span>
+          </div>
+        </div>
+
+        <Img2 img1={asset + "5-1.png"} img2={asset + "5-2.png"} />
+
+        <div className="questAnswer">
+          <div className="question">
+            <span>표정에서만 경험할 수 있는 요인은 무엇인가요?</span>
+          </div>
+          <div className="answer">
+            <span>
+              저희는 홀이 작고 BAR와 비슷한 형태로 되어있어서 손님 한 분 한 분을
+              신경써드리는데 최선을 다하고 있습니다.
+            </span>
+            <br />
+            <span>
+              커피와 디저트의 종류가 다양해서 고객님의 취향과 메뉴에 대해 설명을
+              드리면 자연스럽게 추천해 드린 메뉴로 주문을 해주세요.
+            </span>
+            <br />
+            <span>
+              그래서 그런지,{" "}
+              <H text="하나의 코스를 커스텀 받았다고 느끼시는 분들이 많은 것 같아요." />
+            </span>
+          </div>
+        </div>
+        <Img1 img={asset + "6.png"} />
+        <div className="questAnswer">
+          <div className="question">
+            <span>맛있는 커피를 만드는 표정만의 방법이 있나요?</span>
+          </div>
+          <div className="answer">
+            <span>
+              <H text="저희는 원두를 갈아 검증하고 평가하는 커핑(향미인지과정) 시스템을 도입하여 진행하고 있습니다." />
+            </span>
+            <br />
+            <span>
+              커핑을 통과한 원두는 원두 굵기, 물 온도 등 맛 발현에 영향을 주는
+              요소를 테스팅하여 최상의 맛 상태를 제어하고 있습니다.
+            </span>
+            <br />
+            <span>
+              이렇게 깐깐하게 원두를 검증하는 단계를 밟은 것이 손님들에게 좋은
+              반응을 얻어낸 이유인 것 같습니다.
+            </span>
+          </div>
+        </div>
+        <div className="questAnswer twoQuestion">
+          <div className="question">
+            <span>
+              그래서 단순히 케이크 맛집 뿐만 아니라 커피가 맛있다는 이야기도
+              많았던 거군요!
+            </span>
+          </div>
+          <div className="answer">
+            <span>그렇게 말씀해주시니 너무 고맙습니다.</span>
+            <br />
+            <span>
+              요즘 원두에 과일을 넣고 발효시키는 등 원두의 가공 방식이 많이
+              달라지고 있어요.
+            </span>
+            <br />
+            <span>
+              <H text="이런 가공 방식은 커피의 매력을 알릴 수 있는 요소라고 생각하는데요," />{" "}
+              다른 카페에 가서 커피를 마실 때 그러한 가공 방식의 장점과 매력이
+              잘 전달되지 않아 아쉬웠던 경험이 있었어요.
+            </span>
+            <br />
+            <span>
+              이러한 가공 방식의 장점을 잘 전달드리려고 했던 노력을 알아봐주신
+              거 같아 뿌듯하네요!
+            </span>
+          </div>
+        </div>
+
+        <Img2 img1={asset + "7-1.png"} img2={asset + "7-2.png"} />
+
+        <div className="questAnswer">
+          <div className="question">
+            <span>손님들이 가장 많이 주문하는 메뉴는 무엇인가요?</span>
+          </div>
+          <div className="answer">
+            <span>
+              아무래도 테이크아웃은 초코 하트 구겔호프케이크를 가장 많이
+              찾아주시는 편이고 매장 내부에서는 커피와 미니구겔호프가 같이
+              나오는 <H text="표정 플레이트라는 세트 메뉴를 많이 찾아주세요." />
+            </span>
+          </div>
+        </div>
+
+        <Img2
+          img1={asset + "8-1.png"}
+          desc1="@pyeojeong_x_x 게시글"
+          img2={asset + "8-2.png"}
+        />
+
+        <div className="questAnswer">
+          <div className="question">
+            <span>'표정 플레이트'에 대해 자세히 설명해주세요.</span>
+          </div>
+          <div className="answer">
+            <span>
+              <H text="표정의 커피와 구겔호프를 모두 드실 수 있는 세트 메뉴에요." />
+            </span>
+            <br />
+            <span>
+              3가지 종류의 원두 중에서 원하시는 것을 골라주시면 핸드드립
+              방식으로 커피를 내려드리고, 미니 구겔호프의 경우 8가지 맛 중에
+              원하시는 구겔호프 케이크를 선택하실 수 있습니다.
+            </span>
+          </div>
+        </div>
+        <div className="questAnswer twoQuestion">
+          <div className="question">
+            <span>사장님이 추천하시는 표정 플레이트의 조합이 있으신가요?</span>
+          </div>
+          <div className="answer">
+            <span>
+              <H text="저는 복숭아 향이 나는 원두의 커피와 레밍턴 구겔호프를 좋아해요." />
+            </span>
+            <br />
+            <span>
+              참고로 래밍턴 구겔호프는 겉은 초콜릿과 코코넛 안은 바닐라 시트로
+              만들어졌어요.
+            </span>
+          </div>
+        </div>
+
+        <Img2
+          img1={asset + "9-1.png"}
+          img2={asset + "9-2.png"}
+          desc2="@pyojeong_x_x 게시글"
+        />
+
+        <div className="questAnswer">
+          <div className="question">
+            <span>
+              표정 매장 안에서 메뉴를 즐기고 싶다면, 어느 시간대에 방문하는 것이
+              좋을까요?
+            </span>
+          </div>
+          <div className="answer">
+            <span>
+              <H text="저희는 2시~6시 사이 사람이 많은 편이에요." />
+            </span>
+            <br />
+            <span>
+              날마다 다를 수 있지만 말씀드린 시간 이외에 방문하시면 내부에서
+              여유롭게 음료를 드실 수 있을거라고 생각합니다!
+            </span>
+          </div>
+        </div>
+
+        <Img2 img1={asset + "10-1.png"} img2={asset + "10-2.png"} />
+
+        <div className="questAnswer">
+          <div className="question">
+            <span>마지막으로 하고 싶으신 말씀이 있으신가요?</span>
+          </div>
+          <div className="answer">
+            <span>
+              저는 방문했던 카페의 디저트가 너무 맛있어서 친구를 데리고 방문한
+              적이 있어요.
+            </span>
+            <br />
+            <span>
+              그런데 다시 방문했을 때는 맛이 변해서 너무 실망스럽고 좀
+              창피하기도 하더라고요.
+            </span>
+            <br />
+            <span>
+              <H text="그래서 저희는 항상 일관된 맛을 낼 수 있는 카페가 되는 것을 목표로 잡고 항상 노력하고 있습니다." />
+            </span>
+            <br />
+            <span>
+              많은 분들이 이런 저희의 노력을 알아봐주시면 너무 좋을 것 같아요.
+            </span>
+          </div>
+        </div>
+        <Img1 img={asset + "11.png"} />
 
         <SectionSpace></SectionSpace>
         {/* Bottom */}
         <div className="bottom">
           <div className="cafeMenu">
             <div className="menupan cafeMenuTopMargin">메뉴판</div>
-            <img
-              className="menupanMargin"
-              src="assets/magazinePages/geeksyeonnam/menu.png"
-              alt=""
-            />
+            <img className="menupanMargin" src={asset + "menu.png"} alt="" />
           </div>
           <div className="openingHours">
             <div className="openingHourTitle">운영시간</div>
             <br />
             <div className="open">
-              <span>월~목 </span>
-              <span>&nbsp;12시 ~ 21시</span>
+              <span>월~일 </span>
+              <span>&nbsp;12:00 ~ 20:00</span>
             </div>
             <div className="open">
-              <span>금~일 </span>
-              <span>&nbsp;11시30분 ~ 22시</span>
+              <span className="sunday">화요일 </span>
+              <span className="sunday">&nbsp;정기 휴무</span>
             </div>
           </div>
           <div className="linkTwo">
@@ -409,23 +402,23 @@ const Pyojeong = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B8%B1%EC%8A%A4+%EC%97%B0%EB%82%A8%EC%A0%90"
+                href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%ED%91%9C%EC%A0%95+%EC%97%B0%EB%82%A8%EC%A0%90&oquery=%ED%91%9C%EC%A0%95+%EC%97%B0%EB%82%A8&tqi=h1SPbsp0J1sssA8XGFwssssstHR-216648"
               >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
-                &nbsp;긱스 연남점
+                &nbsp;표정 연남점
               </a>
               <a
                 className="notoSans"
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://www.instagram.com/get_your_coffees/"
+                href="https://www.instagram.com/pyojeong_x_x/"
               >
                 <img
                   className="linkicon rightlinkicon"
                   src="assets/icon/insta.png"
                   alt=""
                 />
-                &nbsp;@get_your_coffees
+                &nbsp;@pyojeong_x_x
               </a>
             </div>
           </div>
@@ -435,7 +428,8 @@ const Pyojeong = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="http://m.map.naver.com/route.nhn?menu=route&ename=긱스 연남점&ex=126.926&ey=37.5619&pathType=0&showMap=true"
+                href="http://m.map.naver.com/route.nhn?
+                menu=route&ename=표정 연남점&ex=126.9255&ey=37.5627&pathType=0&showMap=true"
               >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
                 &nbsp;네이버맵
@@ -443,7 +437,7 @@ const Pyojeong = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://map.kakao.com/link/to/긱스 연남점,37.5619,126.926"
+                href="https://map.kakao.com/link/to/표정 연남점,37.5627,126.9255"
               >
                 <img
                   className="linkicon rightlinkicon"
@@ -456,7 +450,7 @@ const Pyojeong = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <BottomLink></BottomLink>
       <Space></Space>
     </div>
   );

@@ -10,8 +10,9 @@ nav {
     height: 8vh;
     margin-left: 20vh;
     img {
-      margin: auto 0;
       width: 2.3vh;
+      position: relative;
+      top: 2px;
     }
     span {
       color: #00705b;

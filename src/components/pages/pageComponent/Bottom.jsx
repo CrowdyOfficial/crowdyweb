@@ -12,7 +12,7 @@ const Bottom = () => {
         <Link className="align" to="/magazine">
           <div className="bottomLinks">매거진</div>
         </Link>
-        <Link className="align" to="/inquire">
+        <Link className="align" to="/inquiry">
           <div className="bottomLinks">문의하기</div>
         </Link>
       </div>

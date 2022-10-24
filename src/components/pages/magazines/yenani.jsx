@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+// magazine Components
+import BottomLink from "./components/BottomLink";
 import Space from "../Space";
 import PCMNav from "./components/PCMNav";
 import MNav from "./components/MNav";
@@ -7,9 +9,20 @@ import H from "./components/H";
 import Img1 from "./components/img1";
 import Img2 from "./components/img2";
 import SectionSpace from "./components/SectionSpace";
+import SlideIMG from "./components/SlideIMG";
+// style
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 const Yenani = () => {
+  const images = [
+    "./assets/magazinePages/yenani/2-1.png",
+    "./assets/magazinePages/yenani/2-2.png",
+    "./assets/magazinePages/yenani/2-3.png",
+    "./assets/magazinePages/yenani/2-4.png",
+    "./assets/magazinePages/yenani/2-5.png",
+    "./assets/magazinePages/yenani/2-6.png",
+    "./assets/magazinePages/yenani/2-7.png",
+  ];
   const nav = useNavigate();
   return (
     <div className="M">
@@ -84,9 +97,7 @@ const Yenani = () => {
           </div>
         </div>
 
-        <div className="slideIMGs">
-          <img className="" src="assets/magazinePages/yenani/2-1.png" alt="" />
-        </div>
+        <SlideIMG imgArray={images} />
 
         <div className="questAnswer">
           <div className="question">
@@ -398,7 +409,7 @@ const Yenani = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <BottomLink></BottomLink>
       <Space></Space>
     </div>
   );

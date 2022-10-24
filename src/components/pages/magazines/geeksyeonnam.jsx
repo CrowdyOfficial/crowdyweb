@@ -1,5 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+// magazine Components
+import BottomLink from "./components/BottomLink";
 import Space from "../Space";
 import PCMNav from "./components/PCMNav";
 import MNav from "./components/MNav";
@@ -7,13 +9,12 @@ import H from "./components/H";
 import Img1 from "./components/img1";
 import Img2 from "./components/img2";
 import SectionSpace from "./components/SectionSpace";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
+import SlideIMG from "./components/SlideIMG";
+// style
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 
 const GeeksYeonnam = () => {
-  const nav = useNavigate();
   const images = [
     "./assets/magazinePages/geeksyeonnam/2-1.png",
     "./assets/magazinePages/geeksyeonnam/2-2.png",
@@ -22,29 +23,18 @@ const GeeksYeonnam = () => {
     "./assets/magazinePages/geeksyeonnam/2-5.png",
     "./assets/magazinePages/geeksyeonnam/2-6.png",
     "./assets/magazinePages/geeksyeonnam/2-7.png",
-    "./assets/magazinePages/geeksyeonnam/2-8.png",
   ];
-  const makeSlide = () => {
-    const result = [];
-    for (let i = 0; i < images.length; i++) {
-      result.push(
-        <div className="each-slide-effect">
-          <div style={{ backgroundImage: `url(${images[i]})` }}></div>
-        </div>
-      );
-    }
-    return result;
-  };
   return (
     <div className="M">
       <PCMNav></PCMNav>
       <MNav></MNav>
-
       <div id="magazine notoSans" className="magazine">
         <div className="crowdyMagazine">
           크라우디 매거진
-          <div onClick={() => nav(-1)} className="goBack">
-            <img src="./assets/icon/Back.png" alt="" />
+          <div className="goBack">
+            <Link to="/magazine">
+              <img src="./assets/icon/Back.png" alt="" />
+            </Link>
           </div>
         </div>
         <img
@@ -53,8 +43,8 @@ const GeeksYeonnam = () => {
           alt=""
         />
         <div className="title">
-          <span>50가지의 원두에서</span>
-          <span>나의 커피를 찾다</span>
+          <span>다양한 종류의 원두에서</span>
+          <span>나의 커피 취향을 찾다</span>
           <span className="address">
             긱스 연남점 / 서울 마포구 동교로 38길 27-12, 지하 1층
           </span>
@@ -111,25 +101,26 @@ const GeeksYeonnam = () => {
           </div>
         </div>
 
-        <div className="slide">
-          <Slide>{makeSlide()}</Slide>
-        </div>
+        <SlideIMG imgArray={images} />
 
         <div className="questAnswer">
           <div className="question">
-            <span>Q. 긱스 브랜드를 창업하게 된 이유가 궁금합니다.</span>
+            <span>긱스 브랜드를 창업하게 된 이유가 궁금합니다.</span>
           </div>
           <div className="answer">
             <span>제가 긱스 창업 이전에 외국 항공사에서 근무를 했었어요.</span>
-            <br />
             <br />
             <span>
               커피라고는 맥심만 먹어봤는데 우연히 이탈리아에서 인생 커피를
               맛보았습니다.
             </span>
+            <br />
             <span>
-              단순히 원두를 에스프레소 형태로 내린 커피였는데
+              단순히 원두를 에스프레소 형태로 내린 커피였는데{" "}
               <H text="에스프레소가 달달하고 쓰지 않을 수 있다는 것을 처음 알게해줬어요." />
+            </span>
+            <br />
+            <span>
               믿기지 않으시겠지만 그 커피를 먹고 커피 사업을 하기로
               결정했습니다.
             </span>
@@ -147,9 +138,7 @@ const GeeksYeonnam = () => {
 
         <div className="questAnswer">
           <div className="question">
-            <span>
-              Q. 사장님을 반하게 했던 그 커피를 긱스에서 맛볼 수 있나요?
-            </span>
+            <span>사장님을 반하게 했던 그 커피를 긱스에서 맛볼 수 있나요?</span>
           </div>
           <div className="answer">
             <span>
@@ -185,7 +174,7 @@ const GeeksYeonnam = () => {
         <div className="questAnswer">
           <div className="question">
             <span>
-              Q. 긱스의 인테리어는 카페와 캌테일 바, 그 사이 어딘가에 있는 것
+              긱스의 인테리어는 카페와 칵테일 바, 그 사이 어딘가에 있는 것
               같아요.
             </span>
           </div>
@@ -217,7 +206,7 @@ const GeeksYeonnam = () => {
 
         <div className="questAnswer">
           <div className="question">
-            <span>Q. 생소한 메뉴도 눈에 보이네요.</span>
+            <span>생소한 메뉴도 눈에 보이네요.</span>
           </div>
           <div className="answer">
             <span>
@@ -237,7 +226,7 @@ const GeeksYeonnam = () => {
         <div className="questAnswer">
           <div className="question">
             <span>
-              Q. 가까운 시일 내에 새로운 메뉴도 출시할 계획이 있으신가요?
+              가까운 시일 내에 새로운 메뉴도 출시할 계획이 있으신가요?
             </span>
           </div>
           <div className="answer">
@@ -267,7 +256,7 @@ const GeeksYeonnam = () => {
 
         <div className="questAnswer">
           <div className="question">
-            <span>Q. 긱스(Get Your Coffee)는 어떤 의미인가요?</span>
+            <span>긱스(Get Your Coffee)는 어떤 의미인가요?</span>
           </div>
           <div className="answer">
             <span>
@@ -294,7 +283,7 @@ const GeeksYeonnam = () => {
 
         <div className="questAnswer">
           <div className="question">
-            <span>Q. 바리스타의 큐레이팅은 어떻게 진행되나요?</span>
+            <span>바리스타의 큐레이팅은 어떻게 진행되나요?</span>
           </div>
           <div className="answer">
             <span>
@@ -322,8 +311,7 @@ const GeeksYeonnam = () => {
         <div className="questAnswer">
           <div className="question">
             <span>
-              Q. 그래서 커피 애호가분들에게 긱스가 요즘 자주 언급되는 거
-              같습니다.
+              그래서 커피 애호가분들에게 긱스가 요즘 자주 언급되는 거 같습니다.
             </span>
           </div>
           <div className="answer">
@@ -343,7 +331,7 @@ const GeeksYeonnam = () => {
 
         <div className="questAnswer twoQuestion">
           <div className="question">
-            <span>Q. 특별히 추천하는 메뉴가 있으신가요?</span>
+            <span>특별히 추천하는 메뉴가 있으신가요?</span>
           </div>
           <div className="answer">
             <span>
@@ -365,7 +353,7 @@ const GeeksYeonnam = () => {
         />
         <div className="questAnswer">
           <div className="question">
-            <span>Q. 마지막으로 인터뷰를 보시는 분들께 한 말씀해 주세요.</span>
+            <span>마지막으로 인터뷰를 보시는 분들께 한 말씀해 주세요.</span>
           </div>
           <div className="answer">
             <span>
@@ -456,7 +444,7 @@ const GeeksYeonnam = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <BottomLink></BottomLink>
       <Space></Space>
     </div>
   );
