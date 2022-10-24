@@ -12,6 +12,7 @@ import Yenani from "./components/pages/magazines/yenani";
 import TDLCoffee from "./components/pages/magazines/tdlcofee";
 import AtTheMoment from "./components/pages/magazines/atthemoment";
 import GeeksYeonnam from "./components/pages/magazines/geeksyeonnam";
+import Pyojeong from "./components/pages/magazines/pyojeong";
 
 // Components
 import ScrollToTop from "./components/ScrollToTop";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/tenderly" element={<TDLCoffee />} />
         <Route path="/atthemoment" element={<AtTheMoment />} />
         <Route path="/geeksyeonnam" element={<GeeksYeonnam />} />
+        <Route path="/pyojeong" element={<Pyojeong />} />
       </Routes>
     </BrowserRouter>
   );
