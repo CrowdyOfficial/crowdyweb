@@ -17,6 +17,12 @@ const Magazine = () => {
     */
     list: [
       {
+        to: "/pyojeong",
+        thumbnail: "./assets/magazinePages/pyojeong/thumbnail.png",
+        cafeName: "표정",
+        cafeDesc: "작은 공간에서 구겔호프가 주는 특별함",
+      },
+      {
         to: "/geeksyeonnam",
         thumbnail: "./assets/magazinePages/geeksyeonnam/thumbnail.png",
         cafeName: "긱스 연남점",
@@ -46,7 +52,7 @@ const Magazine = () => {
   };
   const makeCafe = (start) => {
     let result = [];
-    for (let i = start; i < start + 4; i++) {
+    for (let i = start; i < start + 5; i++) {
       result.push(
         <MagazineMenu
           key={i}

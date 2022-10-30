@@ -7,7 +7,7 @@ const MagazineMenu = (props) => {
       <div>
         <div className="magazineMenu">
           <Link to={props.to}>
-            <div>
+            <div className="magazineLink">
               <img src={props.thumbnail} alt="" />
               <div className="magazineDesc">
                 <div className="cafeName">{props.cafeName}</div>
