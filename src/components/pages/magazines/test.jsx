@@ -66,6 +66,7 @@ const Test = () => {
           <div className="flexbox">
             <div className="left">
               <img src="./assets/magazinePages/icons/coffee.png" alt="" />
+
               <div>
                 시그니처 메뉴<span>카페 피스타치오</span>
               </div>
