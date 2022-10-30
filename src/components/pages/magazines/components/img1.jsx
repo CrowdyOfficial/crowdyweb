@@ -6,7 +6,8 @@ const Img1 = (props) => {
   return (
     <div className="imgOne">
       <div className="imgDesc">
-        <LazyLoadImage src={props.img} className="LereveMenu" effect="blur" />
+        {/* <img className="LereveMenu" src={props.img} alt="" /> */}
+        <LazyLoadImage src={props.img} width="100%" effect="blur" />
         <div>{props.desc}</div>
       </div>
     </div>
