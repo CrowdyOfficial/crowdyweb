@@ -32,6 +32,9 @@ function App() {
         {/* Inquire */}
         <Route path="/inquiry" element={<Inquire />} />
 
+        {/* Wrong path */}
+        <Route path="/*" element={<Intro />} />
+
         {/* Magazines */}
         <Route path="/yenani" element={<Yenani />} />
         <Route path="/tenderly" element={<TDLCoffee />} />

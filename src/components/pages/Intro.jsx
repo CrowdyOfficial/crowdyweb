@@ -1,11 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import NAV from "./pageComponent/Nav";
 import Bottom from "./pageComponent/Bottom";
 
 import "../../style/Intro.scss";
 
 const Intro = () => {
+  const nowurl = useLocation();
+  console.log(nowurl.pathname);
+  if (nowurl.pathname !== "/") {
+    nowurl.pathname = "/";
+  }
   return (
     <div className="App">
       <div className="Intro">
