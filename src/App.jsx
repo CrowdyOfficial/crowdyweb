@@ -12,6 +12,7 @@ import TDLCoffee from "./components/pages/magazines/tdlcofee";
 import AtTheMoment from "./components/pages/magazines/atthemoment";
 import GeeksYeonnam from "./components/pages/magazines/geeksyeonnam";
 import Pyojeong from "./components/pages/magazines/pyojeong";
+import Jamjam from "./components/pages/magazines/jamjam";
 
 // Test page
 import Test from "./components/pages/magazines/test";
@@ -41,6 +42,7 @@ function App() {
         <Route path="/atthemoment" element={<AtTheMoment />} />
         <Route path="/geeksyeonnam" element={<GeeksYeonnam />} />
         <Route path="/pyojeong" element={<Pyojeong />} />
+        <Route path="/jamjam" element={<Jamjam />} />
 
         {/* Magazine Test */}
         <Route path="magazinetestpage" element={<Test />} />
