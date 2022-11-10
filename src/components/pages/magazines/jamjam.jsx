@@ -16,7 +16,7 @@ import {
 import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 
-const asset = "./assets/magazinePages/pyojeong/";
+const asset = "./assets/magazinePages/jamjam/";
 const Jamjam = () => {
   const images = [
     asset + "2-1.png",
@@ -27,7 +27,6 @@ const Jamjam = () => {
     asset + "2-6.png",
     asset + "2-7.png",
     asset + "2-8.png",
-    asset + "2-9.png",
   ];
   return (
     <div className="M">
@@ -114,7 +113,7 @@ const Jamjam = () => {
           </div>
           <div className="answer">
             <span>
-              소비자가 원하는 니즈를 모두 담은 가게를 꾸리고 싶었습니다.
+              <H text="소비자가 원하는 니즈를 모두 담은 가게를 꾸리고 싶었습니다." />
             </span>
             <br />
             <span>
@@ -152,8 +151,10 @@ const Jamjam = () => {
             </span>
             <br />
             <span>
-              저희만의 철학이 있다면 "맛없는 메뉴를 입에 넣어드릴 바에 다시
-              만들어드린다"입니다.
+              <H
+                text='저희만의 철학이 있다면 "맛없는 메뉴를 입에 넣어드릴 바에 다시
+              만들어드린다"입니다.'
+              />
             </span>
             <br />
             <span>
@@ -182,9 +183,11 @@ const Jamjam = () => {
             <span>감사하게도 가게를 대표하는 메뉴가 참 많습니다.</span>
             <br />
             <span>
-              선택과 집중이라는 단어가 유행처럼 번질 때 저희는 흑임자 라떼와
+              <H
+                text="선택과 집중이라는 단어가 유행처럼 번질 때 저희는 흑임자 라떼와
               흑임자 크럼블을 고수했고, 덕분에 정말 큰 인기를 누릴 수
-              있었습니다.
+              있었습니다."
+              />
             </span>
             <br />
             <span>
@@ -214,9 +217,11 @@ const Jamjam = () => {
             <span>잼잼의 모든 좌석에는 등받이가 있습니다.</span>
             <br />
             <span>
-              예전에 개인 카페의 특징이 자리가 불편하다는 카페 밈을 보고
+              <H
+                text="예전에 개인 카페의 특징이 자리가 불편하다는 카페 밈을 보고
               나만큼은 온전히 메뉴를 즐길 수 있는 테이블과 의자를 사용해야겠다고
-              생각했습니다.
+              생각했습니다."
+              />
             </span>
             <br />
             <span>
@@ -225,7 +230,7 @@ const Jamjam = () => {
             </span>
           </div>
         </div>
-        <Img2 img1="" img2="" />
+        <Img2 img1={asset + "6-1.png"} img2={asset + "6-2.png"} />
         <div className="questAnswer">
           <div className="question">
             <span>손님들이 가장 많이 찾으시는 메뉴는 무엇인가요?</span>
@@ -237,8 +242,10 @@ const Jamjam = () => {
             </span>
             <br />
             <span>
-              아무래도 묵직한 흑임자 크림을 이용한 흑임자 라떼와 흑임자 크럼블이
-              예전부터 지금까지 손님들이 가장 많이 찾아주신느 메뉴이죠.
+              <H
+                text="아무래도 묵직한 흑임자 크림을 이용한 흑임자 라떼와 흑임자 크럼블이
+              예전부터 지금까지 손님들이 가장 많이 찾아주신느 메뉴이죠."
+              />
             </span>
             <br />
             <span>
@@ -249,7 +256,7 @@ const Jamjam = () => {
             </span>
           </div>
         </div>
-        <Img1 />
+        <Img2 img1={asset + "7-1.png"} img2={asset + "7-2.png"} />
         <div className="questAnswer">
           <div className="question">
             <span>잼잼을 이용할 때 유의해야 하는 점 또는 꿀팁이 있을까요?</span>
@@ -258,7 +265,7 @@ const Jamjam = () => {
             <span>잼잼은 감사하지만 죄송하게도 웨이팅이 있을 수 있습니다.</span>
             <br />
             <span>
-              현재는 현장에서 대기를 하면 불러드리는 방식으로 진행하고 있습니다.
+              <H text="현재는 현장에서 대기를 하면 불러드리는 방식으로 진행하고 있습니다." />
             </span>
             <br />
             <span>
@@ -276,14 +283,16 @@ const Jamjam = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "7-1.png"} img2={asset + "7-2.png"} />
+        <Img2 img1={asset + "8-1.png"} img2={asset + "8-2.png"} />
 
         <div className="questAnswer">
           <div className="question">
             <span>특히나 추천하는 메뉴와 조합이 있으실까요?</span>
           </div>
           <div className="answer">
-            <span>아래 4가지로 명확하게 말씀드릴 수 있을 것 같아요.</span>
+            <span>
+              <H text="아래 4가지로 명확하게 말씀드릴 수 있을 것 같아요." />
+            </span>
             <br />
             <span>첫째는 흑임자 라데와 바질페스토.</span>
             <br />
@@ -295,7 +304,7 @@ const Jamjam = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "8-1.png"} img2={asset + "8-2.png"} />
+        <Img2 img1={asset + "9-1.png"} img2={asset + "9-2.png"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -305,8 +314,10 @@ const Jamjam = () => {
           </div>
           <div className="answer">
             <span>
-              잼잼은 한정된 수량의 브런치만 제공하고 재료 소진 시 커피와
-              디저트를 즐길 수 있는 공간으로 탈바꿈됩니다.
+              <H
+                text="잼잼은 한정된 수량의 브런치만 제공하고 재료 소진 시 커피와
+              디저트를 즐길 수 있는 공간으로 탈바꿈됩니다."
+              />
             </span>
             <br />
             <span>
@@ -332,7 +343,7 @@ const Jamjam = () => {
             </span>
           </div>
         </div>
-        <Img2 img1="" img2="" />
+        <Img2 img1={asset + "10-1.png"} img2={asset + "10-2.png"} />
         <div className="questAnswer">
           <div className="question">
             <span>현재 메뉴를 개발 중에 있거나</span>
@@ -346,13 +357,15 @@ const Jamjam = () => {
             </span>
             <br />
             <span>
-              저희는 올해를 목표로 맛있는 크로와상을 구워 코팅한 진한 크림
-              크로와상을 개발하고 있어요.
+              <H
+                text="저희는 올해를 목표로 맛있는 크로와상을 구워 코팅한 진한 크림
+              크로와상을 개발하고 있어요."
+              />
             </span>
           </div>
         </div>
 
-        <Img2 img1={asset + "9-1.png"} img2={asset + "9-2.png"} />
+        <Img2 img1={asset + "11-1.png"} img2={asset + "11-2.png"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -371,11 +384,13 @@ const Jamjam = () => {
               해야겠다는 굳은 다짐이 생겨요.
             </span>
             <br />
-            <span>늘 즐겁게 일하고 즐거움을 제공하겠습니다!</span>
+            <span>
+              <H text="늘 즐겁게 일하고 즐거움을 제공하겠습니다!" />
+            </span>
           </div>
         </div>
 
-        <Img1 img="" />
+        <Img1 img={asset + "12.png"} />
 
         <SectionSpace></SectionSpace>
         {/* Bottom */}
@@ -398,7 +413,7 @@ const Jamjam = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%ED%91%9C%EC%A0%95+%EC%97%B0%EB%82%A8%EC%A0%90&oquery=%ED%91%9C%EC%A0%95+%EC%97%B0%EB%82%A8&tqi=h1SPbsp0J1sssA8XGFwssssstHR-216648"
+                href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%9E%BC%EC%9E%BC+%EC%B9%B4%ED%8E%98+%EC%97%B0%EB%82%A8%EC%A0%90+&oquery=%EC%9E%BC%EC%9E%BC+%EC%97%B0%EB%82%A8%EC%A0%90+%EC%B9%B4%ED%8E%98&tqi=h2wCHdp0J14ssKiRfD4ssssssRh-371947"
               >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
                 &nbsp;잼잼 연남점
@@ -424,8 +439,7 @@ const Jamjam = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="http://m.map.naver.com/route.nhn?
-                menu=route&ename=표정 연남점&ex=126.9255&ey=37.5627&pathType=0&showMap=true"
+                href="http://m.map.naver.com/route.nhn?menu=route&ename=잼잼 연남점&ex=126.9224&ey=37.565&pathType=0&showMap=true"
               >
                 <img className="linkicon" src="assets/icon/naver.png" alt="" />
                 &nbsp;네이버맵
@@ -433,7 +447,7 @@ const Jamjam = () => {
               <a
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://map.kakao.com/link/to/표정 연남점,37.5627,126.9255"
+                href="https://map.kakao.com/link/to/잼잼 연남점,37.565,126.922"
               >
                 <img
                   className="linkicon rightlinkicon"

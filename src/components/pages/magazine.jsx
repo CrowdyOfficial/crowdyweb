@@ -98,9 +98,9 @@ const Magazine = () => {
         {/* section two */}
         <div id="section02" className="section02">
           {makeCafe(0)}
-          <div className="pagination">
+          {/* <div className="pagination">
             <Paging data={cafes} />
-          </div>
+          </div> */}
         </div>
 
         <Bottom></Bottom>
