@@ -2,6 +2,7 @@ import React from "react";
 import MagazineMenu from "./magazineComponent/MagazineMenu";
 import NAV from "./pageComponent/Nav";
 import Bottom from "./pageComponent/Bottom";
+import Paging from "./pageComponent/Paging";
 import "../../style/magazine.scss";
 
 const Magazine = () => {
@@ -48,24 +49,15 @@ const Magazine = () => {
         cafeName: "예나니",
         cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
       },
+      {
+        to: "/yenani",
+        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.png",
+        cafeName: "예나니",
+        cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
+      },
     ],
   };
-  const makePagination = () => {
-    const result = [];
-    result.push(<button key={0}>&laquo;</button>);
-    if (cafes.list.length % 5 === 0) {
-      for (let i = 0; i < cafes.list.length / 5; i++) {
-        result.push(<button key={i + 1}>{i + 1}</button>);
-      }
-    } else {
-      for (let i = 0; i < parseInt(cafes.list.length / 5 + 1); i++) {
-        result.push(<button key={i + 1}>{i + 1}</button>);
-      }
-    }
-    result.push(<button key={99999}>&raquo;</button>);
-    // console.log(result);
-    return result;
-  };
+
   const makeCafe = (start) => {
     const result = [];
     for (let i = start; i < start + 5; i++) {
@@ -106,7 +98,9 @@ const Magazine = () => {
         {/* section two */}
         <div id="section02" className="section02">
           {makeCafe(0)}
-          {/* <div className="pagination">{makePagination()}</div> */}
+          <div className="pagination">
+            <Paging data={cafes} />
+          </div>
         </div>
 
         <Bottom></Bottom>
