@@ -50,22 +50,7 @@ const Magazine = () => {
       },
     ],
   };
-  const makePagination = () => {
-    const result = [];
-    result.push(<button key={0}>&laquo;</button>);
-    if (cafes.list.length % 5 === 0) {
-      for (let i = 0; i < cafes.list.length / 5; i++) {
-        result.push(<button key={i + 1}>{i + 1}</button>);
-      }
-    } else {
-      for (let i = 0; i < parseInt(cafes.list.length / 5 + 1); i++) {
-        result.push(<button key={i + 1}>{i + 1}</button>);
-      }
-    }
-    result.push(<button key={99999}>&raquo;</button>);
-    // console.log(result);
-    return result;
-  };
+
   const makeCafe = (start) => {
     const result = [];
     for (let i = start; i < start + 5; i++) {
@@ -106,7 +91,6 @@ const Magazine = () => {
         {/* section two */}
         <div id="section02" className="section02">
           {makeCafe(0)}
-          {/* <div className="pagination">{makePagination()}</div> */}
         </div>
 
         <Bottom></Bottom>
