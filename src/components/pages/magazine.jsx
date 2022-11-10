@@ -18,6 +18,12 @@ const Magazine = () => {
     */
     list: [
       {
+        to: "/jamjam",
+        thumbnail: "./assets/magazinePages/jamjam/thumbnail.png",
+        cafeName: "잼잼",
+        cafeDesc: "흑임자로 받은 사랑을 서비스로 보답하다",
+      },
+      {
         to: "/pyojeong",
         thumbnail: "./assets/magazinePages/pyojeong/thumbnail.png",
         cafeName: "표정",
@@ -49,18 +55,12 @@ const Magazine = () => {
         cafeName: "예나니",
         cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
       },
-      {
-        to: "/yenani",
-        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.png",
-        cafeName: "예나니",
-        cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
-      },
     ],
   };
 
   const makeCafe = (start) => {
     const result = [];
-    for (let i = start; i < start + 5; i++) {
+    for (let i = start; i < start + 6; i++) {
       result.push(
         <MagazineMenu
           key={i}

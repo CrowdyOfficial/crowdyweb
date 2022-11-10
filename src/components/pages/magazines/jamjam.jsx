@@ -203,7 +203,7 @@ const Jamjam = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "5-1.png"} img2={asset + "5-2.png"} />
+        <Img2 img1={asset + "5-1.png"} img2={asset + "5-2.jpg"} />
 
         <div className="questAnswer">
           <div className="question">
