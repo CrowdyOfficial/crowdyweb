@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import MagazineMenu from "./magazineComponent/MagazineMenu";
 import NAV from "./pageComponent/Nav";
 import Bottom from "./pageComponent/Bottom";
-import Paging from "./pageComponent/Paging";
 import "../../style/magazine.scss";
 import useStore from "../../store";
+import Pagination from "react-js-pagination";
 
 const Magazine = () => {
   const { cafes } = useStore();
+  const [page, setPage] = useState(1);
 
   const makeCafe = (start) => {
     const result = [];
@@ -24,6 +25,11 @@ const Magazine = () => {
       );
     }
     return result;
+  };
+  const m = document.getElementById("section02");
+  const handlePageChange = (page) => {
+    setPage(page);
+    console.log(`now page: ${page}`);
   };
 
   return (
@@ -50,7 +56,15 @@ const Magazine = () => {
         <div id="section02" className="section02">
           {makeCafe(0)}
           {/* <div className="pagination">
-            <Paging data={cafes} />
+            <Pagination
+              activePage={page}
+              itemsCountPerPage={5}
+              totalItemsCount={cafes.list.length}
+              pageRangeDisplayed={5}
+              hideNavigation={true}
+              hideFirstLastPages={true}
+              onChange={handlePageChange}
+            />
           </div> */}
         </div>
 
