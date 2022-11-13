@@ -87,12 +87,12 @@ const Magazine = () => {
               activePage={page}
               itemsCountPerPage={5}
               totalItemsCount={cafes.list.length}
-              // pageRangeDisplayed={5}
               hideNavigation={true}
               hideFirstLastPages={true}
               onChange={handlePageChange}
             />
           </div>
+          <br />
           <br />
           <br />
         </div>
