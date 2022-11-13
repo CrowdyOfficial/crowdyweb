@@ -10,26 +10,53 @@ const Magazine = () => {
   const { cafes } = useStore();
   const [page, setPage] = useState(1);
 
+  // what logic?
+  // 1: 0 1 2 3 4
+  // 2: 5 6 7 8 9
+  // 3: 10 11 12 13 14
+
   const makeCafe = (start) => {
     const result = [];
-    for (let i = start; i < start + 6; i++) {
-      result.push(
-        <MagazineMenu
-          key={i}
-          className="M"
-          to={cafes.list[i].to}
-          thumbnail={cafes.list[i].thumbnail}
-          cafeName={cafes.list[i].cafeName}
-          cafeDesc={cafes.list[i].cafeDesc}
-        />
-      );
+    if (start === 0) {
+      for (let i = 0; i < 5; i++) {
+        if (cafes.list[i] === undefined) {
+          break;
+        }
+        result.push(
+          <MagazineMenu
+            key={i}
+            className="M"
+            to={cafes.list[i].to}
+            thumbnail={cafes.list[i].thumbnail}
+            cafeName={cafes.list[i].cafeName}
+            cafeDesc={cafes.list[i].cafeDesc}
+          />
+        );
+      }
+    } else if (start === 1) {
+      for (let i = 5; i < 10; i++) {
+        if (cafes.list[i] === undefined) {
+          break;
+        }
+        result.push(
+          <MagazineMenu
+            key={i}
+            className="M"
+            to={cafes.list[i].to}
+            thumbnail={cafes.list[i].thumbnail}
+            cafeName={cafes.list[i].cafeName}
+            cafeDesc={cafes.list[i].cafeDesc}
+          />
+        );
+      }
     }
     return result;
   };
-  const m = document.getElementById("section02");
+
   const handlePageChange = (page) => {
     setPage(page);
-    console.log(`now page: ${page}`);
+    // console.log(`now page: ${page}`);
+    document.getElementById("section01").scrollIntoView();
   };
 
   return (
@@ -38,7 +65,7 @@ const Magazine = () => {
         <NAV></NAV>
 
         {/* section one */}
-        <div className="section01 SCoreDreamFont">
+        <div id="section01" className="section01 SCoreDreamFont">
           <div className="desc">
             <div className="title">
               <span>매거진, 사장님이</span>
@@ -54,18 +81,18 @@ const Magazine = () => {
 
         {/* section two */}
         <div id="section02" className="section02">
-          {makeCafe(0)}
-          {/* <div className="pagination">
+          {makeCafe(page - 1)}
+          <div className="pagination">
             <Pagination
               activePage={page}
               itemsCountPerPage={5}
               totalItemsCount={cafes.list.length}
-              pageRangeDisplayed={5}
+              // pageRangeDisplayed={5}
               hideNavigation={true}
               hideFirstLastPages={true}
               onChange={handlePageChange}
             />
-          </div> */}
+          </div>
         </div>
 
         <Bottom></Bottom>
