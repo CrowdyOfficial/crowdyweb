@@ -93,6 +93,8 @@ const Magazine = () => {
               onChange={handlePageChange}
             />
           </div>
+          <br />
+          <br />
         </div>
 
         <Bottom></Bottom>
