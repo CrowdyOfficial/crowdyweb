@@ -151,7 +151,8 @@
       height: 1900px;
       .pagination {
         width: 52%;
-        top: 260%;
+        position: relative;
+        top: 0%;
       }
     }
     .section01 {
