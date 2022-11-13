@@ -7,14 +7,14 @@ const Paging = (props) => {
 
   const handlePageChange = (page) => {
     setPage(page);
+    console.log(`now page: ${page}`);
   };
-
   return (
     <Pagination
       activePage={page}
-      itemsCountPerPage={10}
+      itemsCountPerPage={5}
       totalItemsCount={data.list.length}
-      pageRangeDisplayed={10}
+      pageRangeDisplayed={5}
       hideNavigation={true}
       hideFirstLastPages={true}
       onChange={handlePageChange}
