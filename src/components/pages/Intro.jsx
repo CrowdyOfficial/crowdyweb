@@ -6,8 +6,12 @@ import Bottom from "./pageComponent/Bottom";
 import "../../style/Intro.scss";
 
 const Intro = () => {
+  const sec01Img = "./assets/Intro/5imgs.webp";
+  const sec01ImgMobile = "./assets/Intro/imgs_mobile.webp";
+  const sec02Img = "./assets/Intro/3phones.webp";
+  const sec02ImgMobile = "./assets/Intro/_2phones_mobile.webp";
+
   const nowurl = useLocation();
-  console.log(nowurl.pathname);
   if (nowurl.pathname !== "/") {
     nowurl.pathname = "/";
   }
@@ -27,18 +31,18 @@ const Intro = () => {
           </div>
 
           <div className="mainIMGs">
-            <img src="./assets/Intro/5imgs.png" alt="" />
+            <img src={sec01Img} alt="" />
           </div>
 
           <div className="mainMobileIMGs">
-            <img src="./assets/Intro/imgs_mobile.png" alt="" />
+            <img src={sec01ImgMobile} alt="" />
           </div>
         </div>
 
         {/* section 02 */}
         <div className="section02">
           <div className="mainIMGs">
-            <img src="./assets/Intro/3phones.png" alt="" />
+            <img src={sec02Img} alt="" />
           </div>
           <div className="desc SCoreDreamFont">
             <div className="title">
@@ -56,7 +60,7 @@ const Intro = () => {
             </Link>
           </div>
           <div className="mainMobileIMGs">
-            <img src="./assets/Intro/2phones_mobile.png" alt="" />
+            <img src={sec02ImgMobile} alt="" />
           </div>
         </div>
 
