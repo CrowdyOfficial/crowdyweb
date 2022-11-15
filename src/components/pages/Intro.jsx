@@ -9,7 +9,7 @@ const Intro = () => {
   const sec01Img = "./assets/Intro/5imgs.webp";
   const sec01ImgMobile = "./assets/Intro/imgs_mobile.webp";
   const sec02Img = "./assets/Intro/3phones.webp";
-  const sec02ImgMobile = "./assets/Intro/_2phones_mobile.webp";
+  const sec02ImgMobile = "./assets/Intro/2phones_mobile.webp";
 
   const nowurl = useLocation();
   if (nowurl.pathname !== "/") {
