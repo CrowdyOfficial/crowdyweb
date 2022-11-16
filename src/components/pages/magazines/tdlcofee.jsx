@@ -18,13 +18,13 @@ import "../../../style/QA.scss";
 
 const TDLCoffee = () => {
   const images = [
-    "./assets/magazinePages/tenderlycoffee/2-1.png",
-    "./assets/magazinePages/tenderlycoffee/2-2.png",
-    "./assets/magazinePages/tenderlycoffee/2-3.png",
-    "./assets/magazinePages/tenderlycoffee/2-4.png",
-    "./assets/magazinePages/tenderlycoffee/2-5.png",
-    "./assets/magazinePages/tenderlycoffee/2-6.png",
-    "./assets/magazinePages/tenderlycoffee/2-7.png",
+    "./assets/magazinePages/tenderlycoffee/2-1.webp",
+    "./assets/magazinePages/tenderlycoffee/2-2.webp",
+    "./assets/magazinePages/tenderlycoffee/2-3.webp",
+    "./assets/magazinePages/tenderlycoffee/2-4.webp",
+    "./assets/magazinePages/tenderlycoffee/2-5.webp",
+    "./assets/magazinePages/tenderlycoffee/2-6.webp",
+    "./assets/magazinePages/tenderlycoffee/2-7.webp",
   ];
   const nav = useNavigate();
   return (
@@ -36,12 +36,12 @@ const TDLCoffee = () => {
         <div className="crowdyMagazine">
           크라우디 매거진
           <div onClick={() => nav(-1)} className="goBack">
-            <img src="./assets/icon/Back.png" alt="" />
+            <img src="./assets/icon/Back.webp" alt="" />
           </div>
         </div>
         <img
           className="magazineThumbnail"
-          src="./assets/magazinePages/tenderlycoffee/1.png"
+          src="./assets/magazinePages/tenderlycoffee/1.webp"
           alt=""
         />
         <div className="title">
@@ -61,20 +61,20 @@ const TDLCoffee = () => {
         <div className="cafeDesc containerDesc">
           <div className="flexbox">
             <div className="left">
-              <img src="./assets/magazinePages/icons/pet.png" alt="" />
+              <img src="./assets/magazinePages/icons/pet.webp" alt="" />
               <div>
                 애견 동반<span>가능</span>
               </div>
             </div>
             <div className="center">
-              <img src="./assets/magazinePages/icons/alarm.png" alt="" />
+              <img src="./assets/magazinePages/icons/alarm.webp" alt="" />
               <div>
                 월~목 12시 ~ 21시<span>금~토 12시~22시</span>
                 <span className="thirdLine">일요일 14시~21시</span>
               </div>
             </div>
             <div className="right">
-              <img src="./assets/magazinePages/icons/won.png" alt="" />
+              <img src="./assets/magazinePages/icons/won.webp" alt="" />
               <div>
                 4500원 이상<span>(음료 기준)</span>
               </div>
@@ -82,19 +82,19 @@ const TDLCoffee = () => {
           </div>
           <div className="flexbox secondLine">
             <div className="left">
-              <img src="./assets/magazinePages/icons/car.png" alt="" />
+              <img src="./assets/magazinePages/icons/car.webp" alt="" />
               <div>
                 주변 공용 주차장 X<span>도보 추천</span>
               </div>
             </div>
             <div className="center">
-              <img src="./assets/magazinePages/icons/table.png" alt="" />
+              <img src="./assets/magazinePages/icons/table.webp" alt="" />
               <div>
                 테이블 수<span>8개</span>
               </div>
             </div>
             <div className="right">
-              <img src="./assets/magazinePages/icons/walking.png" alt="" />
+              <img src="./assets/magazinePages/icons/walking.webp" alt="" />
               <div>
                 홍대입구역<span>도보 9분</span>
               </div>
@@ -123,7 +123,7 @@ const TDLCoffee = () => {
             </span>
           </div>
         </div>
-        <Img1 img="assets/magazinePages/tenderlycoffee/3.png" />
+        <Img1 img="assets/magazinePages/tenderlycoffee/3.webp" />
 
         <div className="questAnswer">
           <div className="question">
@@ -147,7 +147,7 @@ const TDLCoffee = () => {
             </span>
           </div>
         </div>
-        <Img1 img={"assets/magazinePages/tenderlycoffee/4.png"} />
+        <Img1 img={"assets/magazinePages/tenderlycoffee/4.webp"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -171,8 +171,8 @@ const TDLCoffee = () => {
           </div>
         </div>
         <Img2
-          img1="./assets/magazinePages/tenderlycoffee/5-1.png"
-          img2="./assets/magazinePages/tenderlycoffee/5-2.png"
+          img1="./assets/magazinePages/tenderlycoffee/5-1.webp"
+          img2="./assets/magazinePages/tenderlycoffee/5-2.webp"
         />
 
         <div className="questAnswer">
@@ -198,8 +198,8 @@ const TDLCoffee = () => {
           </div>
         </div>
         <Img2
-          img1="./assets/magazinePages/tenderlycoffee/6-1.png"
-          img2="./assets/magazinePages/tenderlycoffee/6-2.png"
+          img1="./assets/magazinePages/tenderlycoffee/6-1.webp"
+          img2="./assets/magazinePages/tenderlycoffee/6-2.webp"
         />
 
         <div className="questAnswer">
@@ -227,9 +227,9 @@ const TDLCoffee = () => {
           </div>
         </div>
         <Img2
-          img1="./assets/magazinePages/tenderlycoffee/7-1.png"
+          img1="./assets/magazinePages/tenderlycoffee/7-1.webp"
           desc1="@tenderly_coffee 게시글"
-          img2="./assets/magazinePages/tenderlycoffee/7-2.png"
+          img2="./assets/magazinePages/tenderlycoffee/7-2.webp"
           desc2="@tenderly_coffee 게시글"
         />
 
@@ -256,9 +256,9 @@ const TDLCoffee = () => {
           </div>
         </div>
         <Img2
-          img1="./assets/magazinePages/tenderlycoffee/8-1.png"
+          img1="./assets/magazinePages/tenderlycoffee/8-1.webp"
           desc1="@tenderly_coffee 게시글"
-          img2="./assets/magazinePages/tenderlycoffee/8-2.png"
+          img2="./assets/magazinePages/tenderlycoffee/8-2.webp"
           desc2="@tenderly_coffee 게시글"
         />
         <div className="questAnswer">
@@ -283,7 +283,7 @@ const TDLCoffee = () => {
             <span>메뉴가 출시되면 인스타그램으로 공유드릴 예정입니다 :)</span>
           </div>
         </div>
-        <Img1 img="assets/magazinePages/tenderlycoffee/9.png" />
+        <Img1 img="assets/magazinePages/tenderlycoffee/9.webp" />
         <div className="questAnswer">
           <div className="question">
             <span>
@@ -326,7 +326,7 @@ const TDLCoffee = () => {
             </span>
           </div>
         </div>
-        <Img1 img="assets/magazinePages/tenderlycoffee/10.png" />
+        <Img1 img="assets/magazinePages/tenderlycoffee/10.webp" />
         <SectionSpace></SectionSpace>
         {/* Bottom */}
         <div className="bottom">
@@ -334,7 +334,7 @@ const TDLCoffee = () => {
             <div className="menupan cafeMenuTopMargin">메뉴판</div>
             <img
               className="menupanMargin"
-              src="assets/magazinePages/tenderlycoffee/menu.png"
+              src="assets/magazinePages/tenderlycoffee/menu.webp"
               alt=""
             />
           </div>
@@ -362,7 +362,7 @@ const TDLCoffee = () => {
                 rel="noreferrer"
                 href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%ED%85%90%EB%8D%94%EB%A6%AC%EC%BB%A4%ED%94%BC"
               >
-                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                <img className="linkicon" src="assets/icon/naver.webp" alt="" />
                 &nbsp;&nbsp;텐더리커피
               </a>
               <a
@@ -373,7 +373,7 @@ const TDLCoffee = () => {
               >
                 <img
                   className="linkicon rightlinkicon"
-                  src="assets/icon/insta.png"
+                  src="assets/icon/insta.webp"
                   alt=""
                 />
                 &nbsp;&nbsp;@tenderly_coffee
@@ -388,7 +388,7 @@ const TDLCoffee = () => {
                 rel="noreferrer"
                 href="http://m.map.naver.com/route.nhn?menu=route&ename=텐더리커피&ex=126.9217&ey=37.5657&pathType=0&showMap=true"
               >
-                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                <img className="linkicon" src="assets/icon/naver.webp" alt="" />
                 &nbsp;&nbsp;네이버맵
               </a>
               <a
@@ -398,7 +398,7 @@ const TDLCoffee = () => {
               >
                 <img
                   className="linkicon rightlinkicon"
-                  src="assets/icon/kakaomap.png"
+                  src="assets/icon/kakaomap.webp"
                   alt=""
                 />
                 &nbsp;&nbsp;카카오맵

@@ -18,13 +18,13 @@ import "../../../style/QA.scss";
 
 const GeeksYeonnam = () => {
   const images = [
-    "./assets/magazinePages/geeksyeonnam/2-1.png",
-    "./assets/magazinePages/geeksyeonnam/2-2.png",
-    "./assets/magazinePages/geeksyeonnam/2-3.png",
-    "./assets/magazinePages/geeksyeonnam/2-4.png",
-    "./assets/magazinePages/geeksyeonnam/2-5.png",
-    "./assets/magazinePages/geeksyeonnam/2-6.png",
-    "./assets/magazinePages/geeksyeonnam/2-7.png",
+    "./assets/magazinePages/geeksyeonnam/2-1.webp",
+    "./assets/magazinePages/geeksyeonnam/2-2.webp",
+    "./assets/magazinePages/geeksyeonnam/2-3.webp",
+    "./assets/magazinePages/geeksyeonnam/2-4.webp",
+    "./assets/magazinePages/geeksyeonnam/2-5.webp",
+    "./assets/magazinePages/geeksyeonnam/2-6.webp",
+    "./assets/magazinePages/geeksyeonnam/2-7.webp",
   ];
   return (
     <div className="M">
@@ -35,13 +35,13 @@ const GeeksYeonnam = () => {
           크라우디 매거진
           <div className="goBack">
             <Link to="/magazine">
-              <img src="./assets/icon/Back.png" alt="" />
+              <img src="./assets/icon/Back.webp" alt="" />
             </Link>
           </div>
         </div>
         <img
           className="magazineThumbnail"
-          src="./assets/magazinePages/geeksyeonnam/1.png"
+          src="./assets/magazinePages/geeksyeonnam/1.webp"
           alt=""
         />
         <div className="title">
@@ -63,19 +63,19 @@ const GeeksYeonnam = () => {
         <div className="cafeDesc containerDesc">
           <div className="flexbox">
             <div className="left">
-              <img src="./assets/magazinePages/icons/coffee.png" alt="" />
+              <img src="./assets/magazinePages/icons/coffee.webp" alt="" />
               <div>
                 시그니처 메뉴<span>카페 피스타치오</span>
               </div>
             </div>
             <div className="center">
-              <img src="./assets/magazinePages/icons/alarm.png" alt="" />
+              <img src="./assets/magazinePages/icons/alarm.webp" alt="" />
               <div>
                 월~목 12시 ~ 21시<span>금~일 11시30분~22시</span>
               </div>
             </div>
             <div className="right">
-              <img src="./assets/magazinePages/icons/won.png" alt="" />
+              <img src="./assets/magazinePages/icons/won.webp" alt="" />
               <div>
                 3500원 이상<span>(음료 기준)</span>
               </div>
@@ -83,19 +83,19 @@ const GeeksYeonnam = () => {
           </div>
           <div className="flexbox secondLine">
             <div className="left">
-              <img src="./assets/magazinePages/icons/car.png" alt="" />
+              <img src="./assets/magazinePages/icons/car.webp" alt="" />
               <div>
                 주변 공용 주차장 6분 거리<span>1500원/30분</span>
               </div>
             </div>
             <div className="center">
-              <img src="./assets/magazinePages/icons/table.png" alt="" />
+              <img src="./assets/magazinePages/icons/table.webp" alt="" />
               <div>
                 테이블 수<span>8개</span>
               </div>
             </div>
             <div className="right">
-              <img src="./assets/magazinePages/icons/walking.png" alt="" />
+              <img src="./assets/magazinePages/icons/walking.webp" alt="" />
               <div>
                 홍대입구역<span>도보 12분</span>
               </div>
@@ -134,8 +134,8 @@ const GeeksYeonnam = () => {
           </div>
         </div>
         <Img2
-          img1="./assets/magazinePages/geeksyeonnam/3-1.png"
-          img2="./assets/magazinePages/geeksyeonnam/3-2.png"
+          img1="./assets/magazinePages/geeksyeonnam/3-1.webp"
+          img2="./assets/magazinePages/geeksyeonnam/3-2.webp"
         />
 
         <div className="questAnswer">
@@ -169,8 +169,8 @@ const GeeksYeonnam = () => {
         </div>
 
         <Img2
-          img1="./assets/magazinePages/geeksyeonnam/4-1.png"
-          img2="./assets/magazinePages/geeksyeonnam/4-2.png"
+          img1="./assets/magazinePages/geeksyeonnam/4-1.webp"
+          img2="./assets/magazinePages/geeksyeonnam/4-2.webp"
         />
 
         <div className="questAnswer">
@@ -202,8 +202,8 @@ const GeeksYeonnam = () => {
         </div>
 
         <Img2
-          img1="./assets/magazinePages/geeksyeonnam/5-1.png"
-          img2="./assets/magazinePages/geeksyeonnam/5-2.png"
+          img1="./assets/magazinePages/geeksyeonnam/5-1.webp"
+          img2="./assets/magazinePages/geeksyeonnam/5-2.webp"
         />
 
         <div className="questAnswer">
@@ -224,7 +224,7 @@ const GeeksYeonnam = () => {
             </span>
           </div>
         </div>
-        <Img1 img="./assets/magazinePages/geeksyeonnam/6.png" />
+        <Img1 img="./assets/magazinePages/geeksyeonnam/6.webp" />
         <div className="questAnswer">
           <div className="question">
             <span>
@@ -252,8 +252,8 @@ const GeeksYeonnam = () => {
         </div>
 
         <Img2
-          img1="./assets/magazinePages/geeksyeonnam/7-1.png"
-          img2="./assets/magazinePages/geeksyeonnam/7-2.png"
+          img1="./assets/magazinePages/geeksyeonnam/7-1.webp"
+          img2="./assets/magazinePages/geeksyeonnam/7-2.webp"
         />
 
         <div className="questAnswer">
@@ -279,8 +279,8 @@ const GeeksYeonnam = () => {
         </div>
 
         <Img2
-          img1="./assets/magazinePages/geeksyeonnam/8-1.png"
-          img2="./assets/magazinePages/geeksyeonnam/8-2.png"
+          img1="./assets/magazinePages/geeksyeonnam/8-1.webp"
+          img2="./assets/magazinePages/geeksyeonnam/8-2.webp"
         />
 
         <div className="questAnswer">
@@ -308,7 +308,7 @@ const GeeksYeonnam = () => {
           </div>
         </div>
 
-        <Img1 img="./assets/magazinePages/geeksyeonnam/9.png" />
+        <Img1 img="./assets/magazinePages/geeksyeonnam/9.webp" />
 
         <div className="questAnswer">
           <div className="question">
@@ -350,7 +350,7 @@ const GeeksYeonnam = () => {
         </div>
 
         <Img1
-          img="./assets/magazinePages/geeksyeonnam/10.png"
+          img="./assets/magazinePages/geeksyeonnam/10.webp"
           desc="@get_your_coffees 사진"
         />
         <div className="questAnswer">
@@ -368,7 +368,7 @@ const GeeksYeonnam = () => {
             </span>
           </div>
         </div>
-        <Img1 img="./assets/magazinePages/geeksyeonnam/11.png" />
+        <Img1 img="./assets/magazinePages/geeksyeonnam/11.webp" />
 
         <SectionSpace></SectionSpace>
         {/* Bottom */}
@@ -377,7 +377,7 @@ const GeeksYeonnam = () => {
             <div className="menupan cafeMenuTopMargin">메뉴판</div>
             <img
               className="menupanMargin"
-              src="assets/magazinePages/geeksyeonnam/menu.png"
+              src="assets/magazinePages/geeksyeonnam/menu.webp"
               alt=""
             />
           </div>
@@ -401,7 +401,7 @@ const GeeksYeonnam = () => {
                 rel="noreferrer"
                 href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B8%B1%EC%8A%A4+%EC%97%B0%EB%82%A8%EC%A0%90"
               >
-                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                <img className="linkicon" src="assets/icon/naver.webp" alt="" />
                 &nbsp;긱스 연남점
               </a>
               <a
@@ -412,7 +412,7 @@ const GeeksYeonnam = () => {
               >
                 <img
                   className="linkicon rightlinkicon"
-                  src="assets/icon/insta.png"
+                  src="assets/icon/insta.webp"
                   alt=""
                 />
                 &nbsp;@get_your_coffees
@@ -427,7 +427,7 @@ const GeeksYeonnam = () => {
                 rel="noreferrer"
                 href="http://m.map.naver.com/route.nhn?menu=route&ename=긱스 연남점&ex=126.926&ey=37.5619&pathType=0&showMap=true"
               >
-                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                <img className="linkicon" src="assets/icon/naver.webp" alt="" />
                 &nbsp;네이버맵
               </a>
               <a
@@ -437,7 +437,7 @@ const GeeksYeonnam = () => {
               >
                 <img
                   className="linkicon rightlinkicon"
-                  src="assets/icon/kakaomap.png"
+                  src="assets/icon/kakaomap.webp"
                   alt=""
                 />
                 &nbsp;카카오맵

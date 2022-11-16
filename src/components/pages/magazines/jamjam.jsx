@@ -19,14 +19,14 @@ import "../../../style/QA.scss";
 const asset = "./assets/magazinePages/jamjam/";
 const Jamjam = () => {
   const images = [
-    asset + "2-1.png",
-    asset + "2-2.png",
-    asset + "2-3.png",
-    asset + "2-4.png",
-    asset + "2-5.png",
-    asset + "2-6.png",
-    asset + "2-7.png",
-    asset + "2-8.png",
+    asset + "2-1.webp",
+    asset + "2-2.webp",
+    asset + "2-3.webp",
+    asset + "2-4.webp",
+    asset + "2-5.webp",
+    asset + "2-6.webp",
+    asset + "2-7.webp",
+    asset + "2-8.webp",
   ];
   return (
     <div className="M">
@@ -37,11 +37,11 @@ const Jamjam = () => {
           크라우디 매거진
           <div className="goBack">
             <Link to="/magazine">
-              <img src="./assets/icon/Back.png" alt="" />
+              <img src="./assets/icon/Back.webp" alt="" />
             </Link>
           </div>
         </div>
-        <img className="magazineThumbnail" src={asset + "1.png"} alt="" />
+        <img className="magazineThumbnail" src={asset + "1.webp"} alt="" />
         <div className="title">
           <span>흑임자로 받은 사랑을</span>
           <span>서비스로 보답하다</span>
@@ -61,19 +61,19 @@ const Jamjam = () => {
         <div className="cafeDesc containerDesc">
           <div className="flexbox">
             <div className="left">
-              <img src="./assets/magazinePages/icons/coffee.png" alt="" />
+              <img src="./assets/magazinePages/icons/coffee.webp" alt="" />
               <div>
                 시그니처 메뉴<span>흑임자 라떼</span>
               </div>
             </div>
             <div className="center">
-              <img src="./assets/magazinePages/icons/alarm.png" alt="" />
+              <img src="./assets/magazinePages/icons/alarm.webp" alt="" />
               <div>
                 매일<span>11시 ~ 22시</span>
               </div>
             </div>
             <div className="right">
-              <img src="./assets/magazinePages/icons/won.png" alt="" />
+              <img src="./assets/magazinePages/icons/won.webp" alt="" />
               <div>
                 5000원 이상<span>(음료 기준)</span>
               </div>
@@ -81,19 +81,19 @@ const Jamjam = () => {
           </div>
           <div className="flexbox secondLine">
             <div className="left">
-              <img src="./assets/magazinePages/icons/car.png" alt="" />
+              <img src="./assets/magazinePages/icons/car.webp" alt="" />
               <div>
                 주변 공용 주차장 8분 거리<span>250원/5분</span>
               </div>
             </div>
             <div className="center">
-              <img src="./assets/magazinePages/icons/table.png" alt="" />
+              <img src="./assets/magazinePages/icons/table.webp" alt="" />
               <div>
                 테이블 수<span>12 개</span>
               </div>
             </div>
             <div className="right">
-              <img src="./assets/magazinePages/icons/walking.png" alt="" />
+              <img src="./assets/magazinePages/icons/walking.webp" alt="" />
               <div>
                 홍대입구역<span>도보 9분</span>
               </div>
@@ -129,7 +129,7 @@ const Jamjam = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "3-1.png"} img2={asset + "3-2.png"} />
+        <Img2 img1={asset + "3-1.webp"} img2={asset + "3-2.webp"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -171,7 +171,7 @@ const Jamjam = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "4-1.png"} img2={asset + "4-2.png"} />
+        <Img2 img1={asset + "4-1.webp"} img2={asset + "4-2.webp"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -203,7 +203,7 @@ const Jamjam = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "5-1.png"} img2={asset + "5-2.jpg"} />
+        <Img2 img1={asset + "5-1.webp"} img2={asset + "5-2.jpg"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -230,7 +230,7 @@ const Jamjam = () => {
             </span>
           </div>
         </div>
-        <Img2 img1={asset + "6-1.png"} img2={asset + "6-2.png"} />
+        <Img2 img1={asset + "6-1.webp"} img2={asset + "6-2.webp"} />
         <div className="questAnswer">
           <div className="question">
             <span>손님들이 가장 많이 찾으시는 메뉴는 무엇인가요?</span>
@@ -256,7 +256,7 @@ const Jamjam = () => {
             </span>
           </div>
         </div>
-        <Img2 img1={asset + "7-1.png"} img2={asset + "7-2.png"} />
+        <Img2 img1={asset + "7-1.webp"} img2={asset + "7-2.webp"} />
         <div className="questAnswer">
           <div className="question">
             <span>잼잼을 이용할 때 유의해야 하는 점 또는 꿀팁이 있을까요?</span>
@@ -283,7 +283,7 @@ const Jamjam = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "8-1.png"} img2={asset + "8-2.png"} />
+        <Img2 img1={asset + "8-1.webp"} img2={asset + "8-2.webp"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -304,7 +304,7 @@ const Jamjam = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "9-1.png"} img2={asset + "9-2.png"} />
+        <Img2 img1={asset + "9-1.webp"} img2={asset + "9-2.webp"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -343,7 +343,7 @@ const Jamjam = () => {
             </span>
           </div>
         </div>
-        <Img2 img1={asset + "10-1.png"} img2={asset + "10-2.png"} />
+        <Img2 img1={asset + "10-1.webp"} img2={asset + "10-2.webp"} />
         <div className="questAnswer">
           <div className="question">
             <span>현재 메뉴를 개발 중에 있거나</span>
@@ -365,7 +365,7 @@ const Jamjam = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "11-1.png"} img2={asset + "11-2.png"} />
+        <Img2 img1={asset + "11-1.webp"} img2={asset + "11-2.webp"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -390,14 +390,14 @@ const Jamjam = () => {
           </div>
         </div>
 
-        <Img1 img={asset + "12.png"} />
+        <Img1 img={asset + "12.webp"} />
 
         <SectionSpace></SectionSpace>
         {/* Bottom */}
         <div className="bottom">
           <div className="cafeMenu">
             <div className="menupan cafeMenuTopMargin">메뉴판</div>
-            <img className="menupanMargin" src={asset + "menu.png"} alt="" />
+            <img className="menupanMargin" src={asset + "menu.webp"} alt="" />
           </div>
           <div className="openingHours">
             <div className="openingHourTitle">운영시간</div>

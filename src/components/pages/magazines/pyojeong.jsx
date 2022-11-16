@@ -19,15 +19,15 @@ import "../../../style/QA.scss";
 const asset = "./assets/magazinePages/pyojeong/";
 const Pyojeong = () => {
   const images = [
-    asset + "2-1.png",
-    asset + "2-2.png",
-    asset + "2-3.png",
-    asset + "2-4.png",
-    asset + "2-5.png",
-    asset + "2-6.png",
-    asset + "2-7.png",
-    asset + "2-8.png",
-    asset + "2-9.png",
+    asset + "2-1.webp",
+    asset + "2-2.webp",
+    asset + "2-3.webp",
+    asset + "2-4.webp",
+    asset + "2-5.webp",
+    asset + "2-6.webp",
+    asset + "2-7.webp",
+    asset + "2-8.webp",
+    asset + "2-9.webp",
   ];
   return (
     <div className="M">
@@ -38,11 +38,11 @@ const Pyojeong = () => {
           크라우디 매거진
           <div className="goBack">
             <Link to="/magazine">
-              <img src="./assets/icon/Back.png" alt="" />
+              <img src="./assets/icon/Back.webp" alt="" />
             </Link>
           </div>
         </div>
-        <img className="magazineThumbnail" src={asset + "1.png"} alt="" />
+        <img className="magazineThumbnail" src={asset + "1.webp"} alt="" />
         <div className="title">
           <span>작은 공간에서</span>
           <span>구겔호프가 주는 특별함</span>
@@ -62,19 +62,19 @@ const Pyojeong = () => {
         <div className="cafeDesc containerDesc">
           <div className="flexbox">
             <div className="left">
-              <img src="./assets/magazinePages/icons/cake.png" alt="" />
+              <img src="./assets/magazinePages/icons/cake.webp" alt="" />
               <div>
                 시그니처 메뉴<span>초코 하트 구겔호프케이크</span>
               </div>
             </div>
             <div className="center">
-              <img src="./assets/magazinePages/icons/alarm.png" alt="" />
+              <img src="./assets/magazinePages/icons/alarm.webp" alt="" />
               <div>
                 월~일 12시 ~ 20시<span>(매주 화요일 휴무)</span>
               </div>
             </div>
             <div className="right">
-              <img src="./assets/magazinePages/icons/won.png" alt="" />
+              <img src="./assets/magazinePages/icons/won.webp" alt="" />
               <div>
                 6000원 이상<span>(음료 기준)</span>
               </div>
@@ -82,19 +82,19 @@ const Pyojeong = () => {
           </div>
           <div className="flexbox secondLine">
             <div className="left">
-              <img src="./assets/magazinePages/icons/car.png" alt="" />
+              <img src="./assets/magazinePages/icons/car.webp" alt="" />
               <div>
                 주변 공용 주차장 3분 거리<span>250원/5분</span>
               </div>
             </div>
             <div className="center">
-              <img src="./assets/magazinePages/icons/table.png" alt="" />
+              <img src="./assets/magazinePages/icons/table.webp" alt="" />
               <div>
                 좌석 수<span>4 개</span>
               </div>
             </div>
             <div className="right">
-              <img src="./assets/magazinePages/icons/walking.png" alt="" />
+              <img src="./assets/magazinePages/icons/walking.webp" alt="" />
               <div>
                 홍대입구역<span>도보 9분</span>
               </div>
@@ -149,8 +149,8 @@ const Pyojeong = () => {
         </div>
 
         <Img2
-          img1={asset + "3-1.png"}
-          img2={asset + "3-2.png"}
+          img1={asset + "3-1.webp"}
+          img2={asset + "3-2.webp"}
           desc2="@pyojeong_x_x 게시글"
         />
 
@@ -178,7 +178,7 @@ const Pyojeong = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "4-1.png"} img2={asset + "4-2.png"} />
+        <Img2 img1={asset + "4-1.webp"} img2={asset + "4-2.webp"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -203,7 +203,7 @@ const Pyojeong = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "5-1.png"} img2={asset + "5-2.png"} />
+        <Img2 img1={asset + "5-1.webp"} img2={asset + "5-2.webp"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -226,7 +226,7 @@ const Pyojeong = () => {
             </span>
           </div>
         </div>
-        <Img1 img={asset + "6.png"} />
+        <Img1 img={asset + "6.webp"} />
         <div className="questAnswer">
           <div className="question">
             <span>맛있는 커피를 만드는 표정만의 방법이 있나요?</span>
@@ -278,7 +278,7 @@ const Pyojeong = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "7-1.png"} img2={asset + "7-2.png"} />
+        <Img2 img1={asset + "7-1.webp"} img2={asset + "7-2.webp"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -294,9 +294,9 @@ const Pyojeong = () => {
         </div>
 
         <Img2
-          img1={asset + "8-1.png"}
+          img1={asset + "8-1.webp"}
           desc1="@pyeojeong_x_x 게시글"
-          img2={asset + "8-2.png"}
+          img2={asset + "8-2.webp"}
         />
 
         <div className="questAnswer">
@@ -332,8 +332,8 @@ const Pyojeong = () => {
         </div>
 
         <Img2
-          img1={asset + "9-1.png"}
-          img2={asset + "9-2.png"}
+          img1={asset + "9-1.webp"}
+          img2={asset + "9-2.webp"}
           desc2="@pyojeong_x_x 게시글"
         />
 
@@ -356,7 +356,7 @@ const Pyojeong = () => {
           </div>
         </div>
 
-        <Img2 img1={asset + "10-1.png"} img2={asset + "10-2.png"} />
+        <Img2 img1={asset + "10-1.webp"} img2={asset + "10-2.webp"} />
 
         <div className="questAnswer">
           <div className="question">
@@ -382,14 +382,14 @@ const Pyojeong = () => {
             </span>
           </div>
         </div>
-        <Img1 img={asset + "11.png"} />
+        <Img1 img={asset + "11.webp"} />
 
         <SectionSpace></SectionSpace>
         {/* Bottom */}
         <div className="bottom">
           <div className="cafeMenu">
             <div className="menupan cafeMenuTopMargin">메뉴판</div>
-            <img className="menupanMargin" src={asset + "menu.png"} alt="" />
+            <img className="menupanMargin" src={asset + "menu.webp"} alt="" />
           </div>
           <div className="openingHours">
             <div className="openingHourTitle">운영시간</div>
@@ -411,7 +411,7 @@ const Pyojeong = () => {
                 rel="noreferrer"
                 href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%ED%91%9C%EC%A0%95+%EC%97%B0%EB%82%A8%EC%A0%90&oquery=%ED%91%9C%EC%A0%95+%EC%97%B0%EB%82%A8&tqi=h1SPbsp0J1sssA8XGFwssssstHR-216648"
               >
-                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                <img className="linkicon" src="assets/icon/naver.webp" alt="" />
                 &nbsp;표정 연남점
               </a>
               <a
@@ -422,7 +422,7 @@ const Pyojeong = () => {
               >
                 <img
                   className="linkicon rightlinkicon"
-                  src="assets/icon/insta.png"
+                  src="assets/icon/insta.webp"
                   alt=""
                 />
                 &nbsp;@pyojeong_x_x
@@ -438,7 +438,7 @@ const Pyojeong = () => {
                 href="http://m.map.naver.com/route.nhn?
                 menu=route&ename=표정 연남점&ex=126.9255&ey=37.5627&pathType=0&showMap=true"
               >
-                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                <img className="linkicon" src="assets/icon/naver.webp" alt="" />
                 &nbsp;네이버맵
               </a>
               <a
@@ -448,7 +448,7 @@ const Pyojeong = () => {
               >
                 <img
                   className="linkicon rightlinkicon"
-                  src="assets/icon/kakaomap.png"
+                  src="assets/icon/kakaomap.webp"
                   alt=""
                 />
                 &nbsp;카카오맵
