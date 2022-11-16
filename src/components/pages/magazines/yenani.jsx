@@ -17,13 +17,13 @@ import "../../../style/magazinePages.scss";
 import "../../../style/QA.scss";
 const Yenani = () => {
   const images = [
-    "./assets/magazinePages/yenani/2-1.png",
-    "./assets/magazinePages/yenani/2-2.png",
-    "./assets/magazinePages/yenani/2-3.png",
-    "./assets/magazinePages/yenani/2-4.png",
-    "./assets/magazinePages/yenani/2-5.png",
-    "./assets/magazinePages/yenani/2-6.png",
-    "./assets/magazinePages/yenani/2-7.png",
+    "./assets/magazinePages/yenani/2-1.webp",
+    "./assets/magazinePages/yenani/2-2.webp",
+    "./assets/magazinePages/yenani/2-3.webp",
+    "./assets/magazinePages/yenani/2-4.webp",
+    "./assets/magazinePages/yenani/2-5.webp",
+    "./assets/magazinePages/yenani/2-6.webp",
+    "./assets/magazinePages/yenani/2-7.webp",
   ];
   const nav = useNavigate();
   return (
@@ -35,12 +35,12 @@ const Yenani = () => {
         <div className="crowdyMagazine">
           크라우디 매거진
           <div onClick={() => nav(-1)} className="goBack">
-            <img src="./assets/icon/Back.png" alt="" />
+            <img src="./assets/icon/Back.webp" alt="" />
           </div>
         </div>
         <img
           className="magazineThumbnail"
-          src="./assets/magazinePages/yenani/1.png"
+          src="./assets/magazinePages/yenani/1.webp"
           alt=""
         />
         <div className="title">
@@ -61,17 +61,17 @@ const Yenani = () => {
         <div className="cafeDesc containerDesc">
           <div className="flexbox">
             <div className="left">
-              <img src="./assets/magazinePages/icons/cake.png" alt="" />
+              <img src="./assets/magazinePages/icons/cake.webp" alt="" />
               <div>
                 시그니처 메뉴<span>계절 과일 생크림 케이크</span>
               </div>
             </div>
             <div className="center">
-              <img src="./assets/magazinePages/icons/alarm.png" alt="" />
+              <img src="./assets/magazinePages/icons/alarm.webp" alt="" />
               <div>월~토 11시 ~ 20시</div>
             </div>
             <div className="right">
-              <img src="./assets/magazinePages/icons/won.png" alt="" />
+              <img src="./assets/magazinePages/icons/won.webp" alt="" />
               <div>
                 3000원 이상<span>베이커리 기준</span>
               </div>
@@ -79,19 +79,19 @@ const Yenani = () => {
           </div>
           <div className="flexbox secondLine">
             <div className="left">
-              <img src="./assets/magazinePages/icons/car.png" alt="" />
+              <img src="./assets/magazinePages/icons/car.webp" alt="" />
               <div>
                 잠시 가게 앞<span>10분 주차 가능</span>
               </div>
             </div>
             <div className="center">
-              <img src="./assets/magazinePages/icons/table_none.png" alt="" />
+              <img src="./assets/magazinePages/icons/table_none.webp" alt="" />
               <div className="toNone">
                 테이블 수<span>0개</span>
               </div>
             </div>
             <div className="right">
-              <img src="./assets/magazinePages/icons/walking.png" alt="" />
+              <img src="./assets/magazinePages/icons/walking.webp" alt="" />
               <div>
                 홍대입구역<span>도보 20분</span>
               </div>
@@ -122,8 +122,8 @@ const Yenani = () => {
         </div>
 
         <Img2
-          img1="./assets/magazinePages/yenani/3-1.png"
-          img2="./assets/magazinePages/yenani/3-2.png"
+          img1="./assets/magazinePages/yenani/3-1.webp"
+          img2="./assets/magazinePages/yenani/3-2.webp"
         />
 
         <div className="questAnswer">
@@ -145,7 +145,7 @@ const Yenani = () => {
             <span>아 물론 저도 매일매일 알아가는 중입니다 😂</span>
           </div>
         </div>
-        <Img1 img="assets/magazinePages/yenani/4.png" />
+        <Img1 img="assets/magazinePages/yenani/4.webp" />
         <div className="questAnswer">
           <div className="question">
             <span>특별히 못난이 재료를 직접 공수하시는 이유가 있으신가요?</span>
@@ -174,8 +174,8 @@ const Yenani = () => {
           </div>
         </div>
         <Img2
-          img1="./assets/magazinePages/yenani/5-1.png"
-          img2="./assets/magazinePages/yenani/5-2.png"
+          img1="./assets/magazinePages/yenani/5-1.webp"
+          img2="./assets/magazinePages/yenani/5-2.webp"
         />
         {/* Question 4 */}
         <div className="questAnswer">
@@ -207,7 +207,7 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-        <Img1 img="assets/magazinePages/yenani/6.png" />
+        <Img1 img="assets/magazinePages/yenani/6.webp" />
 
         <div className="questAnswer">
           <div className="question">
@@ -228,7 +228,7 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-        <Img1 img="assets/magazinePages/yenani/7.png" />
+        <Img1 img="assets/magazinePages/yenani/7.webp" />
 
         <div className="questAnswer">
           <div className="question">
@@ -259,7 +259,7 @@ const Yenani = () => {
             </span>
           </div>
         </div>
-        <Img1 img="assets/magazinePages/yenani/8.png" />
+        <Img1 img="assets/magazinePages/yenani/8.webp" />
         <div className="questAnswer">
           <div className="question">
             <span>과일을 활용한 시즌 메뉴가 눈에 띄는데요,</span>
@@ -286,9 +286,9 @@ const Yenani = () => {
           </div>
         </div>
         <Img2
-          img1="./assets/magazinePages/yenani/9-1.png"
+          img1="./assets/magazinePages/yenani/9-1.webp"
           desc1="@_yena_ni_ 게시글"
-          img2="./assets/magazinePages/yenani/9-2.png"
+          img2="./assets/magazinePages/yenani/9-2.webp"
           desc2="@_yena_ni_ 게시글"
         />
         <div className="questAnswer">
@@ -312,8 +312,8 @@ const Yenani = () => {
           </div>
         </div>
         <Img2
-          img1="./assets/magazinePages/yenani/10-1.png"
-          img2="./assets/magazinePages/yenani/10-2.png"
+          img1="./assets/magazinePages/yenani/10-1.webp"
+          img2="./assets/magazinePages/yenani/10-2.webp"
           desc2="@_yena_ni_ 게시글"
         />
         <div className="questAnswer">
@@ -339,9 +339,9 @@ const Yenani = () => {
           </div>
         </div>
         <Img2
-          img1="./assets/magazinePages/yenani/11-1.png"
+          img1="./assets/magazinePages/yenani/11-1.webp"
           desc1="@_yena_ni_ 게시글"
-          img2="./assets/magazinePages/yenani/11-2.png"
+          img2="./assets/magazinePages/yenani/11-2.webp"
           desc2="@_yena_ni_ 게시글"
         />
         <SectionSpace></SectionSpace>
@@ -366,7 +366,7 @@ const Yenani = () => {
                 rel="noreferrer"
                 href="https://search.naver.com/search.naver?where=nexearch&sm=top_sly.hst&fbm=0&acr=1&acq=%EC%98%88%EB%82%98%EB%8B%88&qdt=0&ie=utf8&query=%EC%98%88%EB%82%98%EB%8B%88"
               >
-                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                <img className="linkicon" src="assets/icon/naver.webp" alt="" />
                 &nbsp;예나니
               </a>
               <a
@@ -377,7 +377,7 @@ const Yenani = () => {
               >
                 <img
                   className="linkicon rightlinkicon"
-                  src="assets/icon/insta.png"
+                  src="assets/icon/insta.webp"
                   alt=""
                 />
                 &nbsp;@_yena_ni_
@@ -392,7 +392,7 @@ const Yenani = () => {
                 rel="noreferrer"
                 href="http://m.map.naver.com/route.nhn?menu=route&ename=예나니&ex=126.9171&ey=37.5664&pathType=0&showMap=true"
               >
-                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                <img className="linkicon" src="assets/icon/naver.webp" alt="" />
                 &nbsp;네이버맵
               </a>
               <a
@@ -402,7 +402,7 @@ const Yenani = () => {
               >
                 <img
                   className="linkicon rightlinkicon"
-                  src="assets/icon/kakaomap.png"
+                  src="assets/icon/kakaomap.webp"
                   alt=""
                 />
                 &nbsp;카카오맵

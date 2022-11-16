@@ -415,7 +415,7 @@ const Jamjam = () => {
                 rel="noreferrer"
                 href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%9E%BC%EC%9E%BC+%EC%B9%B4%ED%8E%98+%EC%97%B0%EB%82%A8%EC%A0%90+&oquery=%EC%9E%BC%EC%9E%BC+%EC%97%B0%EB%82%A8%EC%A0%90+%EC%B9%B4%ED%8E%98&tqi=h2wCHdp0J14ssKiRfD4ssssssRh-371947"
               >
-                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                <img className="linkicon" src="assets/icon/naver.webp" alt="" />
                 &nbsp;잼잼 연남점
               </a>
               <a
@@ -426,7 +426,7 @@ const Jamjam = () => {
               >
                 <img
                   className="linkicon rightlinkicon"
-                  src="assets/icon/insta.png"
+                  src="assets/icon/insta.webp"
                   alt=""
                 />
                 &nbsp;@cafe.jamjam
@@ -441,7 +441,7 @@ const Jamjam = () => {
                 rel="noreferrer"
                 href="http://m.map.naver.com/route.nhn?menu=route&ename=잼잼 연남점&ex=126.9224&ey=37.565&pathType=0&showMap=true"
               >
-                <img className="linkicon" src="assets/icon/naver.png" alt="" />
+                <img className="linkicon" src="assets/icon/naver.webp" alt="" />
                 &nbsp;네이버맵
               </a>
               <a
@@ -451,7 +451,7 @@ const Jamjam = () => {
               >
                 <img
                   className="linkicon rightlinkicon"
-                  src="assets/icon/kakaomap.png"
+                  src="assets/icon/kakaomap.webp"
                   alt=""
                 />
                 &nbsp;카카오맵

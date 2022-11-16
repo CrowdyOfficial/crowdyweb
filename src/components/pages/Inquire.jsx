@@ -29,7 +29,7 @@ const Inquire = () => {
           <div className="inquireBox">
             <div className="inquires inqKakao">
               <div className="imgBox">
-                <img src="./assets/Inquire/kakao.png" alt="" />
+                <img src="./assets/Inquire/kakao.webp" alt="" />
               </div>
               <div className="inquireTitle">카카오톡</div>
               <div className="inquireDesc">
@@ -44,7 +44,7 @@ const Inquire = () => {
             </div>
             <div className="inquires inqMail">
               <div className="imgBox">
-                <img src="./assets/Inquire/mail.png" alt="" />
+                <img src="./assets/Inquire/mail.webp" alt="" />
               </div>
               <div className="inquireTitle">이메일</div>
               <div className="inquireDesc">crowdy2022@gmail.com</div>
