@@ -14,7 +14,7 @@ const useStore = create(() => ({
     list: [
       {
         to: "/cafededaeng",
-        thumbnail: "./assets/magazinePages/jamjam/thumbnail.webp",
+        thumbnail: "./assets/magazinePages/cafededaeng/thumbnail.webp",
         cafeName: "카페 드 댕",
         cafeDesc: "고양이를 연상케 하는 블랙&그레이의 모던 카페",
       },
