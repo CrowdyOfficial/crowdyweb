@@ -20,7 +20,7 @@ const Intro = () => {
       <div className="Intro">
         <NAV></NAV>
         <div className="section01">
-          <div className="desc SCoreDreamFont">
+          <div className="desc SCoreDreamFont3">
             <span>카페 사장님의 </span>
             <span>자세한 이야기</span>
             <div className="descs">
@@ -44,7 +44,7 @@ const Intro = () => {
           <div className="mainIMGs">
             <img src={sec02Img} alt="" />
           </div>
-          <div className="desc SCoreDreamFont">
+          <div className="desc SCoreDreamFont3">
             <div className="title">
               <span>서로 다른 사장님,</span>
               <span>서로 다른 인터뷰, </span>

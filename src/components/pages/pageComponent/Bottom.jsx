@@ -4,7 +4,7 @@ import "./BottomStyle.scss";
 
 const Bottom = () => {
   return (
-    <div className="bottom SCoreDreamFont">
+    <div className="bottom SCoreDreamFont3">
       <div className="bottomLink">
         <Link className="align" to="/">
           <div className="bottomLinks">홈</div>

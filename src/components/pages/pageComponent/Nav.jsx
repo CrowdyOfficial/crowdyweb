@@ -12,7 +12,7 @@ const NAV = () => {
 
   return (
     <div className="App">
-      <nav className="SCoreDreamFont">
+      <nav className="SCoreDreamFont3">
         <div className="navnav">
           <Link className="align" to="/">
             <img src="./assets/crowdysymbol.png" alt="" />
