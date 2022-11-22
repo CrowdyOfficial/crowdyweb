@@ -11,7 +11,7 @@ const Inquire = () => {
         <NAV></NAV>
 
         {/* section one */}
-        <div className="section01 SCoreDreamFont2">
+        <div className="section01 SCoreDreamFont1">
           <div className="desc">
             <div className="title">
               <span>&nbsp;</span>

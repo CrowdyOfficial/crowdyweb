@@ -65,7 +65,7 @@ const Magazine = () => {
         <NAV></NAV>
 
         {/* section one */}
-        <div id="section01" className="section01 SCoreDreamFont2">
+        <div id="section01" className="section01 SCoreDreamFont1">
           <div className="desc">
             <div className="title">
               <span>매거진, 사장님이</span>
