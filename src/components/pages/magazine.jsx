@@ -33,8 +33,8 @@ const Magazine = () => {
           />
         );
       }
-    } else if (start === 1) {
-      for (let i = 5; i < 10; i++) {
+    } else {
+      for (let i = 5 * start; i < 5 * start + 5; i++) {
         if (cafes.list[i] === undefined) {
           break;
         }
