@@ -56,42 +56,6 @@ const useStore = create(() => ({
         cafeName: "예나니",
         cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
       },
-      {
-        to: "/yenani",
-        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.webp",
-        cafeName: "예나니",
-        cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
-      },
-      {
-        to: "/yenani",
-        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.webp",
-        cafeName: "예나니",
-        cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
-      },
-      {
-        to: "/yenani",
-        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.webp",
-        cafeName: "예나니",
-        cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
-      },
-      {
-        to: "/yenani",
-        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.webp",
-        cafeName: "예나니",
-        cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
-      },
-      {
-        to: "/yenani",
-        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.webp",
-        cafeName: "예나니",
-        cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
-      },
-      {
-        to: "/yenani",
-        thumbnail: "./assets/magazinePages/yenani/yenani_thumbnail.webp",
-        cafeName: "예나니",
-        cafeDesc: "끝남동의 매력적인 카페, 아기자기한 감성",
-      },
     ],
   },
 
