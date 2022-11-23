@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MagazineMenu = (props) => {
   return (
-    <div className="App SCoreDreamFont1">
+    <div className="App SCoreDreamFont3">
       <div>
         <div className="magazineMenu">
           <Link to={props.to}>

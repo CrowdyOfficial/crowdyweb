@@ -11,7 +11,7 @@ const Inquire = () => {
         <NAV></NAV>
 
         {/* section one */}
-        <div className="section01 SCoreDreamFont1">
+        <div className="section01 SCoreDreamFont4">
           <div className="desc">
             <div className="title">
               <span>&nbsp;</span>
@@ -25,7 +25,7 @@ const Inquire = () => {
         </div>
 
         {/* section two */}
-        <div className="section02 SCoreDreamFont1">
+        <div className="section02 SCoreDreamFont4">
           <div className="inquireBox">
             <div className="inquires inqKakao">
               <div className="imgBox">
