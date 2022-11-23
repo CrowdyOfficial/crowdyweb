@@ -25,7 +25,7 @@ const Inquire = () => {
         </div>
 
         {/* section two */}
-        <div className="section02 SCoreDreamFont2">
+        <div className="section02 SCoreDreamFont1">
           <div className="inquireBox">
             <div className="inquires inqKakao">
               <div className="imgBox">
