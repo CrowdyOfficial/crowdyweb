@@ -72,7 +72,7 @@ const Underfloor = () => {
             <div className="right">
               <img src="./assets/magazinePages/icons/won.webp" alt="" />
               <div>
-                5000원 이상<span>(음료 기준)</span>
+                5500원 이상<span>(음료 기준)</span>
               </div>
             </div>
           </div>
