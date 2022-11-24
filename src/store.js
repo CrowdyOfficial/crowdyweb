@@ -12,6 +12,12 @@ const useStore = create(() => ({
       },
     */
     list: [
+      // {
+      //   to: "/underfloor",
+      //   thumbnail: "./assets/magazinePages/underfloor/thumbnail.webp",
+      //   cafeName: "언더플로어",
+      //   cafeDesc: "5년간 연남동을 지켜온 아늑한 아지트",
+      // },
       {
         to: "/cafededaeng",
         thumbnail: "./assets/magazinePages/cafededaeng/thumbnail.webp",

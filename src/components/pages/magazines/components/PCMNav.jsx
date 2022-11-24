@@ -5,7 +5,7 @@ import "./PCMNav.scss";
 const PCMNav = () => {
   return (
     <div className="pcmnav">
-      <nav className="SCoreDreamFont">
+      <nav className="SCoreDreamFont3">
         <div className="mnavnav">
           <Link className="align" to="/">
             <img src="./assets/crowdysymbol.png" alt="" />

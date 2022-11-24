@@ -10,7 +10,7 @@ const MNav = () => {
   };
   return (
     <div className="App">
-      <nav id="nav" className="SCoreDreamFont">
+      <nav id="nav" className="SCoreDreamFont3">
         <div className="navnav">
           <Link className="align" to="/">
             <img src="./assets/crowdysymbol.png" alt="" />
