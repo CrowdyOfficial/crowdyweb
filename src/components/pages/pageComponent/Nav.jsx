@@ -37,7 +37,7 @@ const NAV = () => {
           <Link className="align" to="/inquiry">
             <div
               className={
-                getURL.pathname === "/inquire" ? "link nowPageColor" : "link"
+                getURL.pathname === "/inquiry" ? "link nowPageColor" : "link"
               }
             >
               문의하기
