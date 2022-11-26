@@ -40,6 +40,7 @@ const Underfloor = () => {
             </Link>
           </div>
         </div>
+        <div className="spaceup"></div>
         <img className="magazineThumbnail" src={asset + "1.webp"} alt="" />
         <div className="title">
           <span>5년간 연남동을 지켜온</span>

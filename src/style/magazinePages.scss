@@ -357,9 +357,17 @@ a::after {
     }
   }
 }
+.spaceup {
+  display: none;
+}
 
 // 1025px --> pc
 @media only screen and (min-width: 1025px) {
+  .spaceup {
+    display: block;
+    width: 100%;
+    min-height: 8vh;
+  }
   .slide {
     height: 100%;
     height: 100vh;

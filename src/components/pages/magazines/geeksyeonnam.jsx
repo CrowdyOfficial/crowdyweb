@@ -39,6 +39,7 @@ const GeeksYeonnam = () => {
             </Link>
           </div>
         </div>
+        <div className="spaceup"></div>
         <img
           className="magazineThumbnail"
           src="./assets/magazinePages/geeksyeonnam/1.webp"

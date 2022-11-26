@@ -41,6 +41,7 @@ const AtTheMoment = () => {
             <img src="./assets/icon/Back.webp" alt="" />
           </div>
         </div>
+        <div className="spaceup"></div>
         <img
           className="magazineThumbnail"
           src="./assets/magazinePages/atthemoment/1.webp"

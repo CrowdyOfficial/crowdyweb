@@ -39,6 +39,7 @@ const TDLCoffee = () => {
             <img src="./assets/icon/Back.webp" alt="" />
           </div>
         </div>
+        <div className="spaceup"></div>
         <img
           className="magazineThumbnail"
           src="./assets/magazinePages/tenderlycoffee/1.webp"

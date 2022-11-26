@@ -42,6 +42,7 @@ const Pyojeong = () => {
             </Link>
           </div>
         </div>
+        <div className="spaceup"></div>
         <img className="magazineThumbnail" src={asset + "1.webp"} alt="" />
         <div className="title">
           <span>작은 공간에서</span>

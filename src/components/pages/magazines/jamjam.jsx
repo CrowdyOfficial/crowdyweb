@@ -41,6 +41,7 @@ const Jamjam = () => {
             </Link>
           </div>
         </div>
+        <div className="spaceup"></div>
         <img className="magazineThumbnail" src={asset + "1.webp"} alt="" />
         <div className="title">
           <span>흑임자로 받은 사랑을</span>

@@ -38,6 +38,7 @@ const Yenani = () => {
             <img src="./assets/icon/Back.webp" alt="" />
           </div>
         </div>
+        <div className="spaceup"></div>
         <img
           className="magazineThumbnail"
           src="./assets/magazinePages/yenani/1.webp"

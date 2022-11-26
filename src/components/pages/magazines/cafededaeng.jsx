@@ -41,6 +41,7 @@ const Cafededaeng = () => {
             </Link>
           </div>
         </div>
+        <div className="spaceup"></div>
         <img className="magazineThumbnail" src={asset + "1.webp"} alt="" />
         <div className="title">
           <span>고양이를 연상케 하는</span>
