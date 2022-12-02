@@ -15,6 +15,7 @@ import Pyojeong from "./components/pages/magazines/pyojeong";
 import Jamjam from "./components/pages/magazines/jamjam";
 import Cafededaeng from "./components/pages/magazines/cafededaeng";
 import Underfloor from "./components/pages/magazines/underfloor";
+import OLU from "./components/pages/magazines/OLU";
 
 // Test page
 import Test from "./components/pages/magazines/test";
@@ -47,6 +48,7 @@ function App() {
         <Route path="/jamjam" element={<Jamjam />} />
         <Route path="/cafededaeng" element={<Cafededaeng />} />
         <Route path="/underfloor" element={<Underfloor />} />
+        <Route path="/olu" element={<OLU />} />
 
         {/* Magazine Test */}
         <Route path="magazinetestpage" element={<Test />} />

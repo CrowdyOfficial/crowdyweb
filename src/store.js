@@ -13,6 +13,12 @@ const useStore = create(() => ({
     */
     list: [
       {
+        to: "/olu",
+        thumbnail: "./assets/magazinePages/olu/thumbnail.webp",
+        cafeName: "OLU",
+        cafeDesc: "에스프레소의 편견을 깨는 공간",
+      },
+      {
         to: "/underfloor",
         thumbnail: "./assets/magazinePages/underfloor/thumbnail.webp",
         cafeName: "언더플로어",
